@@ -1,0 +1,429 @@
+.stats_wrapper {
+    padding: 60px 0 40px;
+}
+.stats_wrapper .stats_header {
+    margin-bottom: 60px;
+}
+.stats_wrapper .stats_header  .stats_header_heading {
+    font-family: 'Montserrat-Bold';
+    font-size: 32px;
+    line-height: 1.3;
+    margin-bottom: 24px;
+    color: #240B14;
+}
+.stats_wrapper .stats_header p {
+    font-family: 'Montserrat-Medium';
+    font-size: 18px;
+    line-height: 1.5;
+    color: #240B14;
+    margin-bottom: 24px;
+}
+.stats_wrapper .stats_header .stats_link {
+    font-family: 'Montserrat-SemiBold';
+    font-size: 16px;
+    line-height: 1;
+    color: #E81132;
+    -webkit-transition: all 0.2s linear;
+    -moz-transition: all 0.2s linear;
+    -o-transition: all 0.2s linear;
+    transition: all 0.2s linear;
+    outline: none;
+    text-decoration: none;
+}
+.stats_wrapper .stats_header .stats_link img{
+    vertical-align: middle;
+}
+.stats_wrapper .stats_header .stats_link:hover , .stats_wrapper .stats_header .stats_link:focus {
+    text-decoration: underline;
+}
+.stats_wrapper .stats_header .stats_link .arrow_right {
+    margin-left: 10px;
+    -webkit-transition: all 0.3s linear;
+    -moz-transition: all 0.3s linear;
+    -o-transition: all 0.3s linear;
+    transition: 0.3s linear;
+  
+}
+.stats_wrapper .stats_header .stats_link:hover .arrow_right ,  .stats_wrapper .stats_header .stats_link:focus .arrow_right{
+    margin-left: 15px;
+}
+.stats_wrapper .stats .row {
+    margin-right: -10px;
+    margin-left: -10px;
+}
+
+
+.stats_wrapper .stats_block_inner .stats_block_upper .stats_date,
+.stats_wrapper .stats_block_inner .stats_block_lower .stats_name {
+    font-family: 'Montserrat-Medium';
+    font-size: 18px;
+    line-height: 1.5;
+    color: #240B14;
+    margin: 0;
+}
+
+
+.stats_wrapper .stats .stats_block_inner .stats_block_upper  .stats_number{
+    font-family: 'Montserrat-Bold';
+}
+
+
+/* stats v1 */
+.stats_wrapper.stats-V1 {
+    padding: 60px 0 0px;
+}
+.stats_wrapper.stats-V1 .stats .stats_block_inner .stats_block_upper  .stats_number {
+    color: #000000;
+    font-size: 32px;
+    line-height: 1.3;
+    margin-bottom: 20px;
+}
+.stats_wrapper.stats-V1 .stats  .stats_block_inner .stats_block_lower .stats_name {
+    color: #000000;
+}
+
+.stats_wrapper.stats-V1 .stats .stats_block_inner .stats_icon_main {
+    margin-bottom: 30px;
+}
+.stats_wrapper.stats-V1 .stats .stats_block_inner .stats_date{
+    display: none;
+}
+.stats_wrapper.stats-V1 .stats .stats_block .stats_block_inner{
+    padding: 0 0 30px;
+    border-bottom: 2px solid #e81132;
+    height: 100%;
+}
+
+.stats_wrapper.stats-V1 .stats .stats_block_inner .stats_icon_main .stats_icon_v1 {
+    display: block;
+}
+.stats_wrapper.stats-V1 .stats .stats_block_inner .stats_icon_main .stats_icon_v3 , .stats_wrapper.stats-V1 .stats .stats_block .stats_block_inner  .stats_icon_main .stats_icon_v4{
+display: none;
+}
+.stats_wrapper.stats-V1 .stats .col{
+    padding-right: 10px;
+    padding-left: 10px;
+    -ms-flex: 0 0 33.333333%;
+    flex: 0 0 33.333333%;
+    max-width: 33.333333%; 
+}
+.stats_wrapper.stats-V1 .stats .stats_block {
+    margin-bottom: 60px;
+}
+/* end stats v1 */
+
+
+/* stats v2 */
+.stats_wrapper.stats-V2 .stats .stats_block_inner .stats_icon_main {
+    display: none;
+}
+.stats_wrapper.stats-V2 .stats .stats_block .stats_block_inner {
+    background-color: #DDF1F2;
+    padding: 30px;
+    height: 100%;
+    transition: 0.3s;
+}
+.stats_wrapper.stats-V2 .stats_block_inner .stats_block_upper .stats_date {
+    margin-bottom: 20px;
+}
+.stats_wrapper.stats-V2 .stats .stats_block .stats_block_inner:hover, .stats_wrapper.stats-V2 .stats .stats_block .stats_block_inner:focus{
+    background-color: #00AAAD;
+    cursor: pointer;
+}
+.stats_wrapper.stats-V2 .stats .stats_block .stats_block_inner:hover .stats_block_upper , .stats_wrapper.stats-V2 .stats .stats_block .stats_block_inner:focus .stats_block_upper{
+    border-bottom: 1px solid #240B14;
+}
+.stats_wrapper.stats-V2 .stats .stats_block_inner .stats_block_upper {
+    border-bottom: 1px solid #00AAAD;
+    padding-bottom: 30px;
+    margin-bottom: 30px;
+}
+.stats_wrapper.stats-V2 .stats .stats_block_inner .stats_block_upper .stats_number {
+    font-size: 50px;
+    line-height: 1.2;
+    margin-bottom: 0;
+    color: #240B14;
+}
+.stats_wrapper.stats-V2 .stats .col{
+    padding-right: 10px;
+    padding-left: 10px;
+    -ms-flex: 0 0 33.333333%;
+    flex: 0 0 33.333333%;
+    max-width: 33.333333%; 
+}
+
+.stats_wrapper.stats-V2 .stats .stats_block {
+    margin-bottom: 20px;
+}
+/*end stats v2 */
+
+/* stats v3 */
+.stats_wrapper.stats-V3 .stats .col{
+    padding-right: 10px;
+    padding-left: 10px;
+    -ms-flex: 0 0 25%;
+    flex: 0 0 25%;
+    max-width: 25%;
+}
+.stats_wrapper.stats-V3 .stats .stats_block_inner .stats_block_upper .stats_number {
+    font-size: 38px;
+    line-height: 1.2;
+    margin-bottom: 0;
+    color: #FFFFFF;
+    padding-right: 25px;
+}
+
+.stats_wrapper.stats-V3 .stats .stats_block_inner .stats_block_lower .stats_name {
+    color: #FFFFFF;
+    margin: 0;
+}
+.stats_wrapper.stats-V3 .stats .stats_block .stats_block_inner {
+    background-color: #240B14;
+    padding: 30px;
+    height: 100%;
+    transition: 0.3s;
+    position: relative;
+    overflow: hidden;
+}
+.stats_wrapper.stats-V3 .stats .stats_block_inner .stats_block_upper {
+    padding-bottom: 30px;
+}
+.stats_wrapper.stats-V3 .stats .stats_block .stats_block_inner  .stats_icon_main {
+    position: absolute;
+    top: 30px;
+    right: -10px;
+}
+.stats_wrapper.stats-V3 .stats .stats_block {
+    margin-bottom: 20px;
+}
+
+.stats_wrapper.stats-V3 .stats .stats_block .stats_block_inner  .stats_icon_main .stats_icon_v1,.stats_wrapper.stats-V3 .stats .stats_block .stats_block_inner  .stats_icon_main  .stats_icon_v4{
+    display:none;
+}
+.stats_wrapper.stats-V3 .stats .stats_block_inner .stats_block_upper .stats_date{
+display: none;
+}
+/*end stats v3 */
+
+/* stats v4 */
+.stats_wrapper.stats-V4 .stats .col{
+    padding-right: 10px;
+    padding-left: 10px;
+    -ms-flex: 0 0 50%;
+    flex: 0 0 50%;
+    max-width: 50%; 
+}
+
+.stats_wrapper.stats-V4 .stats .rowInner{
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    margin-right: -10px;
+    margin-left: -10px;
+}
+.stats_wrapper.stats-V4 .stats .stats_block .col-auto {
+    -ms-flex: 0 0 auto;
+    flex: 0 0 auto;
+    width: auto;
+    max-width: 100%;
+    padding-left: 10px;
+    padding-right: 15px;
+  }
+  .stats_wrapper.stats-V4 .stats .stats_block .colInner {
+    -ms-flex-preferred-size: 0;
+    flex-basis: 0;
+    -ms-flex-positive: 1;
+    flex-grow: 1;
+    max-width: 100%;
+    padding-right: 10px;
+    padding-left: 15px;
+  }
+  .stats_wrapper.stats-V4 .stats .stats_block .stats_block_inner {
+    background-color: #DDF1F2;
+    padding: 30px;
+    height: 100%;
+    transition: 0.3s;
+}
+
+.stats_wrapper.stats-V4 .stats .stats_block .stats_block_inner  .stats_icon_main .stats_icon_v1,.stats_wrapper.stats-V4 .stats .stats_block .stats_block_inner  .stats_icon_main .stats_icon_v3{
+    display:none;
+}
+.stats_wrapper.stats-V4 .stats .stats_block {
+    margin-bottom: 20px;
+}
+
+.stats_wrapper.stats-V4 .stats .stats_block .stats_block_inner .stats_date{
+    border-bottom: 1px solid #00AAAD;
+    padding-bottom: 20px;
+    margin-bottom: 20px;
+    
+}
+
+.stats_wrapper.stats-V4 .stats  .stats_block_inner .stats_block_upper .stats_number {
+    font-size: 50px;
+    line-height: 1.2;
+    margin-bottom: 0;
+    color: #240B14;
+}
+.stats_wrapper.stats-V4 .stats  .stats_block_inner .stats_block_lower{
+    display: none;
+}
+/* end stats v4 */
+
+/*********media********/
+
+
+@media screen and (max-width: 991.98px) {
+    /* stats v1 */
+    .stats_wrapper.stats-V1 .stats .col{
+    -ms-flex: 0 0 50%;
+    flex: 0 0 50%;
+    max-width: 50%; 
+}
+/* end stats v1 */ 
+
+    /* stats v2 */
+    .stats_wrapper.stats-V2 .stats .col{
+        -ms-flex: 0 0 50%;
+        flex: 0 0 50%;
+        max-width: 50%; 
+    }
+    /* end stats v2 */ 
+
+    /* stats v3 */
+    .stats_wrapper.stats-V3 .stats .col{
+        -ms-flex: 0 0 50%;
+        flex: 0 0 50%;
+        max-width: 50%; 
+    }
+    /* end stats v3 */ 
+}
+
+
+
+@media screen and (max-width: 767.98px) {
+    .stats_wrapper .stats_block_inner .stats_block_upper .stats_number {
+        font-size: 38px;
+    }
+
+    /* stats v1 */
+    .stats_wrapper.stats-V1 .stats .col{
+        -ms-flex: 0 0 50%;
+        flex: 0 0 50%;
+        max-width: 50%; 
+    }
+    .stats_wrapper.stats-V1 .stats .stats_block {
+        margin-bottom: 40px;
+    }
+    /* stats v1 */
+    .stats_wrapper.stats-V1 {
+        padding: 60px 0 20px;
+    }
+
+    /* stats v2 */
+    .stats_wrapper.stats-V2 .stats .col{
+        -ms-flex: 0 0 50%;
+        flex: 0 0 50%;
+        max-width: 50%; 
+    }
+    .stats_wrapper.stats-V2 .stats .stats_block_inner .stats_block_upper .stats_number{
+        font-size: 38px;
+    }
+    .stats_wrapper.stats-V2 .stats .stats_block .stats_block_inner{
+        padding: 20px 20px 48px;
+    }
+    /* end stats v2 */ 
+
+    /* stats v3 */
+    .stats_wrapper.stats-V3 .stats .col{
+        -ms-flex: 0 0 100%;
+        flex: 0 0 100%;
+        max-width: 100%; 
+    }
+    /* end stats v3 */ 
+
+    /* stats v4 */
+    .stats_wrapper.stats-V4 .stats .col{
+        -ms-flex: 0 0 100%;
+        flex: 0 0 100%;
+        max-width: 100%; 
+    }
+
+    .stats_wrapper.stats-V4 .stats .stats_block .stats_block_inner{
+        padding: 20px;
+    }
+    /* end stats v4 */ 
+}
+
+@media screen and (max-width: 413.98px) {
+
+    .stats_wrapper .stats_header {
+        margin-bottom: 40px;
+    }
+    .stats_wrapper .stats_header  .stats_header_heading {
+        font-size: 26px;
+        margin-bottom: 20px;
+    }
+    .stats_wrapper .stats_header p {
+        font-size: 16px;
+    }
+    .stats_wrapper .stats .stats_block .stats_block_inner {
+        padding: 20px;
+    }
+    .stats_wrapper .stats_block_inner .stats_block_upper .stats_date, 
+    .stats_wrapper .stats_block_inner .stats_block_lower .stats_name {
+        font-size: 14px;
+    }
+    .stats_wrapper .stats_block_inner .stats_block_upper .stats_number {
+        font-size: 30px;
+    }
+    .stats_wrapper .stats_block_inner .stats_block_upper .stats_date {
+        margin-bottom: 15px;
+    }
+    .stats_wrapper .stats_header .stats_link:hover .arrow_right, .stats_wrapper .stats_header .stats_link:focus .arrow_right {
+        margin-left: 12px;
+    }
+    /* stats v1 */
+    .stats_wrapper.stats-V1 .stats .col{
+        -ms-flex: 0 0 100%;
+        flex: 0 0 100%;
+        max-width: 100%; 
+    }
+    .stats_wrapper.stats-V1 .stats .stats_block .stats_block_inner {
+        padding-bottom: 20px;
+    }
+    .stats_wrapper.stats-V1 .stats .stats_block_inner .stats_block_upper .stats_number{
+        font-size: 26px;
+        margin-bottom: 15px;
+    }
+    .stats_wrapper.stats-V1 .stats .stats_block_inner .stats_icon_main{
+        margin-bottom: 20px;
+    }
+    /* end stats v1 */
+
+    /* stats v2 */
+    .stats_wrapper.stats-V2 .stats .col{
+        -ms-flex: 0 0 100%;
+        flex: 0 0 100%;
+        max-width: 100%; 
+    }
+    .stats_wrapper.stats-V2 .stats .stats_block_inner .stats_block_upper .stats_number{
+        font-size: 38px;
+    }
+    .stats_wrapper.stats-V2 .stats .stats_block .stats_block_inner {
+        padding: 20px;
+    }
+    .stats_wrapper.stats-V2 .stats .stats_block_inner .stats_block_upper{
+        padding-bottom: 20px;
+        margin-bottom: 20px;
+    }
+        /* end stats v2 */ 
+
+        /* stats v4 */
+
+        .stats_wrapper.stats-V4 .stats .stats_block_inner .stats_block_upper .stats_number {
+        font-size: 38px;
+    }
+        /*end stats v4 */
+}
