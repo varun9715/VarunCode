@@ -1,0 +1,338 @@
+.globalSection {
+    padding: 100px 0;
+    background: #fff;
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(42%, rgb(255 255 255)), color-stop(42%, rgb(247 247 247)));
+    background: -o-linear-gradient(top, rgb(255 255 255) 42%, rgb(247 247 247) 42%);
+    background: linear-gradient(180deg, rgb(255 255 255) 42%, rgb(247 247 247) 42%);
+    margin-top: 60px;
+    padding-top: 30px;
+}
+.featuredReport .globalHeading h2{
+    text-align: center;
+    color: #240B14;
+    margin-bottom: 80px;
+}
+.featuredReport p {
+    font-family: 'Montserrat-Medium';
+    font-size: 18px;
+    line-height: 1.6;
+    color: #240B14;
+}
+.featuredReport .videoImagePanel {
+    position: relative;
+}
+.featuredReport  .text-center {
+    text-align: center;
+}
+ .videoImagePanel .playIcon {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+}
+.globalSection .videoSection  .videoDescriptionPanel {
+    padding-top: 55px;
+}
+.globalSection .videoSection  .videoDescriptionPanel h3 {
+    color: #240B14;
+    margin-bottom: 24px;
+}
+
+.globalSection .videoSection  .videoDescriptionPanel a{
+    font-family: 'Montserrat-SemiBold';
+    font-size: 16px;
+    line-height: 1;
+    color: #E81132;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    margin-top: 0;
+    text-decoration: none;
+    -webkit-transition: all 0.2s linear;
+    -moz-transition: all 0.2s linear;
+    -o-transition: all 0.2s linear;
+    transition: all 0.2s linear;
+    margin-top: 24px;
+}
+.globalSection .videoSection .videoDescriptionPanel a img{
+    margin-left: 10px;
+    margin-top: 2px;
+    -webkit-transition: all 0.2s linear;
+    -moz-transition: all 0.2s linear;
+    -o-transition: all 0.2s linear;
+    transition: all 0.2s linear;
+   
+}
+.globalSection .videoSection .videoDescriptionPanel a:hover{
+    text-decoration: underline;
+}
+.globalSection .videoSection .videoDescriptionPanel a:hover img{
+    text-decoration: underline;
+    margin-left: 15px;
+}
+.videoDescriptionPanel p {
+    margin-bottom: 24px;
+}
+
+.videoSection  .mainInfoPanel {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+}
+.videoSection  .mainInfoPanel .infoPanel {
+    background: #E81132;
+    padding: 120px 110px 120px 50px;
+    max-width: 580px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: column;
+            flex-flow: column;
+}
+.videoSection .mainInfoPanel.skyBlue {
+    flex-flow: row-reverse;
+}
+.videoSection  .mainInfoPanel .infoPanel h1 {
+    margin-bottom: 20px;
+    margin-top: 0;
+    color: #fff;
+}
+.videoSection  .mainInfoPanel .infoPanel p {
+    color: #fff;
+}
+.videoSection  .mainInfoPanel .infoPanel p:last-child {
+    margin-bottom: 0;
+}
+.videoSection  .mainInfoPanel .videoImagePanel {
+    margin-left: -54px;
+    position: relative;
+}
+
+.videoSectionTwo .mainInfoPanel.skyBlue .infoPanel {
+    background: #DDF1F2;
+    padding: 120px 50px 120px 100px;
+}
+.videoSectionTwo .mainInfoPanel.skyBlue .infoPanel h1 {
+    font-family: 'Montserrat-Bold';
+    margin-bottom: 24px;
+    color: #240B14;
+}
+.videoSectionTwo .mainInfoPanel.skyBlue .infoPanel p {
+    color: #240B14;
+}
+.videoSectionTwo .mainInfoPanel.skyBlue .videoImagePanel {
+    margin-left: -54px;
+}
+.videoSectionTwo .mainInfoPanel.skyBlue .videoImagePanel {
+    margin-left: 0;
+    margin-right: -54px;
+}
+strong {
+    font-family: 'Montserrat-Bold';
+}
+@media screen and (max-width:1299.98px) {
+    .globalSection {
+        padding: 60px 0;
+    }
+    .globalHeading h2{
+        margin-bottom: 50px;
+    }
+    .videoSection .videoDescriptionPanel {
+        padding-top: 40px;
+    }
+    .globalSection .playIcon img {
+        max-width: 60px;
+    }
+}
+@media screen and (max-width:991.98px) and (min-width:768px) {
+
+    .videoSection .mainInfoPanel .infoPanel {
+        background: #E81132;
+        padding: 80px 70px 80px 50px;
+        width: 57%;
+        height: auto;
+        -webkit-box-flex: 0;
+            -ms-flex: 0 0 57%;
+                flex: 0 0 57%;
+    }
+    .videoSection  .mainInfoPanel .infoPanel h1 {
+        font-size: 30px;
+    }
+    .videoSection  .mainInfoPanel .videoImagePanel {
+        margin-left: -34px;
+    }
+    .videoSectionTwo .mainInfoPanel.skyBlue .infoPanel {
+        min-height: auto;
+        padding: 80px 50px 80px 100px;
+    }
+}
+@media screen and (max-width:767.98px) and (min-width:480.98px){
+    .videoSection  .mainInfoPanel .infoPanel {
+        background:transparent;
+    }
+    section#video_section {
+        background: rgb(232,17,50);
+        background: -webkit-gradient(linear, left top, left bottom, color-stop(75%, rgba(232,17,50,1)), color-stop(75%, rgba(255,255,255,1)));
+        background: -o-linear-gradient(top, rgba(232,17,50,1) 75%, rgba(255,255,255,1) 75%);
+        background: linear-gradient(180deg, rgba(232,17,50,1) 75%, rgba(255,255,255,1) 75%);
+        margin-top: 60px;
+        padding-top: 30px;
+
+    }
+    section#video_sectiontwo {
+        background: rgb(221,241,242);
+        background: -webkit-gradient(linear, left bottom, left top, color-stop(75%, rgba(221,241,242,1)), color-stop(75%, rgba(255,255,255,1)));
+        background: -o-linear-gradient(bottom, rgba(221,241,242,1) 75%, rgba(255,255,255,1) 75%);
+        background: linear-gradient(360deg, rgba(221,241,242,1) 75%, rgba(255,255,255,1) 75%);
+    }
+}
+@media screen and (max-width:767.98px) {
+    .globalHeading h2 {
+        margin-bottom: 30px;
+    }
+    .featuredReport .videoDescriptionPanel {
+        text-align: left !important;
+    }
+    .globalSection .videoSection br {
+        display: none;
+    }
+    .globalSection .videoSection .videoDescriptionPanel a {
+        -webkit-box-pack: start;
+            -ms-flex-pack: start;
+                justify-content: flex-start;
+    }
+    .featuredReport.globalSection {
+        background: #fff;
+        background: -webkit-gradient(linear, left top, left bottom, color-stop(28%, rgb(255 255 255)), color-stop(28%, rgb(247 247 247)));
+        background: -o-linear-gradient(top, rgb(255 255 255) 28%, rgb(247 247 247) 28%);
+        background: linear-gradient(180deg, rgb(255 255 255) 28%, rgb(247 247 247) 28%);
+    }
+     .globalSection .videoSection .videoDescriptionPanel {
+        padding-top: 35px;
+    }
+    .videoSection  .mainInfoPanel .infoPanel {
+        max-width: 100%;
+    }
+    .videoSection  .mainInfoPanel {
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-flow: column;
+                flex-flow: column;
+    }
+    
+    .videoSection  .mainInfoPanel .infoPanel h3 {
+        font-size: 32px;
+    }
+    .videoSection  .mainInfoPanel .infoPanel {
+        padding: 30px 25px 200px 25px;
+    }
+    .videoSection  .mainInfoPanel .videoImagePanel {
+        margin-left: 0;
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+    .videoSection  .mainInfoPanel .infoPanel {
+        padding-top: 30px;
+        padding-bottom: 40px;
+        height: auto;
+    }
+    .videoSection  .mainInfoPanel.skyBlue .videoImagePanel {
+        margin-left: 25px;
+        margin-right: 25px;
+        margin-top: 0;
+    }
+    .videoSection .container,
+    .videoSection  .mainInfoPanel {
+        padding: 0;
+    }
+    .videoSection  .mainInfoPanel .infoPanel {
+        padding-top: 30px;
+        height: auto;
+    }
+    .videoSection  .mainInfoPanel .infoPanel p {
+        color: #fff;
+        padding-bottom: 0;
+    }
+    .videoSection  .mainInfoPanel .infoPanel p:last-child {
+        margin-bottom: 0;
+    }
+    .videoSection  .mainInfoPanel .infoPanel h1 {
+        font-size: 32px;
+    }
+    .videoSectionTwo {
+        padding-bottom: 40px;
+    }
+    .videoSectionTwo .videoSection br {
+        display: none;
+    }
+    .videoSectionTwo .mainInfoPanel.skyBlue {
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-flow: column-reverse;
+                flex-flow: column-reverse;
+    }
+    .videoSectionTwo .mainInfoPanel.skyBlue .infoPanel  {
+        padding-bottom: 0;
+        max-width: 100%;
+        padding: 30px 25px 40px 25px;
+        height: auto;
+    }
+}
+@media screen and (max-width:480px) {
+    .videoSection.globalSection {
+        padding: 60px 0;
+    }
+    .videoSection  .playIcon img {
+        max-width: 60px;
+    }
+    .videoSection  .mainInfoPanel .infoPanel {
+        padding: 30px 25px 42% 25px;
+    }
+    .videoSection  .mainInfoPanel .videoImagePanel {
+        margin-top:-30%;
+    }
+    .videoSectionTwo .mainInfoPanel.skyBlue .videoImagePanel {
+        margin-bottom: -30%;
+    }
+    .videoSectionTwo .mainInfoPanel.skyBlue .infoPanel {
+        padding: 37% 25px 40px 25px;
+    }
+}
+@media screen and (max-width:479.98px) {
+    .videoImagePanel .playIcon img {
+        max-width: 60px;
+    }
+}
+@media screen and (max-width:413.98px) {
+    .videoSection p {
+        font-size: 16px;
+    }  
+    .videoSection .mainInfoPanel .infoPanel h1 {
+        font-size: 25px;
+    }
+    
+}

@@ -1,0 +1,292 @@
+.content_wrapper {
+    padding: 60px 0;
+}
+.content_wrapper img {
+    vertical-align: middle;
+    width: 100%;
+}
+.content_wrapper .content_heading {
+    margin-bottom: 30px;
+}
+.content_wrapper .content_heading .content_subtext {
+    font-size: 18px;
+    line-height: 1.5;
+    text-transform: uppercase;
+    font-family: 'Montserrat-Medium';
+    margin: 0 0 8px 0;
+}
+.content_wrapper .content_heading h2 {
+    font-size: 32px;
+    line-height: 1.4;
+    color: #EE1B3A;
+    margin: 0;
+    font-family: 'Montserrat-Bold';
+}
+.content_wrapper .cardslider {
+    margin: 0 -10px;
+}
+.content_wrapper .cardslider .card_slide {
+    padding: 0 10px;
+}
+.content_wrapper .custom_card .card_img {
+    margin-bottom: 24px;
+}
+.content_wrapper .custom_card .card_body {
+    padding: 0;
+}
+.content_wrapper .custom_card .card_body .card_type {
+    font-size: 18px;
+    line-height: 1.6;
+    margin: 0 0 10px 0;
+    font-family: 'Montserrat-Medium';
+}
+.content_wrapper .custom_card .card_body .card_title,
+.content_wrapper .custom_card .card_body .card_title a {
+    font-size: 28px;
+    line-height: 1.4;
+    margin: 0 0 20px 0;
+    font-family: 'Montserrat-Bold';
+    color: #240B14;
+}
+.content_wrapper .custom_card .card_body .card_title a {
+    text-decoration: none;
+    -webkit-transition: all 0.3s linear;
+    -moz-transition: all 0.3s linear;
+    -o-transition: all 0.3s linear;
+    transition: all 0.3s linear;
+}
+.content_wrapper .custom_card .card_body .card_title a:hover,
+.content_wrapper .custom_card .card_body .card_title a:focus {
+    text-decoration: underline;
+}
+.content_wrapper .custom_card .card_body .card_text {
+    font-size: 14px;
+    line-height: 1.7;
+    padding: 0;
+    margin: 0;
+    font-family: 'Montserrat-Regular';
+}
+.content_wrapper .custom_card .card_body .card_text span {
+    position: relative;
+    margin: 0 10px;
+}
+.content_wrapper .custom_card .card_body .card_text span:before {
+    content: "";
+    position: absolute;
+    height: 2px;
+    width: 2px;
+    border-radius: 50px;
+    top: 9px;
+    background: #240B14;
+}
+.content_wrapper .custom_card .card_btn {
+    margin-top: 20px;
+    display: inline-block;
+}
+.content_wrapper .custom_card .card_btn .stats_link {
+    display: flex;
+    align-items: center;
+    font-size: 16px;
+    line-height: 0.9;
+    color: #E81132;
+    background: none;
+    border: none;
+    padding: 0;
+    font-family: 'Montserrat-SemiBold';
+    text-decoration: none;
+}
+.content_wrapper .custom_card .card_btn .stats_link:hover {
+    text-decoration: underline;
+}
+.content_wrapper .custom_card .card_btn .stats_link .arrow_right {
+    margin-left: 10px;
+    -webkit-transition: all 0.3s linear;
+    -moz-transition: all 0.3s linear;
+    -o-transition: all 0.3s linear;
+    transition: all 0.3s linear;
+}
+.content_wrapper .custom_card .card_btn .stats_link:focus {
+    text-decoration: underline;
+    outline: none;
+}
+.content_wrapper .custom_card .card_btn .stats_link:focus .arrow_right {
+    margin-left: 15px;
+}
+.content_wrapper .custom_card .card_btn .stats_link:hover .arrow_right {
+    margin-left: 15px;
+}
+.content_wrapper .content_explore_news {
+    display: none;
+}
+.content_wrapper .content_explore_news .content_explore_btn {
+    padding: 13px 63px;
+    background: #EE1B3A;
+    border: 1px solid #EE1B3A;
+    border-radius: 50px;
+    color: #fff;
+    font-size: 16px;
+    line-height: 1.6;
+    font-family: 'Montserrat-SemiBold';
+    text-decoration: none;
+    display: inline-block;
+}
+.content_wrapper .content_explore_news .content_explore_btn:hover {
+    border: 1px solid #EE1B3A;
+    text-decoration: none;
+    background: #fff;
+    color: #EE1B3A;
+}
+.content_wrapper .content_cards_wrapper .card_slider_navigation {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 50px;
+}
+.content_wrapper .content_cards_wrapper .card_slider_navigation .slick-dots {
+    position: relative;
+    bottom: 1px;
+    display: block;
+    width: auto;
+    padding: 0;
+    margin: 0 2px;
+    list-style: none;
+    text-align: center;
+}
+.content_wrapper .content_cards_wrapper .card_slider_navigation .slick-dots li {
+    position: relative;
+    display: inline-block;
+    width: 16px;
+    height: 16px;
+    margin: 0 8px;
+    padding: 0;
+    cursor: pointer;
+}
+.content_wrapper .content_cards_wrapper .card_slider_navigation .slick-dots li button {
+    display: block;
+    width: 16px;
+    height: 16px;
+    padding: 0;
+    cursor: pointer;
+    color: transparent;
+    border: 0;
+    outline: none;
+    background-color: #240B15;
+    border: 0;
+    border-radius: 50px;
+}
+.content_wrapper .content_cards_wrapper .card_slider_navigation .slick-dots li.slick-active button {
+    background-color: #F00037;
+}
+.content_wrapper .content_cards_wrapper .card_slider_navigation .card_arrow_prev, 
+.content_wrapper .content_cards_wrapper .card_slider_navigation .card_arrow_next {
+    font-size: 0;
+    border-left: 2px solid #240b14;
+    border-right: 0;
+    border-bottom: 0;
+    border-top: 2px solid #240b14;
+    background-color: transparent;
+    line-height: 0;
+    width: 12px;
+    height: 12px;
+    position: relative;
+    padding: 0;
+    transform: rotate(-45deg);
+    bottom: 0;
+    top: auto;
+}
+.content_wrapper .content_cards_wrapper .card_slider_navigation .card_arrow_next {
+    transform: rotate(135deg);
+}
+.content_wrapper .content_cards_wrapper .card_slider_navigation .slick-disabled { 
+    display: none !important; 
+    pointer-events:none; 
+}
+@media (min-width: 991.98px) and (max-width: 1199.98px) {
+    .content_wrapper .custom_card .card_body .card_type {
+        font-size: 15px;
+    }
+    .content_wrapper .custom_card .card_body .card_title, 
+    .content_wrapper .custom_card .card_body .card_title a {
+        font-size: 22px;
+    }
+    .content_wrapper .custom_card .card_body .card_text {
+        font-size: 13px;
+    }
+    .content_wrapper .custom_card .card_btn .stats_link {
+        font-size: 15px;
+    }
+}
+@media (max-width: 991.98px) {
+    .content_wrapper .content_heading .content_subtext {
+        font-size: 15px;
+    }
+    .content_wrapper .content_heading h2 {
+        font-size: 26px;
+    }
+    .content_wrapper .custom_card .card_body .card_type {
+        font-size: 14px;
+    }
+    .content_wrapper .custom_card .card_body .card_title,
+    .content_wrapper .custom_card .card_body .card_title a {
+        font-size: 20px;
+    }
+    .content_wrapper .custom_card .card_body .card_text {
+        font-size: 13px;
+    }
+    .content_wrapper .custom_card .card_btn .stats_link {
+        font-size: 14px;
+    }
+}
+@media (max-width: 767.98px) {
+    .content_wrapper .content_explore_news {
+        display: block;
+        text-align: center;
+        padding-top: 33px;
+    }
+    .content_wrapper {
+        padding-bottom: 90px;
+    }
+    .content_wrapper .content_heading .content_subtext {
+        font-size: 18px;
+    }
+    .content_wrapper .content_heading h2 {
+        font-size: 32px;
+    }
+    .content_wrapper .custom_card .card_body .card_type {
+        font-size: 18px;
+    }
+    .content_wrapper .custom_card .card_body .card_title,
+    .content_wrapper .custom_card .card_body .card_title a {
+        font-size: 28px;
+    }
+    .content_wrapper .custom_card .card_body .card_text {
+        font-size: 14px;
+    }
+    .content_wrapper .custom_card .card_btn .stats_link {
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 413.98px) {
+    .content_wrapper .content_heading .content_subtext {
+        font-size: 14px;
+    }
+    .content_wrapper .content_heading h2 {
+        font-size: 24px;
+    }
+    .content_wrapper .custom_card .card_body .card_type {
+        font-size: 14px;
+    }
+    .content_wrapper .custom_card .card_body .card_title,
+    .content_wrapper .custom_card .card_body .card_title a {
+        font-size: 24px;
+        line-height: 1.2;
+    }
+    .content_wrapper .custom_card .card_body .card_text {
+        font-size: 13px;
+    }
+    .content_wrapper .custom_card .card_btn .stats_link {
+        font-size: 14px;
+    }
+}
