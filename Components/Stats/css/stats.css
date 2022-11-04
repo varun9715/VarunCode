@@ -216,7 +216,7 @@ display: none;
     margin-right: -10px;
     margin-left: -10px;
 }
-.stats_wrapper.stats-V4 .stats .stats_block .column -auto {
+.stats_wrapper.stats-V4 .stats .stats_block .column-auto {
     -ms-flex: 0 0 auto;
     flex: 0 0 auto;
     width: auto;
@@ -224,7 +224,7 @@ display: none;
     padding-left: 10px;
     padding-right: 15px;
   }
-  .stats_wrapper.stats-V4 .stats .stats_block .column Inner {
+  .stats_wrapper.stats-V4 .stats .stats_block .columnInner {
     -ms-flex-preferred-size: 0;
     flex-basis: 0;
     -ms-flex-positive: 1;
