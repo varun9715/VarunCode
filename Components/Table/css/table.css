@@ -29,7 +29,7 @@
     margin-bottom: 20px;
     color: #240B14;
 }
-.table_wrapper .responsive_table .table {
+.table_wrapper .responsive_table .custom_table {
     width: 100%;
     max-width: 100%;
     margin-bottom: 0;
@@ -37,22 +37,22 @@
     display: table;
     text-indent: initial;
 }
-.table_wrapper .responsive_table .table thead {
+.table_wrapper .responsive_table .custom_table thead {
     display: table-header-group;
     vertical-align: middle;
     border-color: inherit;
 }
-.table_wrapper .responsive_table .table tbody {
+.table_wrapper .responsive_table .custom_table tbody {
     display: table-row-group;
     vertical-align: middle;
     border-color: inherit;
 }
-.table_wrapper .responsive_table .table tr {
+.table_wrapper .responsive_table .custom_table tr {
     display: table-row;
     vertical-align: inherit;
     border-color: inherit;
 }
-.table_wrapper .responsive_table .table th, .table_wrapper .responsive_table .table td {
+.table_wrapper .responsive_table .custom_table th, .table_wrapper .responsive_table .custom_table td {
     vertical-align: middle;
     display: table-cell;
     font-size: 16px;
@@ -63,56 +63,56 @@
     border-right: 1px solid #dddddd;
     text-align: right;
 }
-.table_wrapper .responsive_table .table th:first-child, .table_wrapper .responsive_table .table td:first-child {
+.table_wrapper .responsive_table .custom_table th:first-child, .table_wrapper .responsive_table .custom_table td:first-child {
     text-align: left;
 }
-.table_wrapper .responsive_table .table.left_aligned th, .table_wrapper .responsive_table .table.left_aligned td {
+.table_wrapper .responsive_table .custom_table.left_aligned th, .table_wrapper .responsive_table .custom_table.left_aligned td {
     text-align: left;
 }
-.table_wrapper .responsive_table .table thead th:first-child, 
-.table_wrapper .responsive_table .table thead th:last-child, 
-.table_wrapper .responsive_table .table tbody th:first-child, 
-.table_wrapper .responsive_table .table tbody th:last-child, 
-.table_wrapper .responsive_table .table tbody td:first-child, 
-.table_wrapper .responsive_table .table tbody td:last-child {
+.table_wrapper .responsive_table .custom_table thead th:first-child, 
+.table_wrapper .responsive_table .custom_table thead th:last-child, 
+.table_wrapper .responsive_table .custom_table tbody th:first-child, 
+.table_wrapper .responsive_table .custom_table tbody th:last-child, 
+.table_wrapper .responsive_table .custom_table tbody td:first-child, 
+.table_wrapper .responsive_table .custom_table tbody td:last-child {
     border-left: 0;
 }
-.table_wrapper .responsive_table .table thead th:last-child,
-.table_wrapper .responsive_table .table tbody td:last-child {
+.table_wrapper .responsive_table .custom_table thead th:last-child,
+.table_wrapper .responsive_table .custom_table tbody td:last-child {
     border-right: 0;
 }
 
-.table_wrapper .responsive_table .table td:first-child {
+.table_wrapper .responsive_table .custom_table td:first-child {
     font-family: 'Montserrat-Bold';
 }
-.table_wrapper .responsive_table .table td {
+.table_wrapper .responsive_table .custom_table td {
     font-family: 'Montserrat-Medium';
 }
-.table_wrapper .responsive_table .table thead th {
+.table_wrapper .responsive_table .custom_table thead th {
     padding: 20px 24px;
     background-color: #240B14;
     color: #ffffff;
     width: 1%;
     font-family: 'Montserrat-Bold';
 }
-.table_wrapper .responsive_table .table tbody th, 
-.table_wrapper .responsive_table .table tbody td {
+.table_wrapper .responsive_table .custom_table tbody th, 
+.table_wrapper .responsive_table .custom_table tbody td {
     padding: 15px 24px 19px 24px;
 }
-.table_wrapper .responsive_table .table tbody td:first-child {
+.table_wrapper .responsive_table .custom_table tbody td:first-child {
     color: #240B14;
 }
-.table_wrapper .responsive_table .table tbody td {
+.table_wrapper .responsive_table .custom_table tbody td {
     color: #212529;
 }
-.table_wrapper .responsive_table .table tbody tr:nth-of-type(even) {
+.table_wrapper .responsive_table .custom_table tbody tr:nth-of-type(even) {
     background-color: #f7f7f7;
 }
 
 /*********media********/
 
 @media screen and (max-width: 767.98px) {
-    .table_wrapper .responsive_table .table thead {
+    .table_wrapper .responsive_table .custom_table thead {
         border: none;
         clip: rect(0 0 0 0);
         height: 1px;
@@ -122,12 +122,12 @@
         position: absolute;
         width: 1px;
     }
-    .table_wrapper .responsive_table .table tbody tr {
+    .table_wrapper .responsive_table .custom_table tbody tr {
         margin-bottom: 10px;
         display: block;
     }
-    .table_wrapper .responsive_table .table tbody th, 
-    .table_wrapper .responsive_table .table tbody td {
+    .table_wrapper .responsive_table .custom_table tbody th, 
+    .table_wrapper .responsive_table .custom_table tbody td {
         display: block;
         text-align: left;
         border: 0;
@@ -136,11 +136,11 @@
         position: relative;
         border-bottom: 1px solid #ffffff;
     }
-    .table_wrapper .responsive_table .table tbody th:last-child, 
-    .table_wrapper .responsive_table .table tbody td:last-child {
+    .table_wrapper .responsive_table .custom_table tbody th:last-child, 
+    .table_wrapper .responsive_table .custom_table tbody td:last-child {
         border-bottom: 0;
     }
-    .table_wrapper .responsive_table .table tbody th::before, .table_wrapper .responsive_table .table tbody td::before {
+    .table_wrapper .responsive_table .custom_table tbody th::before, .table_wrapper .responsive_table .custom_table tbody td::before {
         content: attr(data-label);
         position: absolute;
         left: 0;
@@ -156,13 +156,13 @@
         font-size: 16px;
         line-height: 1.2;
     }
-    .table_wrapper .responsive_table .table tbody tr:nth-of-type(even) {
+    .table_wrapper .responsive_table .custom_table tbody tr:nth-of-type(even) {
         background-color: transparent;
     }
-    .table_wrapper .responsive_table .table tbody tr th:first-child {
+    .table_wrapper .responsive_table .custom_table tbody tr th:first-child {
         background-color: #f7f7f7;
     }
-    .table_wrapper .responsive_table .table tbody tr td:nth-of-type(even) {
+    .table_wrapper .responsive_table .custom_table tbody tr td:nth-of-type(even) {
         background-color: #f7f7f7;
     }
 }
@@ -184,26 +184,26 @@
     .table_wrapper .table_heading {
         font-size: 18px;
     }
-    .table_wrapper .responsive_table .table tbody th, 
-    .table_wrapper .responsive_table .table tbody td {
+    .table_wrapper .responsive_table .custom_table tbody th, 
+    .table_wrapper .responsive_table .custom_table tbody td {
         font-size: 14px;  
         padding: 10px 15px;      
         padding-left: calc(50% + 15px);
     }
-    .table_wrapper .responsive_table .table tbody th::before, .table_wrapper .responsive_table .table tbody td::before {
+    .table_wrapper .responsive_table .custom_table tbody th::before, .table_wrapper .responsive_table .custom_table tbody td::before {
         padding: 10px 15px;
         font-size: 14px;
     }
 }
 
 @media screen and (max-width: 374.98px) {
-    .table_wrapper .responsive_table .table tbody th, 
-    .table_wrapper .responsive_table .table tbody td {
+    .table_wrapper .responsive_table .custom_table tbody th, 
+    .table_wrapper .responsive_table .custom_table tbody td {
         font-size: 13px;
         padding: 10px 10px;
         padding-left: calc(50% + 10px);
     }
-    .table_wrapper .responsive_table .table tbody th::before, .table_wrapper .responsive_table .table tbody td::before {
+    .table_wrapper .responsive_table .custom_table tbody th::before, .table_wrapper .responsive_table .custom_table tbody td::before {
         padding: 10px 10px;
         font-size: 13px;
     }

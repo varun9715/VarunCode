@@ -1,7 +1,3 @@
-body {
-    margin: 0;
-    padding: 0; 
-}
 .wrapper {
     max-width: 1920px;
     margin: 0 auto;
@@ -18,7 +14,7 @@ body {
 .wrapper, .wrapper *{  
     word-break: normal;
 } 
-.wrapper .container{
+.wrapper .sm_container{
     max-width: 1322px;
     padding: 0 45px;
     margin: 0 auto;
@@ -65,7 +61,7 @@ body {
     max-width: 100%;
     height: auto;
 } 
-.wrapper .row{
+.wrapper .custom_row{
     display: -ms-flexbox;
     display: flex;
     -ms-flex-wrap: wrap;
@@ -73,7 +69,7 @@ body {
     margin-right: -15px;
     margin-left: -15px;
 }
-.wrapper .col{
+.wrapper .column{
     position: relative;
     width: 100%;
     min-height: 1px;
@@ -86,42 +82,42 @@ body {
 
 @media screen and ( min-width: 767.98px ) {
     
-.wrapper .col-sm-2{
+.wrapper .column-sm-2{
     -ms-flex: 0 0 16.666667%;
     flex: 0 0 16.666667%;
     max-width: 16.666667%;
 }
-.wrapper .col-sm-3{
+.wrapper .column-sm-3{
     -ms-flex: 0 0 25%;
     flex: 0 0 25%;
     max-width: 25%;
 }
-.wrapper .col-sm-4{
+.wrapper .column-sm-4{
     -ms-flex: 0 0 33.333333%;
     flex: 0 0 33.333333%;
     max-width: 33.333333%;
 }
-.wrapper .col-sm-6{
+.wrapper .column-sm-6{
     -ms-flex: 0 0 50%;
     flex: 0 0 50%;
     max-width: 50%; 
 }
-.wrapper .col-sm-7{
+.wrapper .column-sm-7{
     -ms-flex: 0 0 60%;
     flex: 0 0 60%;
     max-width: 60%; 
 }
-.wrapper .col-sm-5{
+.wrapper .column-sm-5{
     -ms-flex: 0 0 40%;
     flex: 0 0 40%;
     max-width: 40%;
 }
-.wrapper .col-sm-8{
+.wrapper .column-sm-8{
     -ms-flex: 0 0 66.666667%;
     flex: 0 0 66.666667%;
     max-width: 66.666667%;
 }
-.wrapper .col-sm-9{
+.wrapper .column-sm-9{
     -ms-flex: 0 0 75%;
     flex: 0 0 75%;
     max-width: 75%;
@@ -131,22 +127,22 @@ body {
 
 @media screen and ( min-width: 991.98px ) { 
     
-.wrapper .col-lg-3{
+.wrapper .column-lg-3{
     -ms-flex: 0 0 25%;
     flex: 0 0 25%;
     max-width: 25%;
 }
-.wrapper .col-lg-4{
+.wrapper .column-lg-4{
     -ms-flex: 0 0 33.333333%;
     flex: 0 0 33.333333%;
     max-width: 33.333333%;
 }
-.wrapper .col-lg-6{
+.wrapper .column-lg-6{
     -ms-flex: 0 0 50%;
     flex: 0 0 50%;
     max-width: 50%; 
 }  
-.wrapper .col-lg-8{
+.wrapper .column-lg-8{
     -ms-flex: 0 0 66.666667%;
     flex: 0 0 66.666667%;
     max-width: 66.666667%;
@@ -175,7 +171,7 @@ body {
 }
 
 @media screen and (max-width: 991.98px) {
-    .wrapper .container {
+    .wrapper .sm_container {
         padding: 0 25px;
     }
 }
@@ -184,7 +180,7 @@ body {
     .wrapper {
         font-size: 16px;
     }
-    .wrapper .container {
+    .wrapper .sm_container {
         padding: 0 15px;
     }
     .wrapper h1 {
