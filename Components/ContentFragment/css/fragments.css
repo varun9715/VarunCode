@@ -1,0 +1,366 @@
+.fragment_wrapper {
+    padding: 60px 0;
+}
+
+.fragment_wrapper .fragment_heading p {
+    font-size: 18px;
+    line-height: 1.6;
+}
+
+.fragment_wrapper .fragment_heading {
+    margin-bottom: 60px;
+}
+
+.fragment_wrapper .fragment_heading h2 {
+    font-size: 32px;
+    line-height: 1.3;
+    text-align: left;
+    margin-bottom: 20px;
+}
+
+.fragment_wrapper .fragment_section .fragment_descripion h3 {
+    font-family: 'Montserrat-Bold';
+    font-size: 32px;
+    line-height: 1.3;
+    color: #240B14;
+    margin: 0;
+    margin-bottom: 24px;
+}
+
+.fragment_wrapper .fragment_section .fragment_descripion .fragment_des_text .fragment_link {
+    margin-top: 24px;
+}
+
+.fragment_wrapper .fragment_section .fragment_descripion a {
+    font-family: 'Montserrat-SemiBold';
+    font-size: 16px;
+    line-height: 1;
+    color: #E81132;
+    display: inline-block;
+    text-decoration: none;
+    -webkit-transition: all 0.3s linear;
+    -moz-transition: all 0.3s linear;
+    -o-transition: all 0.3s linear;
+    transition: all 0.3s linear;
+}
+
+.fragment_wrapper .fragment_section .fragment_descripion a:hover,
+.fragment_wrapper .fragment_section .fragment_descripion a:focus {
+    text-decoration: underline;
+}
+
+.fragment_wrapper .fragment_section .fragment_descripion a img {
+    margin-left: 4px;
+}
+
+.fragment_wrapper .fragment_img_desk {
+    display: block;
+}
+
+.fragment_wrapper .fragment_img_mob {
+    display: none;
+}
+
+.fragment_wrapper .fragment_section .fragment_descripion .fragment_des_text .fragment_link a .arrow_right {
+    margin-left: 10px;
+    -webkit-transition: all 0.3s linear;
+    -moz-transition: all 0.3s linear;
+    -o-transition: all 0.3s linear;
+    transition: all 0.3s linear;
+
+}
+
+.fragment_wrapper .fragment_section .fragment_descripion .fragment_des_text .fragment_link a:hover .arrow_right,
+.fragment_wrapper .fragment_section .fragment_descripion .fragment_des_text .fragment_link a:focus .arrow_right {
+    margin-left: 15px;
+}
+
+.fragment_wrapper.fragment_v1 .fragment_section .fragment_descripion {
+    max-width: 83%;
+    margin: 0 auto;
+    background: #fff;
+    padding: 40px 20px;
+    margin-top: -100px;
+    position: relative;
+    text-align: center;
+}
+
+.fragment_wrapper.fragment_v1 .fragment_section .fragment_descripion .fragment_des_text {
+    margin: 0 auto;
+    max-width: 70%;
+}
+
+.fragment_wrapper .fragment_section .fragment_descripion .fragment_des_text .fragment_link a .arrow_right.arrow_white {
+    filter: brightness(0) invert(1);
+}
+
+/* v2 */
+
+.fragment_wrapper.fragment_v2 .fragment_section .fragment_descripion {
+    max-width: 100%;
+    padding: 40px 0;
+    margin: 0;
+    text-align: left;
+}
+
+.fragment_wrapper.fragment_v2 .fragment_section .fragment_descripion p {
+    padding: 0;
+}
+
+/* v3a */
+
+.fragment_wrapper.fragment_v3a {
+    background-color: #F7F7F7;
+}
+
+.fragment_wrapper.fragment_v3a .fragment_section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #fff;
+    padding: 40px;
+}
+
+.fragment_wrapper.fragment_v3a .fragment_img {
+    width: 33%;
+}
+
+.fragment_wrapper.fragment_v3a .fragment_img img {
+    width: 100%;
+}
+
+.fragment_wrapper.fragment_v3a .fragment_section .fragment_descripion {
+    padding-left: 64px;
+    width: 67%;
+}
+
+
+/* v3b */
+
+.fragment_wrapper.fragment_v3b {
+    background-color: #F7F7F7;
+}
+
+.fragment_wrapper.fragment_v3b .fragment_section {
+    background: #fff;
+    padding: 40px;
+}
+
+
+/* pink */
+
+.fragment_wrapper.fragment_pink {
+    background-color: #fff;
+}
+
+.fragment_wrapper.fragment_pink .fragment_section {
+    background: #E81132;
+}
+
+.fragment_wrapper.fragment_pink .fragment_section .fragment_descripion h3 {
+    color: #Fff;
+}
+
+.fragment_wrapper.fragment_pink .fragment_section .fragment_descripion p {
+    color: #fff;
+}
+
+.fragment_wrapper.fragment_pink .fragment_section .fragment_descripion a {
+    color: #fff;
+}
+
+/* brown */
+
+.fragment_wrapper.fragment_brown {
+    background-color: #fff;
+}
+
+.fragment_wrapper.fragment_brown .fragment_section {
+    background: #240B14;
+}
+
+.fragment_wrapper.fragment_brown .fragment_section .fragment_descripion h3 {
+    color: #fff;
+}
+
+.fragment_wrapper.fragment_brown .fragment_section .fragment_descripion p {
+    color: #fff;
+}
+
+.fragment_wrapper.fragment_brown .fragment_section .fragment_descripion a {
+    color: #fff;
+}
+
+@media screen and (max-width:1199px) {
+    .fragment_wrapper.fragment_v1 .fragment_section .fragment_descripion .fragment_des_text {
+        max-width: 100%;
+    }
+}
+
+@media (min-width: 992px) and (max-width: 1199px) {
+    .fragment_wrapper.fragment_v3a .fragment_section {
+        padding: 30px;
+    }
+
+    .fragment_wrapper.fragment_v3b .fragment_section {
+        padding: 30px;
+    }
+
+    .fragment_wrapper.fragment_v3a .fragment_section .fragment_descripion {
+        padding-left: 30px;
+    }
+
+    .fragment_wrapper .fragment_heading h2 {
+        font-size: 28px;
+    }
+
+    .fragment_wrapper .fragment_section .fragment_descripion h3 {
+        font-size: 28px;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+    .fragment_wrapper.fragment_v3a .fragment_section {
+        padding: 20px;
+    }
+
+    .fragment_wrapper.fragment_v3b .fragment_section {
+        padding: 20px;
+    }
+
+    .fragment_wrapper.fragment_v3a .fragment_img {
+        width: 40%;
+    }
+
+    .fragment_wrapper.fragment_v3a .fragment_section .fragment_descripion {
+        padding-left: 20px;
+        width: 60%;
+    }
+
+    .fragment_wrapper .fragment_heading h2 {
+        font-size: 28px;
+    }
+
+    .fragment_wrapper .fragment_section .fragment_descripion h3 {
+        font-size: 28px;
+        margin-bottom: 15px;
+    }
+
+    .fragment_wrapper .fragment_descripion .fragment_des_text p {
+        font-size: 16px;
+    }
+
+    .fragment_wrapper .fragment_section .fragment_descripion .fragment_des_text .fragment_link {
+        margin-top: 15px;
+    }
+
+    .fragment_wrapper .fragment_section .fragment_descripion a {
+        font-size: 15px;
+    }
+
+}
+
+
+@media screen and (max-width:767.98px) {
+    .fragment_wrapper .fragment_heading {
+        margin-bottom: 40px;
+    }
+
+
+    .fragment_wrapper .fragment_img_desk {
+        display: none;
+    }
+
+    .fragment_wrapper .fragment_img_mob {
+        display: block;
+    }
+
+    .fragment_wrapper .fragment_img_mob img {
+        width: 100%;
+    }
+
+    .fragment_wrapper .sm_container {
+        padding: 0 24px;
+    }
+
+    .fragment_wrapper.fragment_v1 .fragment_section .fragment_descripion {
+        padding: 30px;
+        text-align: left;
+        max-width: 92%;
+    }
+
+    .fragment_wrapper.fragment_v3a .fragment_section,
+    .fragment_wrapper.fragment_v3b .fragment_section {
+        padding: 0;
+        display: block;
+    }
+
+    .fragment_wrapper.fragment_v3a .fragment_img {
+        width: 100%;
+    }
+
+    .fragment_wrapper.fragment_v3a .fragment_section .fragment_descripion,.fragment_wrapper.fragment_v3b .fragment_section .fragment_descripion {
+        padding: 30px 24px;
+        width: 100%;
+    }
+
+    .fragment_wrapper .fragment_section .fragment_descripion .fragment_des_text .fragment_link a {
+        position: relative;
+        padding-right: 5px;
+    }
+
+    .fragment_wrapper .fragment_section .fragment_descripion .fragment_des_text .fragment_link a img {
+        position: absolute;
+        right: -20px;
+        top: 0;
+    }
+}
+
+@media screen and (max-width:413.98px) {
+    .fragment_wrapper {
+        padding: 40px 0;
+    }
+
+    .fragment_wrapper .sm_container {
+        padding: 0px 15px;
+    }
+
+    .fragment_wrapper .fragment_heading {
+        margin-bottom: 20px;
+    }
+
+    .fragment_wrapper.fragment_v1 .fragment_section .fragment_descripion {
+        padding: 20px;
+    }
+
+    .fragment_wrapper .fragment_heading h2 {
+        font-size: 26px;
+    }
+
+    .fragment_wrapper .fragment_section .fragment_descripion h3 {
+        font-size: 26px;
+        margin-bottom: 15px;
+    }
+
+    .fragment_wrapper .fragment_descripion .fragment_des_text p {
+        font-size: 16px;
+    }
+
+    .fragment_wrapper .fragment_section .fragment_descripion .fragment_des_text .fragment_link {
+        margin-top: 15px;
+    }
+
+    .fragment_wrapper .fragment_section .fragment_descripion a {
+        font-size: 15px;
+    }
+}
+
+@media screen and (max-width: 374.98px) {
+    .fragment_wrapper .fragment_heading h2 {
+        font-size: 24px;
+    }
+
+    .fragment_wrapper .fragment_section .fragment_descripion h3 {
+        font-size: 24px;
+    }
+}
