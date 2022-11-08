@@ -1,0 +1,394 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v8.4.14,
+* Autoprefixer: v10.4.7
+* Browsers: last 4 version
+*/
+
+.parallaxImageSection {
+    padding-top: 30px;
+}
+ .parallaxImageSection h2{
+    text-align: center;
+    color: #240B14;
+    margin-bottom: 80px;
+}
+ p {
+    font-family: 'Montserrat-Medium';
+    font-size: 18px;
+    line-height: 1.6;
+    color: #240B14;
+}
+.wrapper .sm_container {
+    width:100%;
+}
+.parallaxImagePanel {
+    position: relative;
+}
+.text-center {
+    text-align: center;
+}
+.parallaxImageSection  .descriptionPanel {
+    margin-top: 60px;
+    margin-bottom: 60px;
+}
+.parallaxImageSection  .descriptionPanel h3 {
+    color: #240B14;
+    margin-bottom: 24px;
+}
+
+.parallaxImageSection  .descriptionPanel a{
+    font-family: 'Montserrat-SemiBold';
+    font-size: 16px;
+    line-height: 1;
+    color: #E81132;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    margin-top: 0;
+    text-decoration: none;
+    -webkit-transition: all 0.2s linear;
+    -o-transition: all 0.2s linear;
+    transition: all 0.2s linear;
+    margin-top: 24px;
+}
+ .parallaxImageSection .descriptionPanel a img{
+    margin-left: 10px;
+    margin-top: 2px;
+    -webkit-transition: all 0.2s linear;
+    -o-transition: all 0.2s linear;
+    transition: all 0.2s linear;
+   
+}
+ .parallaxImageSection .descriptionPanel a:hover{
+    text-decoration: underline;
+}
+ .parallaxImageSection .descriptionPanel a:hover img{
+    text-decoration: underline;
+    margin-left: 15px;
+}
+.descriptionPanel p {
+    margin-bottom: 24px;
+}
+
+.parallaxImageSection  .mainInfoPanel {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+}
+.parallaxImageSection  .mainInfoPanel .infoPanel {
+    background: #DDF1F2;
+    padding: 80px 50px 80px 50px;
+    max-width: 580px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: column;
+            flex-flow: column;
+    margin-left: -67px;
+    z-index: 99;
+}
+.parallaxImageSection .mainInfoPanel {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: reverse;
+        -ms-flex-flow: row-reverse;
+            flex-flow: row-reverse;
+}
+.parallaxImageSection  .mainInfoPanel .infoPanel h1 {
+    margin-bottom: 20px;
+    margin-top: 0;
+    color: #28111A;
+}
+.parallaxImageSection  .mainInfoPanel .infoPanel p {
+    color: #28111A;
+}
+.parallaxImageSection  .mainInfoPanel .infoPanel p:last-child {
+    margin-bottom: 0;
+}
+.parallaxImageSection  .mainInfoPanel .parallaxImagePanel {
+    position: relative;
+}
+.visibleMob {
+    display: none;
+}
+strong {
+    font-family: 'Montserrat-Bold';
+}
+.parallaxSix .mainInfoPanel  .sm_container {
+    width:100% !important;
+}
+.fullImagePanel  {
+    background-size: 100% 100%;
+    margin-bottom:0;
+}
+
+.parallaxVFive .mainInfoPanel,
+.parallaxVSix .mainInfoPanel {
+    padding-bottom: 0;
+}
+.parallaxVFive .mainInfoPanel  .infoPanel {
+    float: right;
+}
+.parallaxVSix .mainInfoPanel .infoPanel {
+    float: left;
+}
+.parallaxVFive .mainInfoPanel .infoPanel,
+.parallaxVSix .mainInfoPanel .infoPanel {
+    background: #E81132;
+}
+.parallaxVFive .mainInfoPanel .infoPanel, 
+.parallaxVSix .mainInfoPanel .infoPanel{
+    margin-top: 58px;
+    padding: 80px 67px;
+    margin-bottom: -90px;
+    margin-left: 0;
+}
+.parallaxVFive .mainInfoPanel .infoPanel p,
+.parallaxVSix .mainInfoPanel .infoPanel p,
+.parallaxVFive .mainInfoPanel .infoPanel h1,
+.parallaxVSix .mainInfoPanel .infoPanel h1 {
+    color: #fff;
+}
+.parallaxVThree .mainInfoPanel,
+.parallaxVFour .mainInfoPanel,
+.parallaxVFive .mainInfoPanel,
+.parallaxVSix .mainInfoPanel {
+    background-attachment: fixed;
+}
+/*-=============*/
+
+.parallaxVTwo .mainInfoPanel {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: row;
+            flex-flow: row;
+}
+.parallaxVTwo  .mainInfoPanel .infoPanel {
+    margin-right: -67px;
+    margin-left: 0;;
+}
+.parallaxVThree  .mainInfoPanel,
+.parallaxVFour  .mainInfoPanel,
+.parallaxVFive  .mainInfoPanel,
+.parallaxVSix  .mainInfoPanel {
+    background-size: 100% 100%;
+    padding: 56px;
+    background-repeat: no-repeat;
+}
+.parallaxVThree .mainInfoPanel {
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
+}
+.parallaxVFour .mainInfoPanel
+ {
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+}
+.parallaxVThree .mainInfoPanel .infoPanel,
+.parallaxVFour  .mainInfoPanel .infoPanel {
+    margin-right: 0;
+    margin-left: 0;
+    background: #fff;
+}
+@media screen and (max-width:1399.98px) {
+    .parallaxVFive .mainInfoPanel, .parallaxVSix .mainInfoPanel {
+        padding-left: 0;
+        padding-right: 0;
+    }
+}
+@media screen and (max-width:1299.98px) {
+
+    .parallaxImageSection h2{
+        margin-bottom: 50px;
+    }
+    .parallaxVFive .mainInfoPanel, .parallaxSix .mainInfoPanel {
+        padding-left: 0;
+    }
+    .parallaxImageSection  {
+        margin-top: 60px !important;
+    }
+}
+@media screen and (max-width:1199.98px) and (min-width:768px) {
+
+    .parallaxImageSection .mainInfoPanel .parallaxImagePanel {
+        width: 57%;
+        height: auto;
+        -webkit-box-flex: 0;
+            -ms-flex: 0 0 57%;
+                flex: 0 0 57%;
+    }
+    .parallaxImageSection .mainInfoPanel .infoPanel {
+        padding: 60px;
+    }
+    .parallaxImageSection .mainInfoPanel .infoPanel p {
+        font-size: 16px;
+    }
+    .parallaxImageSection  .mainInfoPanel .infoPanel h1 {
+        font-size: 36px;
+    }
+    .parallaxImageSection  .mainInfoPanel .parallaxImagePanel {
+        margin-left: 0;
+    }
+    .parallaxVFive .mainInfoPanel .infoPanel,
+    .parallaxVSix .mainInfoPanel .infoPanel {
+        margin-top: 0;
+        padding: 60px;
+    }
+    
+}
+@media screen and (max-width:991.98px) and (min-width:768px) { 
+    .parallaxImageSection  .mainInfoPanel .infoPanel h1 {
+        font-size: 24px;
+    }
+    .parallaxImageSection .mainInfoPanel .infoPanel {
+        padding: 40px 30px;
+        max-width: 430px;
+    }
+    .parallaxVFive .mainInfoPanel, .parallaxSix .mainInfoPanel {
+        padding: 40px 0;
+    }
+     .parallaxImageSection .descriptionPanel {
+        margin-top: 0;
+    }
+    .parallaxImageSection {
+        margin: 0;
+        padding-top: 0;
+    }
+    .parallaxVFive .mainInfoPanel .infoPanel,
+    .parallaxVSix .mainInfoPanel .infoPanel {
+        margin-bottom: -70px;
+    }
+    #parallaxOne {
+        margin-top: 60px;
+    }
+    .parallaxImageSection p {
+        font-size: 16px;
+    }  
+}
+@media screen and (max-width:767.98px) {
+    .parallaxVFive .sm_container:last-child, .parallaxVSix .sm_container:last-child {
+        padding: 0 !important;
+    }
+    .parallaxImageSection .descriptionPanel {
+        margin-top: 60px;
+        margin-bottom: 40px;
+    }
+    .globalHeading h2 {
+        margin-bottom: 30px;
+    }
+     .parallaxImageSection .descriptionPanel {
+        margin-top: 0;
+    }
+    .parallaxImageSection {
+        margin: 0;
+        padding-top: 0;
+    }
+    .parallaxImageSection .mainInfoPanel {
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: reverse;
+            -ms-flex-flow: column-reverse;
+                flex-flow: column-reverse;
+        max-width: 100%;
+    }
+    .parallaxImageSection .mainInfoPanel .infoPanel {
+        margin: 0;
+        padding: 30px;
+        max-width: 100%;
+    }
+    .parallaxImageSection .mainInfoPanel .parallaxImagePanel {
+        position: relative;
+        margin-bottom: -7px;
+        width:100%
+    }
+    .parallaxImageSection .mainInfoPanel .parallaxImagePanel img {
+        width:100%;
+    }
+    .parallaxImageSection .mainInfoPanel .infoPanel h1 {
+        font-size: 32px;
+    }
+    .parallaxImageSection .mainInfoPanel .infoPanel h1 br {
+        display: none;
+    }
+    .parallaxVTwo .mainInfoPanel  .infoPanel {
+        margin-right: 0;
+    }
+    
+    .visibleMob {
+        display: block;
+    }
+    .parallaxVThree .mainInfoPanel,.parallaxVFour .mainInfoPanel, .parallaxVFive .mainInfoPanel, .parallaxVSix .mainInfoPanel {
+        background-image: none !important;
+        padding: 0;
+    }
+    .parallaxVThree .mainInfoPanel .infoPanel,
+    .parallaxVFour .mainInfoPanel .infoPanel{
+        padding-left: 0;
+        padding-right: 0;
+    }
+    .parallaxVThree .mainInfoPanel,
+    .parallaxVSix .mainInfoPanel {
+        padding-bottom: 0;
+        padding: 0;
+        margin: 0;
+        background-image: none !important;
+    }
+    .parallaxVSix .sm_container , .parallaxVFive .sm_container {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: reverse;
+            -ms-flex-flow: column-reverse;
+                flex-flow: column-reverse;
+    }
+    .parallaxVFive .mainInfoPanel .infoPanel,
+    .parallaxVSix .mainInfoPanel .infoPanel {
+        margin-top: 0;
+        padding: 30px;
+        margin-left: 25px;
+        margin-right: 25px;
+        margin-top: -50px;
+    }
+    section#parallaxSix {
+        margin-top: 80px;
+    }
+}
+@media screen and (max-width:413.98px) {
+    .parallaxImageSection p {
+        font-size: 16px;
+    }  
+    .parallaxImageSection .mainInfoPanel .infoPanel h1 {
+        font-size: 25px;
+    }
+    .parallaxVFive .mainInfoPanel .infoPanel,
+    .parallaxVSix .mainInfoPanel .infoPanel {
+        margin-left: 15px;
+        margin-right: 15px;
+    }
+}.example {
+    display: -ms-grid;
+    display: grid;
+    -webkit-transition: all .5s;
+    -o-transition: all .5s;
+    transition: all .5s;
+    -webkit-user-select: none;
+       -moz-user-select: none;
+        -ms-user-select: none;
+            user-select: none;
+    background: -webkit-gradient(linear, left top, left bottom, from(white), to(black));
+    background: -o-linear-gradient(top, white, black);
+    background: linear-gradient(to bottom, white, black);
+}
