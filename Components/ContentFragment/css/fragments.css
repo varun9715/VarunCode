@@ -306,13 +306,22 @@
 
     .fragment_wrapper .fragment_section .fragment_descripion .fragment_des_text .fragment_link a {
         position: relative;
-        padding-right: 5px;
+        padding-right: 10px;
     }
 
     .fragment_wrapper .fragment_section .fragment_descripion .fragment_des_text .fragment_link a img {
         position: absolute;
-        right: -20px;
+        right: -15px;
         top: 0;
+        -webkit-transition: all 0.3s linear;
+        -moz-transition: all 0.3s linear;
+        -o-transition: all 0.3s linear;
+        transition: all 0.3s linear;
+    }
+
+    .fragment_wrapper .fragment_section .fragment_descripion .fragment_des_text .fragment_link a:hover img, 
+    .fragment_wrapper .fragment_section .fragment_descripion .fragment_des_text .fragment_link a:focus img {
+        right: -25px;
     }
 }
 
