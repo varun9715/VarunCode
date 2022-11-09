@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/common.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/fonts.css">
+    <title>Pie Chart</title>
+</head>
+<body>
+    <div class="wrapper chartMainSection PieMain">
+        <div class="sm_container">
+            <div class="PieChartMain">
+                <div class="ChartContext">
+                    <h3>Data pie chart</h3>
+                    <p>As a global investor, we believe performance and purpose go hand in hand. We want to make sure
+                        the investments we make create a better world, not just for our members and our partners, but
+                        for everyone.</p>
+                    <a href="#" class="stats_link">Learn more about our impact<span class="arrow_right"><img
+                                src="images/Arrow-Right.svg" alt="Arrow Right" /></span></a>
+                </div>
+                <div class="data-pie-chart">
+                    <div class="card-body">
+                        <div id="chart">
+                            <canvas id="pieChart" width="100" height="100"></canvas>
+                        </div>
+                        <div id="legend"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- <script src="js/bootstrap.min.js"></script> -->
+    <script src="js/jquery.min.js"></script>
+    <script src="js/Chart.bundle.min.js"></script>
+    <script src="js/CustomChart.js"></script>
+</body>
+
+</html>

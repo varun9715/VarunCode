@@ -82,7 +82,6 @@ background-color:#E81132;
     margin: 0px 24px;
     z-index: -1;
     top: 0;
-    bottom: 0;
 }
 .bullet-v2 .bullet-list-main li:last-child::after{
     background-color: transparent;
@@ -146,7 +145,6 @@ background-color:#E81132;
     margin: 24px 0;
     z-index: -1;
     top: 0;
-    bottom: 0;
 }
 .bullet-v3 .bullet-list-main ul li:hover .bullet-img{
     background-color:#E81132;
@@ -208,7 +206,6 @@ display: none;
     margin: 8px 0;
     z-index: -1;
     top: 0;
-    bottom: 0;
 }
 .bullet-v4 .bullet-list-main ul li:hover .bullet-img{
     background-color:#E81132;
@@ -218,19 +215,27 @@ display: none;
 
 
 /* media query */
-@media screen and (max-width: 991.98px) {
-.bullet-v1 .bullet-list-heading, .bullet-v2 .bullet-list-heading {
-    font-size: 18px;
+@media (min-width:991.98px) and (max-width: 1199.98px) {
+    .bullet_wrapper .bullet_header .bullet_header_heading{
+        font-size: 28px;
+    }
 }
-.bullet-v1 .bullet-list-text, .bullet-v2 .bullet-list-text {
-    font-size: 16px;
-}
-.bullet-v3 .bullet-list-heading, .bullet-v4 .bullet-list-heading{
-    font-size: 16px;
-}
-.bullet-v3 .bullet-list-text, .bullet-v4 .bullet-list-text{
-    font-size: 13px;
-}
+@media (min-width:767.98px) and (max-width: 991.98px) {
+    .bullet_wrapper .bullet_header .bullet_header_heading{
+        font-size: 24px;
+    }
+    .bullet-v1 .bullet-list-heading, .bullet-v2 .bullet-list-heading {
+        font-size: 18px;
+    }
+    .bullet-v1 .bullet-list-text, .bullet-v2 .bullet-list-text {
+        font-size: 16px;
+    }
+    .bullet-v3 .bullet-list-heading, .bullet-v4 .bullet-list-heading{
+        font-size: 16px;
+    }
+    .bullet-v3 .bullet-list-text, .bullet-v4 .bullet-list-text{
+        font-size: 13px;
+    }
 }
 @media screen and (max-width: 767.98px) {
     .bullet_wrapper .bullet_header .bullet_header_heading{
@@ -279,7 +284,6 @@ display: none;
         margin: 0px 24px;
         z-index: -1;
         top: 0;
-        bottom: 0;
     }
     .bullet-v3 .bullet-list-main li:last-child::after{
         background-color: transparent;
@@ -330,7 +334,7 @@ display: none;
 
 @media screen and (max-width: 413.98px) {
     .bullet_wrapper .bullet_header .bullet_header_heading{
-        font-size: 26px;
+        font-size: 24px;
     }
     .bullet-v1 .bullet-list-heading, .bullet-v2 .bullet-list-heading {
         font-size: 18px;

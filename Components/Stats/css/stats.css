@@ -264,15 +264,29 @@ display: none;
 /*********media********/
 
 
-@media screen and (max-width: 991.98px) {
+
+
+@media (min-width:991.98px) and (max-width: 1199.98px) {
+    .stats_wrapper .stats_header .stats_header_heading{
+        font-size: 28px;
+    }
+}
+
+@media (min-width:767.98px) and (max-width: 991.98px) {
+    .stats_wrapper .stats_header .stats_header_heading{
+        font-size: 24px;
+    }
+    .stats_wrapper .stats_header p{
+        font-size: 16px;
+    }
     /* stats v1 */
     .stats_wrapper.stats-V1 .stats .column {
-    -ms-flex: 0 0 50%;
-    flex: 0 0 50%;
-    max-width: 50%; 
-}
-/* end stats v1 */ 
-
+        -ms-flex: 0 0 50%;
+        flex: 0 0 50%;
+        max-width: 50%; 
+    }
+    /* end stats v1 */ 
+    
     /* stats v2 */
     .stats_wrapper.stats-V2 .stats .column {
         -ms-flex: 0 0 50%;
@@ -289,8 +303,6 @@ display: none;
     }
     /* end stats v3 */ 
 }
-
-
 
 @media screen and (max-width: 767.98px) {
     .stats_wrapper .stats_block_inner .stats_block_upper .stats_number {
@@ -321,7 +333,7 @@ display: none;
         font-size: 38px;
     }
     .stats_wrapper.stats-V2 .stats .stats_block .stats_block_inner{
-        padding: 20px 20px 48px;
+        padding: 20px 15px;
     }
     /* end stats v2 */ 
 
@@ -346,13 +358,21 @@ display: none;
     /* end stats v4 */ 
 }
 
+@media screen and (max-width: 479.98px) {
+    .stats_wrapper .stats_block_inner .stats_block_upper .stats_date, .stats_wrapper .stats_block_inner .stats_block_lower .stats_name{
+        font-size: 14px;
+    }
+    .stats_wrapper.stats-V4 .stats .stats_block_inner .stats_block_upper .stats_number{
+        font-size: 45px;
+    }
+}
 @media screen and (max-width: 413.98px) {
 
     .stats_wrapper .stats_header {
         margin-bottom: 40px;
     }
     .stats_wrapper .stats_header  .stats_header_heading {
-        font-size: 26px;
+        font-size: 24px;
         margin-bottom: 20px;
     }
     .stats_wrapper .stats_header p {

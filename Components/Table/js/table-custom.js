@@ -1,7 +1,7 @@
 jQuery(window).on('load resize', function () {
 
-    tableHeading = jQuery('.table_wrapper .table thead th');
-    tableRow = jQuery('.table_wrapper .table tbody tr');
+    tableHeading = jQuery('.table_wrapper .custom_table thead th');
+    tableRow = jQuery('.table_wrapper .custom_table tbody tr');
 
     var optionTexts = [];
     tableHeading.each(function () {

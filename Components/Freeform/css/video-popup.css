@@ -43,9 +43,13 @@
 	font-weight: 100;
 	line-height: 30px;
     text-decoration: none;
+    font-family: 'Montserrat-Light';
 }
 .video_lightbox .video_lightbox_close:hover{
-	text-decoration:none;
+	text-decoration:none !important;
+}
+.video_lightbox .video_lightbox_close:focus{
+	border:1px dotted #ddd;
 }
 .video_lightbox iframe{
     width: 100%;

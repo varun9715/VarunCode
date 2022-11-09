@@ -6,7 +6,7 @@
 .table_wrapper .table_header {
     margin-bottom: 60px;
 }
-.table_wrapper .table_header h2 {
+.table_wrapper .table_header .table_title {
     font-family: 'Montserrat-Bold';
     font-size: 32px;
     line-height: 1.3;
@@ -14,7 +14,7 @@
     color: #240B14;
     margin-top: 0;
 }
-.table_wrapper .table_header p {
+.table_wrapper .table_header .table_des {
     font-family: 'Montserrat-Medium';
     font-size: 18px;
     line-height: 1.5;
@@ -110,6 +110,31 @@
 }
 
 /*********media********/
+@media (min-width: 991.98px) and (max-width: 1199.98px) {
+    .table_wrapper .table_header .table_title {
+        font-size: 28px;
+    }
+}
+@media (min-width: 767.98px) and (max-width: 991.98px) {
+    .table_wrapper .table_header .table_title {
+        font-size: 24px;
+    }
+    .table_wrapper .table_header .table_des {
+        font-size: 16px;
+    }
+    .table_wrapper .table_heading {
+        font-size: 18px;
+    }
+    .table_wrapper .responsive_table .custom_table thead th {
+        padding: 16px 10px;
+    }
+    .table_wrapper .responsive_table .custom_table tbody th, .table_wrapper .responsive_table .custom_table tbody td {
+        padding: 12px 10px 16px 10px;
+    }
+    .table_wrapper .responsive_table .custom_table th, .table_wrapper .responsive_table .custom_table td {
+        font-size: 14px;
+    }
+}
 
 @media screen and (max-width: 767.98px) {
     .table_wrapper .responsive_table .custom_table thead {
@@ -166,7 +191,6 @@
         background-color: #f7f7f7;
     }
 }
-
 @media screen and (max-width: 413.98px) {
     .table_wrapper {
         padding: 40px 0;
@@ -174,11 +198,11 @@
     .table_wrapper .table_header {
         margin-bottom: 40px;
     }
-    .table_wrapper .table_header h2 {
-        font-size: 26px;
+    .table_wrapper .table_header .table_title {
+        font-size: 24px;
         margin-bottom: 20px;
     }
-    .table_wrapper .table_header p {
+    .table_wrapper .table_header .table_des {
         font-size: 16px;
     }
     .table_wrapper .table_heading {
@@ -192,6 +216,10 @@
     }
     .table_wrapper .responsive_table .custom_table tbody th::before, .table_wrapper .responsive_table .custom_table tbody td::before {
         padding: 10px 15px;
+        font-size: 14px;
+    }
+    .table_wrapper .responsive_table .custom_table th, 
+    .table_wrapper .responsive_table .custom_table td {
         font-size: 14px;
     }
 }

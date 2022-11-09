@@ -89,7 +89,10 @@
 .videoDescriptionPanel p {
     margin-bottom: 24px;
 }
-
+.videoSection .mainInfoPanel .infoPanel h2 {
+    font-size: 50px;
+    line-height: 1.2;
+}
 .videoSection  .mainInfoPanel {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -116,7 +119,7 @@
 .videoSection .mainInfoPanel.skyBlue {
     flex-flow: row-reverse;
 }
-.videoSection  .mainInfoPanel .infoPanel h1 {
+.videoSection  .mainInfoPanel .infoPanel h2 {
     margin-bottom: 20px;
     margin-top: 0;
     color: #fff;
@@ -136,7 +139,7 @@
     background: #DDF1F2;
     padding: 120px 50px 120px 100px;
 }
-.videoSectionTwo .mainInfoPanel.skyBlue .infoPanel h1 {
+.videoSectionTwo .mainInfoPanel.skyBlue .infoPanel h2 {
     font-family: 'Montserrat-Bold';
     margin-bottom: 24px;
     color: #240B14;
@@ -154,6 +157,9 @@
 strong {
     font-family: 'Montserrat-Bold';
 }
+.playIcon.-video-link a:focus {
+    border: 1px dotted #ddd;
+}
 @media screen and (max-width:1299.98px) {
     .globalSection {
         padding: 60px 0;
@@ -167,19 +173,36 @@ strong {
     .globalSection .playIcon img {
         max-width: 60px;
     }
+    .videoSection .mainInfoPanel .infoPanel {
+        padding: 60px 80px 60px 50px;
+    }
+    .videoSectionTwo .mainInfoPanel.skyBlue .infoPanel {
+        padding: 60px 50px 60px 80px;
+    }
+}
+@media screen and (max-width:1199.98px) and (min-width:991.98px) {
+    .globalSection .videoSection .videoDescriptionPanel h3 {
+        font-size: 28px;
+    }
+    .featuredReport .globalHeading h2 {
+        margin-bottom: 50px;
+    }
+    .videoSection .mainInfoPanel .infoPanel h2 {
+        font-size: 40px;
+    }
 }
 @media screen and (max-width:991.98px) and (min-width:768px) {
 
     .videoSection .mainInfoPanel .infoPanel {
         background: #E81132;
-        padding: 80px 70px 80px 50px;
+        padding: 60px 70px 60px 50px;
         width: 57%;
         height: auto;
         -webkit-box-flex: 0;
             -ms-flex: 0 0 57%;
                 flex: 0 0 57%;
     }
-    .videoSection  .mainInfoPanel .infoPanel h1 {
+    .videoSection  .mainInfoPanel .infoPanel h2 {
         font-size: 30px;
     }
     .videoSection  .mainInfoPanel .videoImagePanel {
@@ -187,7 +210,10 @@ strong {
     }
     .videoSectionTwo .mainInfoPanel.skyBlue .infoPanel {
         min-height: auto;
-        padding: 80px 50px 80px 100px;
+        padding: 60px 50px 60px 100px;
+    }
+    .globalSection .videoSection .videoDescriptionPanel h3 {
+        font-size: 24px;
     }
 }
 @media screen and (max-width:767.98px) and (min-width:480.98px){
@@ -280,7 +306,7 @@ strong {
     .videoSection  .mainInfoPanel .infoPanel p:last-child {
         margin-bottom: 0;
     }
-    .videoSection  .mainInfoPanel .infoPanel h1 {
+    .videoSection  .mainInfoPanel .infoPanel h2 {
         font-size: 32px;
     }
     .videoSectionTwo {
@@ -321,18 +347,31 @@ strong {
     .videoSectionTwo .mainInfoPanel.skyBlue .infoPanel {
         padding: 37% 25px 40px 25px;
     }
+    .globalSection .videoSection .videoDescriptionPanel a {
+        display: inline-block !important;
+    }
+    .globalSection .videoSection .videoDescriptionPanel a img {
+        top:3px;
+        position:relative;
+    }
+    .featuredReport .globalHeading h2 {
+        margin-bottom:60px;
+    }
 }
 @media screen and (max-width:479.98px) {
     .videoImagePanel .playIcon img {
         max-width: 60px;
     }
+    
 }
 @media screen and (max-width:413.98px) {
     .videoSection p {
         font-size: 16px;
     }  
-    .videoSection .mainInfoPanel .infoPanel h1 {
-        font-size: 25px;
+    .globalSection .videoSection .videoDescriptionPanel h3 {
+        font-size: 24px;
     }
-    
+    .videoSection .mainInfoPanel .infoPanel h2 {
+        font-size: 32px;
+    }
 }

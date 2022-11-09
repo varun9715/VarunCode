@@ -1,3 +1,8 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
 .fragment_wrapper {
     padding: 60px 0;
 }
@@ -8,23 +13,27 @@
 }
 
 .fragment_wrapper .fragment_heading {
+    text-align: left;
     margin-bottom: 60px;
 }
 
-.fragment_wrapper .fragment_heading h2 {
-    font-size: 32px;
-    line-height: 1.3;
-    text-align: left;
-    margin-bottom: 20px;
-}
-
-.fragment_wrapper .fragment_section .fragment_descripion h3 {
+.fragment_wrapper .fragment_block h3 {
     font-family: 'Montserrat-Bold';
     font-size: 32px;
     line-height: 1.3;
     color: #240B14;
-    margin: 0;
+    margin-bottom: 20px;
+}
+
+.fragment_wrapper .fragment_section .fragment_descripion h3 {
     margin-bottom: 24px;
+}
+
+.fragment_wrapper .fragment_section .fragment_descripion .fragment_des_text p {
+    font-size: 18px;
+    font-family: 'Montserrat-Medium';
+    line-height: 1.6;
+    color: #240B14;
 }
 
 .fragment_wrapper .fragment_section .fragment_descripion .fragment_des_text .fragment_link {
@@ -67,7 +76,6 @@
     -moz-transition: all 0.3s linear;
     -o-transition: all 0.3s linear;
     transition: all 0.3s linear;
-
 }
 
 .fragment_wrapper .fragment_section .fragment_descripion .fragment_des_text .fragment_link a:hover .arrow_right,
@@ -78,7 +86,7 @@
 .fragment_wrapper.fragment_v1 .fragment_section .fragment_descripion {
     max-width: 83%;
     margin: 0 auto;
-    background: #fff;
+    background: #ffffff;
     padding: 40px 20px;
     margin-top: -100px;
     position: relative;
@@ -98,7 +106,7 @@
 
 .fragment_wrapper.fragment_v2 .fragment_section .fragment_descripion {
     max-width: 100%;
-    padding: 40px 0;
+    padding: 20px 10px;
     margin: 0;
     text-align: left;
 }
@@ -117,7 +125,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    background: #fff;
+    background: #ffffff;
     padding: 40px;
 }
 
@@ -142,15 +150,15 @@
 }
 
 .fragment_wrapper.fragment_v3b .fragment_section {
-    background: #fff;
-    padding: 40px;
+    background: #ffffff;
+    padding: 80px 40px;
 }
 
 
 /* pink */
 
 .fragment_wrapper.fragment_pink {
-    background-color: #fff;
+    background-color: #ffffff;
 }
 
 .fragment_wrapper.fragment_pink .fragment_section {
@@ -158,21 +166,21 @@
 }
 
 .fragment_wrapper.fragment_pink .fragment_section .fragment_descripion h3 {
-    color: #Fff;
+    color: #ffffff;
 }
 
 .fragment_wrapper.fragment_pink .fragment_section .fragment_descripion p {
-    color: #fff;
+    color: #ffffff;
 }
 
 .fragment_wrapper.fragment_pink .fragment_section .fragment_descripion a {
-    color: #fff;
+    color: #ffffff;
 }
 
 /* brown */
 
 .fragment_wrapper.fragment_brown {
-    background-color: #fff;
+    background-color: #ffffff;
 }
 
 .fragment_wrapper.fragment_brown .fragment_section {
@@ -180,24 +188,28 @@
 }
 
 .fragment_wrapper.fragment_brown .fragment_section .fragment_descripion h3 {
-    color: #fff;
+    color: #ffffff;
 }
 
 .fragment_wrapper.fragment_brown .fragment_section .fragment_descripion p {
-    color: #fff;
+    color: #ffffff;
 }
 
 .fragment_wrapper.fragment_brown .fragment_section .fragment_descripion a {
-    color: #fff;
+    color: #ffffff;
 }
 
 @media screen and (max-width:1199px) {
     .fragment_wrapper.fragment_v1 .fragment_section .fragment_descripion .fragment_des_text {
         max-width: 100%;
     }
+    .fragment_wrapper .fragment_heading {
+        margin-bottom: 30px;
+    }
 }
 
 @media (min-width: 992px) and (max-width: 1199px) {
+
     .fragment_wrapper.fragment_v3a .fragment_section {
         padding: 30px;
     }
@@ -210,18 +222,14 @@
         padding-left: 30px;
     }
 
-    .fragment_wrapper .fragment_heading h2 {
-        font-size: 28px;
-    }
-
-    .fragment_wrapper .fragment_section .fragment_descripion h3 {
+    .fragment_wrapper .fragment_block h3 {
         font-size: 28px;
     }
 }
 
 @media (min-width: 768px) and (max-width: 991px) {
-    .fragment_wrapper.fragment_v3a .fragment_section {
-        padding: 20px;
+    .fragment_wrapper.fragment_v3b .fragment_section {
+        padding: 30px 20px;
     }
 
     .fragment_wrapper.fragment_v3b .fragment_section {
@@ -237,16 +245,15 @@
         width: 60%;
     }
 
-    .fragment_wrapper .fragment_heading h2 {
-        font-size: 28px;
+    .fragment_wrapper .fragment_block h3 {
+        font-size: 24px;
     }
 
     .fragment_wrapper .fragment_section .fragment_descripion h3 {
-        font-size: 28px;
         margin-bottom: 15px;
     }
 
-    .fragment_wrapper .fragment_descripion .fragment_des_text p {
+    .fragment_wrapper .fragment_section .fragment_descripion .fragment_des_text p {
         font-size: 16px;
     }
 
@@ -266,6 +273,13 @@
         margin-bottom: 40px;
     }
 
+    .fragment_wrapper .fragment_section .fragment_descripion br {
+        display: none;
+    }
+
+    .fragment_wrapper .fragment_section .fragment_descripion .fragment_year {
+        display: inline-block;
+    }
 
     .fragment_wrapper .fragment_img_desk {
         display: none;
@@ -273,6 +287,7 @@
 
     .fragment_wrapper .fragment_img_mob {
         display: block;
+        width: 100%;
     }
 
     .fragment_wrapper .fragment_img_mob img {
@@ -299,27 +314,20 @@
         width: 100%;
     }
 
-    .fragment_wrapper.fragment_v3a .fragment_section .fragment_descripion,.fragment_wrapper.fragment_v3b .fragment_section .fragment_descripion {
+    .fragment_wrapper.fragment_v3a .fragment_section .fragment_descripion,
+    .fragment_wrapper.fragment_v3b .fragment_section .fragment_descripion {
         padding: 30px 24px;
         width: 100%;
     }
 
-    .fragment_wrapper .fragment_section .fragment_descripion .fragment_des_text .fragment_link a {
-        position: relative;
-        padding-right: 10px;
-    }
-
     .fragment_wrapper .fragment_section .fragment_descripion .fragment_des_text .fragment_link a img {
-        position: absolute;
-        right: -15px;
-        top: 0;
         -webkit-transition: all 0.3s linear;
         -moz-transition: all 0.3s linear;
         -o-transition: all 0.3s linear;
         transition: all 0.3s linear;
     }
 
-    .fragment_wrapper .fragment_section .fragment_descripion .fragment_des_text .fragment_link a:hover img, 
+    .fragment_wrapper .fragment_section .fragment_descripion .fragment_des_text .fragment_link a:hover img,
     .fragment_wrapper .fragment_section .fragment_descripion .fragment_des_text .fragment_link a:focus img {
         right: -25px;
     }
@@ -334,6 +342,15 @@
         padding: 0px 15px;
     }
 
+    .fragment_wrapper.fragment_v2 .fragment_section .fragment_descripion {
+        padding: 20px 0;
+    }
+
+    .fragment_wrapper.fragment_v3a .fragment_section .fragment_descripion,
+    .fragment_wrapper.fragment_v3b .fragment_section .fragment_descripion {
+        padding: 30px 15px;
+    }
+
     .fragment_wrapper .fragment_heading {
         margin-bottom: 20px;
     }
@@ -342,16 +359,15 @@
         padding: 20px;
     }
 
-    .fragment_wrapper .fragment_heading h2 {
-        font-size: 26px;
+    .fragment_wrapper .fragment_block h3 {
+        font-size: 24px;
     }
 
     .fragment_wrapper .fragment_section .fragment_descripion h3 {
-        font-size: 26px;
         margin-bottom: 15px;
     }
 
-    .fragment_wrapper .fragment_descripion .fragment_des_text p {
+    .fragment_wrapper .fragment_section .fragment_descripion .fragment_des_text p {
         font-size: 16px;
     }
 
@@ -361,15 +377,12 @@
 
     .fragment_wrapper .fragment_section .fragment_descripion a {
         font-size: 15px;
+        line-height: 1.5;
     }
 }
 
 @media screen and (max-width: 374.98px) {
-    .fragment_wrapper .fragment_heading h2 {
-        font-size: 24px;
-    }
-
-    .fragment_wrapper .fragment_section .fragment_descripion h3 {
-        font-size: 24px;
+    .fragment_wrapper .fragment_section .fragment_descripion .fragment_des_text p {
+        font-size: 14px;
     }
 }

@@ -1,0 +1,168 @@
+.chartMainSection {
+    padding: 60px 0px;
+}
+
+.chartMainSection .ChartContext h3 {
+    /* font-family: 'Montserrat-Bold'; */
+    margin-bottom: 24px;
+    /* font-size: 32px;
+    line-height: 1.3;
+    color: #240B14; */
+}
+
+.chartMainSection .ChartContext p {
+    font-family: 'Montserrat-Medium';
+    font-size: 18px;
+    margin-bottom: 24px;
+    line-height: 1.6;
+    color: #240B14;
+}
+
+.chartMainSection .stats_link {
+    font-family: 'Montserrat-SemiBold';
+    font-size: 16px;
+    color: #E81132;
+    text-decoration: none;
+}
+
+.chartMainSection .stats_link .arrow_right {
+    margin-left: 10px;
+    -webkit-transition: all 0.3s linear;
+    -moz-transition: all 0.3s linear;
+    -o-transition: all 0.3s linear;
+    transition: 0.3s linear;
+
+}
+
+.chartMainSection .stats_link:hover span {
+    margin-left: 15px;
+}
+
+.chartMainSection .ChartGraph .ChartGraphText {
+    padding: 60px 0 30px;
+}
+
+.chartMainSection .ChartGraph .ChartGraphText p {
+    font-size: 20px;
+    color: #240B14;
+    font-family: 'Montserrat-Bold';
+}
+.data-pie-chart {
+    padding: 60px 0 80px 0;
+    border-bottom: 1px solid #DDDDDD;
+}
+
+.data-pie-chart .card-body {
+    display: flex;
+    align-items: center;
+    padding: 0;
+}
+
+.data-pie-chart .card-body #chart {
+    width: 450px;
+    height: 450px;
+    margin-right: 50px;
+}
+
+.data-pie-chart .card-body #legend ul {
+    padding: 0;
+    margin: 0;
+}
+
+.data-pie-chart .card-body #legend ul li {
+    position: relative;
+    display: flex;
+    align-items: center;
+    font-family: 'Montserrat-SemiBold';
+    font-size: 18px;
+    line-height: 28px;
+}
+
+.data-pie-chart .card-body #legend ul li:not(:last-child) {
+    padding-bottom: 33px;
+}
+
+.data-pie-chart .card-body #legend ul li .legendBox {
+    width: 52px;
+    height: 25px;
+    margin-right: 22px;
+}
+
+.data-pie-chart .card-body #legend ul li .labels {
+    color: #000000;
+}
+
+@media screen and (min-width: 1920px) {
+    .data-pie-chart .card-body #chart {
+        width: 564px;
+        height: 563px;
+    }
+}
+@media screen and (max-width: 1199.98px){
+    .chartMainSection .ChartContext h3 {
+         font-size: 28px;
+    }
+}
+
+@media screen and (max-width: 991.98px) {
+    .chartMainSection .ChartContext h3 {
+        font-size: 24px;
+   }
+   .chartMainSection .ChartContext p {
+    font-size: 16px;
+}
+    .data-pie-chart {
+        padding-bottom: 0;
+        border-bottom: 0px;
+        max-width: 480px;
+        margin: 0 auto;
+    }
+
+    .data-pie-chart .card-body {
+        flex-wrap: wrap;
+    }
+    .data-pie-chart .card-body #chart {
+        padding-bottom: 50px;
+    }
+    .data-pie-chart .card-body #chart {
+        width: 100%;
+        height: 100%;
+        margin-right: 0px;
+    }
+}
+@media screen and (max-width: 767.98px) {
+    .chartMainSection .ChartContext h3 {
+        font-size: 32px;
+   }
+   .chartMainSection .ChartContext p {
+    font-size: 18px;
+}
+    .data-pie-chart {
+        padding-bottom: 0;
+        border-bottom: 0px solid #DDDDDD;
+        max-width: 480px;
+        margin: 0 auto;
+    }
+}
+
+@media screen and (max-width: 413.98px) {
+    .chartMainSection {
+        padding: 30px 0px;
+    }
+    .chartMainSection .ChartContext h3 {
+        font-size: 24px;
+   }
+    .chartMainSection .ChartContext p {
+        font-size: 16px;
+    }
+    .chartMainSection .ChartGraph .ChartGraphText {
+        padding: 30px 0 30px;
+    }    
+    .data-pie-chart .card-body #legend ul li {
+        font-size: 16px;
+    }
+
+    .data-pie-chart .card-body #legend ul li:not(:last-child) {
+        padding-bottom: 20px;
+    }
+}

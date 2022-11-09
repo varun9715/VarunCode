@@ -15,7 +15,7 @@
     font-family: 'Montserrat-Medium';
     margin: 0 0 8px 0;
 }
-.content_wrapper .content_heading h2 {
+.content_wrapper .content_heading .content_title {
     font-size: 32px;
     line-height: 1.4;
     color: #EE1B3A;
@@ -119,7 +119,7 @@
     display: none;
 }
 .content_wrapper .content_explore_news .content_explore_btn {
-    padding: 13px 63px;
+    padding: 13px 30px;
     background: #EE1B3A;
     border: 1px solid #EE1B3A;
     border-radius: 50px;
@@ -129,6 +129,12 @@
     font-family: 'Montserrat-SemiBold';
     text-decoration: none;
     display: inline-block;
+    min-width: 270px;
+    width: auto;
+    -webkit-transition: all 0.3s linear;
+    -moz-transition: all 0.3s linear;
+    -o-transition: all 0.3s linear;
+    transition: all 0.3s linear;
 }
 .content_wrapper .content_explore_news .content_explore_btn:hover {
     border: 1px solid #EE1B3A;
@@ -178,6 +184,8 @@
     -moz-transition: all 0.3s linear;
     -o-transition: all 0.3s linear;
     transition: all 0.3s linear;
+    text-indent: -100px;
+    overflow: hidden;
 }
 .content_wrapper .content_cards_wrapper .card_slider_navigation .slick-dots li.slick-active button {
     background-color: #F00037;
@@ -221,6 +229,9 @@
 }
 
 @media (min-width: 991.98px) and (max-width: 1199.98px) {
+    .content_wrapper .content_heading .content_title {
+        font-size: 28px;
+    }
     .content_wrapper .custom_card .card_body .card_type {
         font-size: 15px;
     }
@@ -237,10 +248,10 @@
 }
 @media (max-width: 991.98px) {
     .content_wrapper .content_heading .content_subtext {
-        font-size: 15px;
+        font-size: 16px;
     }
-    .content_wrapper .content_heading h2 {
-        font-size: 26px;
+    .content_wrapper .content_heading .content_title {
+        font-size: 24px;
     }
     .content_wrapper .custom_card .card_body .card_type {
         font-size: 14px;
@@ -268,7 +279,7 @@
     .content_wrapper .content_heading .content_subtext {
         font-size: 18px;
     }
-    .content_wrapper .content_heading h2 {
+    .content_wrapper .content_heading .content_title {
         font-size: 32px;
     }
     .content_wrapper .custom_card .card_body .card_type {
@@ -288,9 +299,9 @@
 
 @media (max-width: 413.98px) {
     .content_wrapper .content_heading .content_subtext {
-        font-size: 14px;
+        font-size: 16px;
     }
-    .content_wrapper .content_heading h2 {
+    .content_wrapper .content_heading .content_title {
         font-size: 24px;
     }
     .content_wrapper .custom_card .card_body .card_type {
@@ -298,7 +309,7 @@
     }
     .content_wrapper .custom_card .card_body .card_title,
     .content_wrapper .custom_card .card_body .card_title a {
-        font-size: 24px;
+        font-size: 22px;
         line-height: 1.2;
     }
     .content_wrapper .custom_card .card_body .card_text {
@@ -306,5 +317,8 @@
     }
     .content_wrapper .custom_card .card_btn .stats_link {
         font-size: 14px;
+    }
+    .content_wrapper .content_explore_news .content_explore_btn {
+        min-width: 250px;
     }
 }
