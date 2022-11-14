@@ -158,6 +158,7 @@
     margin: 0 2px;
     list-style: none;
     text-align: center;
+    line-height: 0;
 }
 .content_wrapper .content_cards_wrapper .card_slider_navigation .slick-dots li {
     position: relative;
@@ -216,6 +217,7 @@
     -moz-transition: all 0.3s linear;
     -o-transition: all 0.3s linear;
     transition: all 0.3s linear;
+    border-radius: 0;
 }
 .content_wrapper .content_cards_wrapper .card_slider_navigation .slick-arrow.card_arrow_next {
     transform: rotate(135deg);

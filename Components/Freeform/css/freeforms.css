@@ -21,7 +21,7 @@
 .featuredReport .videoImagePanel {
     position: relative;
 }
-.featuredReport  .text-center {
+.featuredReport  .textCenter {
     text-align: center;
 }
  .videoImagePanel .playIcon {
@@ -154,7 +154,7 @@
     margin-left: 0;
     margin-right: -54px;
 }
-strong {
+.globalSection strong {
     font-family: 'Montserrat-Bold';
 }
 .playIcon.-video-link a:focus {
@@ -191,7 +191,7 @@ strong {
         font-size: 40px;
     }
 }
-@media screen and (max-width:991.98px) and (min-width:768px) {
+@media screen and (max-width:991.98px) and (min-width:767.98px) {
 
     .videoSection .mainInfoPanel .infoPanel {
         background: #E81132;
@@ -220,7 +220,7 @@ strong {
     .videoSection  .mainInfoPanel .infoPanel {
         background:transparent;
     }
-    section#video_section {
+    section.video_section {
         background: rgb(232,17,50);
         background: -webkit-gradient(linear, left top, left bottom, color-stop(75%, rgba(232,17,50,1)), color-stop(75%, rgba(255,255,255,1)));
         background: -o-linear-gradient(top, rgba(232,17,50,1) 75%, rgba(255,255,255,1) 75%);
@@ -229,7 +229,7 @@ strong {
         padding-top: 30px;
 
     }
-    section#video_sectiontwo {
+    section.video_sectiontwo {
         background: rgb(221,241,242);
         background: -webkit-gradient(linear, left bottom, left top, color-stop(75%, rgba(221,241,242,1)), color-stop(75%, rgba(255,255,255,1)));
         background: -o-linear-gradient(bottom, rgba(221,241,242,1) 75%, rgba(255,255,255,1) 75%);
@@ -327,8 +327,6 @@ strong {
         padding: 30px 25px 40px 25px;
         height: auto;
     }
-}
-@media screen and (max-width:480px) {
     .videoSection.globalSection {
         padding: 60px 0;
     }
@@ -358,6 +356,7 @@ strong {
         margin-bottom:60px;
     }
 }
+
 @media screen and (max-width:479.98px) {
     .videoImagePanel .playIcon img {
         max-width: 60px;
@@ -372,6 +371,9 @@ strong {
         font-size: 24px;
     }
     .videoSection .mainInfoPanel .infoPanel h2 {
-        font-size: 32px;
+        font-size: 28px;
     }
+    .featuredReport .globalHeading h2 {
+        margin-bottom: 40px;
+    } 
 }
