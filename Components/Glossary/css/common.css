@@ -14,9 +14,9 @@
 .wrapper, .wrapper *{  
     word-break: normal;
 } 
-.wrapper .sm_container{
-    max-width: 1322px;
-    padding: 0 45px;
+.wrapper .sm_container {
+    max-width: 1292px;
+    padding: 0 30px;
     margin: 0 auto;
 }
 .wrapper h1, .wrapper h2, .wrapper h3, .wrapper h4, .wrapper h5, .wrapper h6,  .wrapper p, .wrapper ul, .wrapper ol, .wrapper li{
@@ -80,6 +80,46 @@
     max-width: 100%;  
 }
 
+.wrapper .customLink{
+    font-family: 'Montserrat-SemiBold';
+    font-size: 16px;
+    line-height: 1;
+    color: #E81132;
+    -webkit-transition: all 0.2s linear;
+    -moz-transition: all 0.2s linear;
+    -o-transition: all 0.2s linear;
+    transition: all 0.2s linear;
+    outline: none;
+    text-decoration: none;
+    display: inline-flex;
+    align-items: center;
+}
+.wrapper .customLink .arrow_right {
+    margin-left: 10px;
+    -webkit-transition: all 0.3s linear;
+    -moz-transition: all 0.3s linear;
+    -o-transition: all 0.3s linear;
+    transition: all 0.3s linear;
+}
+
+.wrapper .customLink img{
+    display: block;
+}
+.wrapper .customLink:hover,
+.wrapper .customLink:focus {
+    text-decoration: underline;
+}
+
+.wrapper .customLink:hover .arrow_right,
+.wrapper .customLink:focus .arrow_right {
+    margin-left: 15px;
+}
+
+@media (min-width: 991.98px) and (max-width: 1199.98px) {
+    .wrapper .customLink {
+        font-size: 15px;
+    }
+}
 @media screen and ( min-width: 767.98px ) {
     
 .wrapper .column-sm-2{
@@ -172,16 +212,23 @@
 
 @media screen and (max-width: 991.98px) {
     .wrapper .sm_container {
-        padding: 0 25px;
+        padding: 0 20px;
+    }
+    .wrapper .customLink {
+        font-size: 14px;
+    }
+}
+
+
+@media screen and (max-width: 767.98px) {
+    .wrapper .customLink {
+        font-size: 16px;
     }
 }
 
 @media screen and (max-width: 413.98px) {
     .wrapper {
         font-size: 16px;
-    }
-    .wrapper .sm_container {
-        padding: 0 15px;
     }
     .wrapper h1 {
         font-size: 40px;
@@ -198,5 +245,8 @@
     .wrapper h5 {
         font-size: 18px;
     }
+    .wrapper .customLink {
+        font-size: 14px;
+        line-height: 1.5;
+    }
 }
-

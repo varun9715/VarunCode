@@ -18,40 +18,11 @@
     color: #240B14;
     margin-bottom: 24px;
 }
-.stats_wrapper .stats_header .stats_link {
-    font-family: 'Montserrat-SemiBold';
-    font-size: 16px;
-    line-height: 1;
-    color: #E81132;
-    -webkit-transition: all 0.2s linear;
-    -moz-transition: all 0.2s linear;
-    -o-transition: all 0.2s linear;
-    transition: all 0.2s linear;
-    outline: none;
-    text-decoration: none;
-}
-.stats_wrapper .stats_header .stats_link img{
-    vertical-align: middle;
-}
-.stats_wrapper .stats_header .stats_link:hover , .stats_wrapper .stats_header .stats_link:focus {
-    text-decoration: underline;
-}
-.stats_wrapper .stats_header .stats_link .arrow_right {
-    margin-left: 10px;
-    -webkit-transition: all 0.3s linear;
-    -moz-transition: all 0.3s linear;
-    -o-transition: all 0.3s linear;
-    transition: 0.3s linear;
-  
-}
-.stats_wrapper .stats_header .stats_link:hover .arrow_right ,  .stats_wrapper .stats_header .stats_link:focus .arrow_right{
-    margin-left: 15px;
-}
+
 .stats_wrapper .stats .custom_row {
     margin-right: -10px;
     margin-left: -10px;
 }
-
 
 .stats_wrapper .stats_block_inner .stats_block_upper .stats_date,
 .stats_wrapper .stats_block_inner .stats_block_lower .stats_name {
@@ -391,9 +362,7 @@ display: none;
     .stats_wrapper .stats_block_inner .stats_block_upper .stats_date {
         margin-bottom: 15px;
     }
-    .stats_wrapper .stats_header .stats_link:hover .arrow_right, .stats_wrapper .stats_header .stats_link:focus .arrow_right {
-        margin-left: 12px;
-    }
+
     /* stats v1 */
     .stats_wrapper.stats-V1 .stats .column {
         -ms-flex: 0 0 100%;

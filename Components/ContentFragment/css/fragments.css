@@ -40,47 +40,12 @@ body {
     margin-top: 24px;
 }
 
-.fragment_wrapper .fragment_section .fragment_descripion a {
-    font-family: 'Montserrat-SemiBold';
-    font-size: 16px;
-    line-height: 1;
-    color: #E81132;
-    display: inline-block;
-    text-decoration: none;
-    -webkit-transition: all 0.3s linear;
-    -moz-transition: all 0.3s linear;
-    -o-transition: all 0.3s linear;
-    transition: all 0.3s linear;
-}
-
-.fragment_wrapper .fragment_section .fragment_descripion a:hover,
-.fragment_wrapper .fragment_section .fragment_descripion a:focus {
-    text-decoration: underline;
-}
-
-.fragment_wrapper .fragment_section .fragment_descripion a img {
-    margin-left: 4px;
-}
-
 .fragment_wrapper .fragment_img_desk {
     display: block;
 }
 
 .fragment_wrapper .fragment_img_mob {
     display: none;
-}
-
-.fragment_wrapper .fragment_section .fragment_descripion .fragment_des_text .fragment_link a .arrow_right {
-    margin-left: 10px;
-    -webkit-transition: all 0.3s linear;
-    -moz-transition: all 0.3s linear;
-    -o-transition: all 0.3s linear;
-    transition: all 0.3s linear;
-}
-
-.fragment_wrapper .fragment_section .fragment_descripion .fragment_des_text .fragment_link a:hover .arrow_right,
-.fragment_wrapper .fragment_section .fragment_descripion .fragment_des_text .fragment_link a:focus .arrow_right {
-    margin-left: 15px;
 }
 
 .fragment_wrapper.fragment_v1 .fragment_section .fragment_descripion {
@@ -96,10 +61,6 @@ body {
 .fragment_wrapper.fragment_v1 .fragment_section .fragment_descripion .fragment_des_text {
     margin: 0 auto;
     max-width: 70%;
-}
-
-.fragment_wrapper .fragment_section .fragment_descripion .fragment_des_text .fragment_link a .arrow_right.arrow_white {
-    filter: brightness(0) invert(1);
 }
 
 /* v2 */
@@ -261,9 +222,6 @@ body {
         margin-top: 15px;
     }
 
-    .fragment_wrapper .fragment_section .fragment_descripion a {
-        font-size: 15px;
-    }
 
 }
 
@@ -377,10 +335,6 @@ body {
         margin-top: 15px;
     }
 
-    .fragment_wrapper .fragment_section .fragment_descripion a {
-        font-size: 15px;
-        line-height: 1.5;
-    }
 }
 
 @media screen and (max-width: 374.98px) {

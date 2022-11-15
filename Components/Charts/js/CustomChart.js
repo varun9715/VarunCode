@@ -13,22 +13,15 @@ $(document).ready(function () {
                     {
                         label: "Ice Cream Sales ",
                         fill: true,
-                        backgroundColor: [
-                            '#71BF44',
-                            '#240B14',
-                            '#71BF44',
-                            '#240B14',
-                            '#71BF44',
-                            '#240B14',
-                            '#71BF44',
-                            '#240B14',
-                            '#71BF44',
-                            '#240B14',
-                            '#71BF44',
-                            '#240B14'],
-                        data: [1.5, 2.5, 2, 2.5, 4, 3, 5, 4.5, 4, 3, 5, 4.1],
-                        // data: [1.5, 2.5, 2, 2.5, 4, 3, 5, 4.5, 4, 3, 5, 4.1],
-                    }
+						backgroundColor: "#71BF44",
+                        data: [1.5, 3.5, 2, 2.5, 4, 3.2, 5, 4.5, 4, 3.8, 5, 4.1],
+                    },
+					{
+                        label: "Ice Cream Sales ",
+                        fill: true,
+						backgroundColor: "#240B14",
+                        data: [2.5, 2.5, 2.3, 2.5, 4, 3, 5, 4.8, 4, 3, 5, 4.1],
+                    }						
                 ]
             },
             options: {
@@ -57,7 +50,7 @@ $(document).ready(function () {
 
                     }],
                     xAxes: [{
-                        barThickness: BarChartWindowWidth ? 26 : 12,
+                        barThickness: BarChartWindowWidth ? 13 : 6,
                         ticks: {
                             fontColor: ' #757575',
                         },

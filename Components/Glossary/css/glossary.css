@@ -11,18 +11,18 @@
   color: #240B14;
   margin-top: 24px !important;
 }
-.redLink {
+.glossaryIntroSection .redLink {
   color: #EE1B3A;
   font-family: 'Montserrat-Bold';
   text-decoration: none;
   display:inline-block;
 }
-.blueLink {
+.glossaryIntroSection .blueLink {
   color: #004B98;
   font-family: 'Montserrat-Bold';
   text-decoration: underline;
 }
-.wrapper a.blueLink:hover, .wrapper a.blueLink:focus {
+.wrapper .glossaryIntroSection a.blueLink:hover, .wrapper .glossaryIntroSection a.blueLink:focus {
   text-decoration: none;
 }
 .glossaryIntroSection .divider {
@@ -32,18 +32,18 @@
 .glossarycontantBlock {
   margin-top: 30px;
 }
-strong {
+.glossaryIntroSection strong {
   font-family: 'Montserrat-Bold';
 }
 /* START TOOLTIP STYLES */
-.tooltip_txt[tooltip] {
+.glossaryIntroSection .tooltip_txt[tooltip] {
   position: relative; /* opinion 1 */
   font-size: 16px;
   text-align:left;
   max-width:100%;
 }
-.tooltip_txt[tooltip]::before,
-.tooltip_txt[tooltip]::after {
+.glossaryIntroSection .tooltip_txt[tooltip]::before,
+.glossaryIntroSection .tooltip_txt[tooltip]::after {
   text-transform: none; /* opinion 2 */
   line-height: 1;
   user-select: none;
@@ -52,12 +52,15 @@ strong {
   display: none;
   opacity: 0;
 }
-.tooltip_txt[tooltip]::before {
+.glossaryIntroSection .tooltip_txt[tooltip]::before {
   content: '';
-  border: 5px solid transparent; /* opinion 4 */
-  z-index: 1001; /* absurdity 1 */
+  width: 0;
+  height: 0;
+  border-left: 10px solid transparent;
+  border-right: 10px solid transparent;
+  border-top: 19px solid;
 }
-.tooltip_txt[tooltip]::after {
+.glossaryIntroSection .tooltip_txt[tooltip]::after {
   content: attr(tooltip); /* magic! */
   white-space: nowrap;
   padding: 10px 20px;
@@ -66,61 +69,62 @@ strong {
   font-size: 16px;
   line-height: 1.3;
   font-family: 'Montserrat-Medium';
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
 }
 
 .glossaryInfoPanel {
   margin-bottom: 40px;
 }
 /* Make the tooltips respond to hover */
-.tooltip_txt[tooltip]:hover::before,
-.tooltip_txt[tooltip]:hover::after {
+.glossaryIntroSection .tooltip_txt[tooltip]:hover::before,
+.glossaryIntroSection .tooltip_txt[tooltip]:hover::after {
   display: block;
 }
 
 /* don't show empty tooltips */
-.tooltip_txt[tooltip='']::before,
-.tooltip_txt[tooltip='']::after {
+.glossaryIntroSection .tooltip_txt[tooltip='']::before,
+.glossaryIntroSection .tooltip_txt[tooltip='']::after {
   display: none !important;
   transition:all 0.3s ease-in-out;
 }
 
 /* FLOW: UP */
-.tooltip_txt[tooltip][flow^="up"]::before {
+.glossaryIntroSection .tooltip_txt[tooltip][flow^="up"]::before {
   bottom: 100%;
   border-bottom-width: 0;
   border-top-color: #240B14;
 }
-.tooltip_txt[tooltip][flow^="up"]::after {
+.glossaryIntroSection .tooltip_txt[tooltip][flow^="up"]::after {
   bottom: calc(100% + 5px);
 }
-.tooltip_txt[tooltip][flow^="up"]::after {
+.glossaryIntroSection .tooltip_txt[tooltip][flow^="up"]::after {
   left: 50%;
   transform: translate(-50%, 0);
 }
 /* FX All The Things */ 
-.tooltip_txt[tooltip]:not([flow]):hover::before,
-.tooltip_txt[tooltip]:not([flow]):hover::after,
-.tooltip_txt[tooltip][flow^="up"]:hover::before,
-.tooltip_txt[tooltip][flow^="up"]:hover::after {
+.glossaryIntroSection .tooltip_txt[tooltip]:not([flow]):hover::before,
+.glossaryIntroSection .tooltip_txt[tooltip]:not([flow]):hover::after,
+.glossaryIntroSection .tooltip_txt[tooltip][flow^="up"]:hover::before,
+.glossaryIntroSection .tooltip_txt[tooltip][flow^="up"]:hover::after {
 animation: tooltips-vert 100ms ease-out forwards;
 }
-.tooltip_txt[tooltip][flow^="up"]:hover::before,
-.tooltip_txt[tooltip]:not([flow]):hover::before {
+.glossaryIntroSection .tooltip_txt[tooltip][flow^="up"]:hover::before,
+.glossaryIntroSection .tooltip_txt[tooltip]:not([flow]):hover::before {
   animation: tooltips-vert 100ms ease-out forwards;
 }
-.tooltip_txt[tooltip]:not([flow])::after, .tooltip_txt[tooltip][flow^="up"]::after {
+.glossaryIntroSection .tooltip_txt[tooltip]:not([flow])::after, .glossaryIntroSection .tooltip_txt[tooltip][flow^="up"]::after {
   left: -20px;
   transform: translate(0%, 0);
 }
 
-.tooltip_txt[tooltip]:not([flow])::after, .tooltip_txt[tooltip][flow^="up"]::after {
+.glossaryIntroSection .tooltip_txt[tooltip]:not([flow])::after, .glossaryIntroSection .tooltip_txt[tooltip][flow^="up"]::after {
   bottom: calc(100% + 5px);
 }
-.tooltip_txt[tooltip]:hover::before, .tooltip_txt[tooltip]:hover::after {
+.glossaryIntroSection .tooltip_txt[tooltip]:hover::before, .glossaryIntroSection .tooltip_txt[tooltip]:hover::after {
   display: block;
 }
-.tooltip_txt[tooltip]:not([flow])::before, .tooltip_txt[tooltip][flow^="up"]::before {
-  bottom: 100%;
+.glossaryIntroSection .tooltip_txt[tooltip]:not([flow])::before, .glossaryIntroSection .tooltip_txt[tooltip][flow^="up"]::before {
+  bottom: 19px;
   border-bottom-width: 0;
   border-top-color: #240B14;
 }
@@ -140,14 +144,14 @@ animation: tooltips-vert 100ms ease-out forwards;
 }
 
 /* FX All The Things */ 
-.tooltip_txt[tooltip]:not([flow]):hover::before,
-.tooltip_txt[tooltip]:not([flow]):hover::after,
-.tooltip_txt[tooltip][flow^="up"]:hover::before,
-.tooltip_txt[tooltip][flow^="up"]:hover::after{
+.glossaryIntroSection .tooltip_txt[tooltip]:not([flow]):hover::before,
+.glossaryIntroSection .tooltip_txt[tooltip]:not([flow]):hover::after,
+.glossaryIntroSection .tooltip_txt[tooltip][flow^="up"]:hover::before,
+.glossaryIntroSection .tooltip_txt[tooltip][flow^="up"]:hover::after{
   animation: tooltips-vert 300ms ease-out forwards;
 }
 
-.tooltip_txt.tooltip_txt_right[tooltip]::after{
+.glossaryIntroSection .tooltip_txt.tooltip_txt_right[tooltip]::after{
   left: auto;
   right: 64px;
 }
@@ -234,7 +238,7 @@ section.wrapper.glossaryAccordianPanel {
     padding:0 0 24px 0;
     cursor: pointer;
   }
-  .js .panel-title {
+  .glossaryAccordianPanel  .js .panel-title {
     margin: 0;
   }
   .glossaryAccordianPanel  .panel-title a {
@@ -252,10 +256,10 @@ section.wrapper.glossaryAccordianPanel {
     color: #240B14;
     text-decoration:none;
   }
-  .panel-title a.active {
+  .glossaryAccordianPanel  .panel-title a.active {
     color: #37474f;
   }
-  strong {
+  .glossaryAccordianPanel  strong {
       font-family: 'Montserrat-Bold';
   }
 
@@ -275,7 +279,9 @@ section.wrapper.glossaryAccordianPanel {
 }
 
 @media screen and (max-width:1199.98px) and (min-width:991.98px) {
-
+    .glossaryIntroSection .tooltip_txt[tooltip]::after {
+      font-size: 14px;
+    }
     .glossaryIntroSection p, .glossaryAccordianPanel p {
         font-size: 16px;
     }
@@ -292,10 +298,13 @@ section.wrapper.glossaryAccordianPanel {
   }
   .glossaryIntroSection p, .glossaryAccordianPanel p {
     font-size: 16px;
-}
+  }
+  .glossaryIntroSection .tooltip_txt[tooltip]::after {
+    font-size: 13px;
+  }
 }
 @media screen and (max-width:767.98px) {
-  .tooltip_txt[tooltip]::after {
+  .glossaryIntroSection .tooltip_txt[tooltip]::after {
     white-space: normal;
   }
 

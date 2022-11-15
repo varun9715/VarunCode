@@ -1,0 +1,134 @@
+body {
+    margin:0;
+}
+.mapSectionMain {
+    padding: 100px 0;
+}
+.mapSectionMain p {
+    font-family: 'Montserrat-Medium';
+    font-size: 18px;
+    line-height: 1.6;
+    color: #240B14;
+    margin-top: 24px;
+    margin-bottom: 15px;
+}
+.mapSectionMain p a{
+    text-decoration: none;
+}
+.mapSectionMain .mapTopDescriptionPanel a {
+    margin-top: 0;
+}
+.mapSectionMain .lactionPanel {
+    margin-top: 60px;
+}
+.mapSectionMain .mapDescriptionPanel {
+    background: #fff;
+    max-width: 1024px;
+    margin: 0 auto;
+    top: -340px;
+    position: relative;
+    z-index: 999;
+    box-shadow: 0px 3px 6px rgb(0 0 0 / 45%);
+    display: flex;
+    flex-direction: row;
+    align-items: stretch;
+}
+.mapSectionMain .mapDescriptionPanel .leftPanel .topDesc p {
+    margin-top: 14px;
+    margin-bottom: 5px;
+}
+.mapSectionMain .mapDescriptionPanel .leftPanel {
+    padding: 36px;
+}
+.mapSectionMain .mapDescriptionPanel .leftPanel {
+    max-width: 50%;
+}
+.mapSectionMain .mapDescriptionPanel .middlePanel {
+    margin: 30px 0;
+}
+.mapSectionMain .mapDescriptionPanel .bottomPanel {
+    margin-bottom: 50px;
+}
+.mapSectionMain .mapDescriptionPanel .bottomPanel p {
+    margin: 0 0 5px 0;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.5;
+}
+.mapSectionMain .mapDescriptionPanel .bottomPanel p span {
+    margin-right: 22px;
+}
+.mapSectionMain .mapDescriptionPanel .rightPanel img{
+    height:100%;
+}
+@media screen and (max-width:1800.98px) and (min-width:1299.98px) {
+    .lactionPanel .mapFrame iframe {
+        height: 600px !important;
+    }
+}
+@media screen and (max-width:1299.98px) and (min-width:991.98px) {
+    .mapSectionMain h3 {
+        font-size: 28px;
+    }   
+}
+@media screen and (max-width:1199.98px) {
+    .lactionPanel .mapFrame iframe {
+        height: 580px !important;
+    }
+    .mapSectionMain .mapDescriptionPanel {
+        top: -280px;
+    }
+    .mapSectionMain {
+        padding: 60px 0;
+    }
+}
+@media screen and (max-width:991.98px) and (min-width:767.98px) {
+    .mapSectionMain p {
+        font-size: 16px;
+    }
+    .mapSectionMain h3 {
+        font-size: 24px;
+    }
+}
+@media screen and (max-width:767.98px) {
+    .mapSectionMain .mapDescriptionPanel {
+        top: -60px;
+    }
+    .mapSectionMain .mapDescriptionPanel {
+        top: -100px;
+        display: flex;
+        flex-flow: column-reverse;
+        box-shadow: none;
+        filter: drop-shadow(0px 4px 15px rgba(0, 0, 0, 0.1));
+    }
+    .mapSectionMain .mapDescriptionPanel .leftPanel {
+        max-width: 100%;
+    }
+    .mapSectionMain .mapDescriptionPanel .leftPanel {
+        padding: 30px;
+    }
+    .mapSectionMain .mapDescriptionPanel .leftPanel .topDesc p {
+        margin-top: 0;
+    }
+    .mapSectionMain .mapDescriptionPanel .middlePanel {
+        margin: 20px 0;
+    }
+    .mapSectionMain .mapDescriptionPanel .middlePanel p {
+        margin-top: 20px;
+        margin-bottom: 0;
+    }
+    .mapSectionMain .lactionPanel {
+        margin-top: 40px;
+    }
+    .mapSectionMain .mapDescriptionPanel .rightPanel img{
+        width:100%;
+    }
+}
+@media screen and (max-width:413.98px) {
+    .mapSectionMain p {
+        font-size: 16px;
+    }
+    .mapSectionMain h3 {
+        font-size: 24px;
+    }
+}

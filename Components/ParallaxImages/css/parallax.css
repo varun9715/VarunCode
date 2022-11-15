@@ -30,39 +30,10 @@
     margin-bottom: 24px;
 }
 
-.parallaxImageSection  .descriptionPanel a{
-    font-family: 'Montserrat-SemiBold';
-    font-size: 16px;
-    line-height: 1;
-    color: #E81132;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    margin-top: 0;
-    text-decoration: none;
-    -webkit-transition: all 0.2s linear;
-    -o-transition: all 0.2s linear;
-    transition: all 0.2s linear;
+.parallaxImageSection  .descriptionPanel .customLink{
     margin-top: 24px;
 }
- .parallaxImageSection .descriptionPanel a img{
-    margin-left: 10px;
-    margin-top: 2px;
-    -webkit-transition: all 0.2s linear;
-    -o-transition: all 0.2s linear;
-    transition: all 0.2s linear;
-   
-}
- .parallaxImageSection .descriptionPanel a:hover{
-    text-decoration: underline;
-}
- .parallaxImageSection .descriptionPanel a:hover img{
-    text-decoration: underline;
-    margin-left: 15px;
-}
+
 .descriptionPanel p {
     margin-bottom: 24px;
 }
@@ -379,13 +350,7 @@ section.wrapper.parallaxImageSection.parallaxVSix {
     section#parallaxSix {
         margin-top: 80px;
     }
-    .parallaxImageSection .descriptionPanel a {
-        display:inline-block;
-    }
-    .parallaxImageSection .descriptionPanel a img {
-       position:relative;
-       top:2px;
-    }
+
 }
 @media screen and (max-width:413.98px) {
     .wrapper.parallaxImageSection h2{
