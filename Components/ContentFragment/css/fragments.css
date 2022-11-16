@@ -1,8 +1,3 @@
-body {
-    margin: 0;
-    padding: 0;
-}
-
 .fragment_wrapper {
     padding: 60px 0;
 }
@@ -83,8 +78,14 @@ body {
 }
 
 .fragment_wrapper.fragment_v3a .fragment_section {
+    display: -ms-flexbox;
+    display: -webkit-box;
     display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
     justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
     align-items: center;
     background: #ffffff;
     padding: 40px;
@@ -282,7 +283,6 @@ body {
 
     .fragment_wrapper .fragment_section .fragment_descripion .fragment_des_text .fragment_link a img {
         -webkit-transition: all 0.3s linear;
-        -moz-transition: all 0.3s linear;
         -o-transition: all 0.3s linear;
         transition: all 0.3s linear;
     }

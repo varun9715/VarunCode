@@ -114,12 +114,22 @@
 .wrapper .customLink:focus .arrow_right {
     margin-left: 15px;
 }
-
+.wrapper .listPanel ul {
+    padding: 0 0 0 20px;
+    margin: 0;
+}
+.wrapper .listPanel ul li {
+    padding-bottom: 24px;
+}
 @media (min-width: 991.98px) and (max-width: 1199.98px) {
     .wrapper .customLink {
         font-size: 15px;
     }
+    .wrapper h3 {
+        font-size: 28px;
+    }
 }
+
 @media screen and ( min-width: 767.98px ) {
     
 .wrapper .column-sm-2{
@@ -200,7 +210,7 @@
         font-size: 32px;
     }
     .wrapper h3 {
-        font-size: 26px;
+        font-size: 24px;
     }
     .wrapper h4 {
         font-size: 22px;
@@ -237,7 +247,7 @@
         font-size: 32px;
     }
     .wrapper h3 {
-        font-size: 26px;
+        font-size: 24px;
     }
     .wrapper h4 {
         font-size: 22px;

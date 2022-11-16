@@ -6,7 +6,7 @@
     color: #240B14;
     margin-bottom: 80px;
 }
- p {
+.parallaxImageSection p {
     font-family: 'Montserrat-Medium';
     font-size: 18px;
     line-height: 1.6;
@@ -18,7 +18,7 @@
 .parallaxImagePanel {
     position: relative;
 }
-.text-center {
+.parallaxImageSection .text-center {
     text-align: center;
 }
 .parallaxImageSection  .descriptionPanel {
@@ -34,7 +34,7 @@
     margin-top: 24px;
 }
 
-.descriptionPanel p {
+.parallaxImageSection .descriptionPanel p {
     margin-bottom: 24px;
 }
 
@@ -261,7 +261,7 @@ section.wrapper.parallaxImageSection.parallaxVSix {
     }
 }
 @media screen and (max-width:767.98px) {
-    section.wrapper.parallaxImageSection.parallaxVSix {
+    .wrapper.parallaxImageSection.parallaxVSix {
         margin-bottom: 60px;
     }
     .parallaxVFive .sm_container:last-child, .parallaxVSix .sm_container:last-child {

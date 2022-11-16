@@ -1,7 +1,9 @@
-body {
-    margin: 0;
-    padding: 0;
-}
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v8.4.14,
+* Autoprefixer: v10.4.7
+* Browsers: last 4 version
+*/
 
 .header_v1 {
     margin-top: 50px;
@@ -45,6 +47,8 @@ body {
     border-radius: 50px;
     border: 1px solid #ffffff;
     text-decoration: none;
+    -webkit-transition: all 0.5s;
+    -o-transition: all 0.5s;
     transition: all 0.5s;
 }
 
@@ -79,6 +83,7 @@ body {
 
 .header_wrapper.header_v1 .header_wrapper_section {
     display: -ms-flexbox;
+    display: -webkit-box;
     display: flex;
 }
 
