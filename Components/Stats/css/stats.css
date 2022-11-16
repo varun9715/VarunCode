@@ -72,7 +72,8 @@
     padding-right: 10px;
     padding-left: 10px;
     -ms-flex: 0 0 33.333333%;
-    flex: 0 0 33.333333%;
+    -webkit-box-flex: 0;
+            flex: 0 0 33.333333%;
     max-width: 33.333333%; 
 }
 .stats_wrapper.stats-V1 .stats .stats_block {
@@ -89,6 +90,8 @@
     background-color: #DDF1F2;
     padding: 30px;
     height: 100%;
+    -webkit-transition: 0.3s;
+    -o-transition: 0.3s;
     transition: 0.3s;
 }
 .stats_wrapper.stats-V2 .stats_block_inner .stats_block_upper .stats_date {
@@ -116,7 +119,8 @@
     padding-right: 10px;
     padding-left: 10px;
     -ms-flex: 0 0 33.333333%;
-    flex: 0 0 33.333333%;
+    -webkit-box-flex: 0;
+            flex: 0 0 33.333333%;
     max-width: 33.333333%; 
 }
 
@@ -130,7 +134,8 @@
     padding-right: 10px;
     padding-left: 10px;
     -ms-flex: 0 0 25%;
-    flex: 0 0 25%;
+    -webkit-box-flex: 0;
+            flex: 0 0 25%;
     max-width: 25%;
 }
 .stats_wrapper.stats-V3 .stats .stats_block_inner .stats_block_upper .stats_number {
@@ -149,6 +154,8 @@
     background-color: #240B14;
     padding: 30px;
     height: 100%;
+    -webkit-transition: 0.3s;
+    -o-transition: 0.3s;
     transition: 0.3s;
     position: relative;
     overflow: hidden;
@@ -175,12 +182,14 @@ display: none;
     padding-right: 10px;
     padding-left: 10px;
     -ms-flex: 0 0 50%;
-    flex: 0 0 50%;
+    -webkit-box-flex: 0;
+            flex: 0 0 50%;
     max-width: 50%; 
 }
 
 .stats_wrapper.stats-V4 .stats .rowInner{
     display: -ms-flexbox;
+    display: -webkit-box;
     display: flex;
     -ms-flex-wrap: wrap;
     flex-wrap: wrap;
@@ -189,7 +198,8 @@ display: none;
 }
 .stats_wrapper.stats-V4 .stats .stats_block .column-auto {
     -ms-flex: 0 0 auto;
-    flex: 0 0 auto;
+    -webkit-box-flex: 0;
+            flex: 0 0 auto;
     width: auto;
     max-width: 100%;
     padding-left: 10px;
@@ -199,7 +209,8 @@ display: none;
     -ms-flex-preferred-size: 0;
     flex-basis: 0;
     -ms-flex-positive: 1;
-    flex-grow: 1;
+    -webkit-box-flex: 1;
+            flex-grow: 1;
     max-width: 100%;
     padding-right: 10px;
     padding-left: 15px;
@@ -208,6 +219,8 @@ display: none;
     background-color: #DDF1F2;
     padding: 30px;
     height: 100%;
+    -webkit-transition: 0.3s;
+    -o-transition: 0.3s;
     transition: 0.3s;
 }
 .stats_wrapper.stats-V4 .stats .stats_block {
@@ -234,9 +247,6 @@ display: none;
 
 /*********media********/
 
-
-
-
 @media (min-width:991.98px) and (max-width: 1199.98px) {
     .stats_wrapper .stats_header .stats_header_heading{
         font-size: 28px;
@@ -253,7 +263,8 @@ display: none;
     /* stats v1 */
     .stats_wrapper.stats-V1 .stats .column {
         -ms-flex: 0 0 50%;
-        flex: 0 0 50%;
+        -webkit-box-flex: 0;
+                flex: 0 0 50%;
         max-width: 50%; 
     }
     /* end stats v1 */ 
@@ -261,7 +272,8 @@ display: none;
     /* stats v2 */
     .stats_wrapper.stats-V2 .stats .column {
         -ms-flex: 0 0 50%;
-        flex: 0 0 50%;
+        -webkit-box-flex: 0;
+                flex: 0 0 50%;
         max-width: 50%; 
     }
     /* end stats v2 */ 
@@ -269,7 +281,8 @@ display: none;
     /* stats v3 */
     .stats_wrapper.stats-V3 .stats .column {
         -ms-flex: 0 0 50%;
-        flex: 0 0 50%;
+        -webkit-box-flex: 0;
+                flex: 0 0 50%;
         max-width: 50%; 
     }
     /* end stats v3 */ 
@@ -283,7 +296,8 @@ display: none;
     /* stats v1 */
     .stats_wrapper.stats-V1 .stats .column {
         -ms-flex: 0 0 50%;
-        flex: 0 0 50%;
+        -webkit-box-flex: 0;
+                flex: 0 0 50%;
         max-width: 50%; 
     }
     .stats_wrapper.stats-V1 .stats .stats_block {
@@ -297,7 +311,8 @@ display: none;
     /* stats v2 */
     .stats_wrapper.stats-V2 .stats .column {
         -ms-flex: 0 0 50%;
-        flex: 0 0 50%;
+        -webkit-box-flex: 0;
+                flex: 0 0 50%;
         max-width: 50%; 
     }
     .stats_wrapper.stats-V2 .stats .stats_block_inner .stats_block_upper .stats_number{
@@ -311,7 +326,8 @@ display: none;
     /* stats v3 */
     .stats_wrapper.stats-V3 .stats .column {
         -ms-flex: 0 0 100%;
-        flex: 0 0 100%;
+        -webkit-box-flex: 0;
+                flex: 0 0 100%;
         max-width: 100%; 
     }
     /* end stats v3 */ 
@@ -319,7 +335,8 @@ display: none;
     /* stats v4 */
     .stats_wrapper.stats-V4 .stats .column {
         -ms-flex: 0 0 100%;
-        flex: 0 0 100%;
+        -webkit-box-flex: 0;
+                flex: 0 0 100%;
         max-width: 100%; 
     }
 
@@ -366,7 +383,8 @@ display: none;
     /* stats v1 */
     .stats_wrapper.stats-V1 .stats .column {
         -ms-flex: 0 0 100%;
-        flex: 0 0 100%;
+        -webkit-box-flex: 0;
+                flex: 0 0 100%;
         max-width: 100%; 
     }
     .stats_wrapper.stats-V1 .stats .stats_block .stats_block_inner {
@@ -384,7 +402,8 @@ display: none;
     /* stats v2 */
     .stats_wrapper.stats-V2 .stats .column {
         -ms-flex: 0 0 100%;
-        flex: 0 0 100%;
+        -webkit-box-flex: 0;
+                flex: 0 0 100%;
         max-width: 100%; 
     }
     .stats_wrapper.stats-V2 .stats .stats_block_inner .stats_block_upper .stats_number{

@@ -114,7 +114,13 @@
 .wrapper .customLink:focus .arrow_right {
     margin-left: 15px;
 }
-
+.wrapper .listPanel ul {
+    padding: 0 0 0 20px;
+    margin: 0;
+}
+.wrapper .listPanel ul li {
+    padding-bottom: 24px;
+}
 @media (min-width: 991.98px) and (max-width: 1199.98px) {
     .wrapper .customLink {
         font-size: 15px;

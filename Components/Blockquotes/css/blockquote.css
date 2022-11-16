@@ -42,7 +42,8 @@
 .blockquote_wrapper .blockquote_user_img img {
     height: 100%;
     width: 100%;
-    object-fit: cover;
+    -o-object-fit: cover;
+       object-fit: cover;
     display: block;
 }
 .blockquote_wrapper .blockquote_description p:first-child:before {
@@ -105,9 +106,10 @@
 }
 .blockquote_v2_a .blockquote_card, .blockquote_v2_b .blockquote_card {
     display: -ms-flexbox;
+    display: -webkit-box;
     display: flex;
     -ms-flex-align: center;
-    -webkit-align-items: center;
+    -webkit-box-align: center;
     align-items: center;
     padding: 0;
 }
@@ -191,10 +193,11 @@
     background-color: #DDF1F2;
 }
 .blockquote_v2_b .blockquote_card {
-    -webkit-flex-direction: row-reverse;
     -moz-flex-direction: row-reverse;
     -ms-flex-direction: row-reverse;
     -o-flex-direction: row-reverse;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: reverse;
     flex-direction: row-reverse;
 }
 .blockquote_v2_b .blockquote_description p:first-child:before {
@@ -336,14 +339,16 @@
     }
     .blockquote_v2_a .blockquote_user_img, .blockquote_v2_b .blockquote_user_img {
         -ms-flex: 0 0 100%;
-        flex: 0 0 100%;
+        -webkit-box-flex: 0;
+                flex: 0 0 100%;
         width: 100%; 
     }
     .blockquote_v2_b .blockquote_card {
-        -webkit-flex-direction: column-reverse;
         -moz-flex-direction: column-reverse;
         -ms-flex-direction: column-reverse;
         -o-flex-direction: column-reverse;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: reverse;
         flex-direction: column-reverse;
     }
     .blockquote_v2_a .blockquote_text, .blockquote_v2_b .blockquote_text {
