@@ -1,0 +1,79 @@
+@import 'customfonts';
+
+/** Colors **/
+
+$primary_color: #240B14;
+$brand_color: #E81132;
+$white_color:#FFFFFF;
+$black_color:#000000;
+$lightblue_color:#DDF1F2;
+$teal_color:#00AAAD;
+$darkgrey_color: #28111A;
+$red_color:#f00037;
+$darkestGrey_color :#240B15;
+$lightgray_color:#F7F7F7;
+
+/** Font Family **/
+
+$light_font: 'Montserrat-Light';
+$normal_font: 'Montserrat-Regular';
+$medium_font: 'Montserrat-Medium';
+$semibold_font: 'Montserrat-SemiBold';
+$bold_font: 'Montserrat-Bold';
+
+/** Media Queries **/
+
+$breakpoints: () !default;
+
+$breakpoints: map-merge(
+  $breakpoints,  (
+    xxs: 374.98px,
+    xs: 413.98px,
+    sm: 479.98px,
+    md: 767.98px,
+    lg: 991.98px,
+    xl: 1199.98px,
+    lgmd: 1299.98px,
+    xxl: 1599.98px,
+    xxxl: 1749.98px,
+    xxxxl: 1850.98px
+));
+
+@mixin media-screen-breakpoint-up($breakpoint) {
+  @if map-has-key($breakpoints, $breakpoint) {
+    $breakpoint-value: map-get($breakpoints, $breakpoint);
+    @media screen and (min-width: $breakpoint-value) {
+      @content;
+    }
+  } @else {
+    @warn 'Invalid breakpoint: #{$breakpoint}.';
+  }
+}
+
+@mixin media-screen-breakpoint-down($breakpoint) {
+  @if map-has-key($breakpoints, $breakpoint) {
+    $breakpoint-value: map-get($breakpoints, $breakpoint);
+    @media screen and (max-width: ($breakpoint-value)) {
+      @content;
+    }
+  } @else {
+    @warn 'Invalid breakpoint: #{$breakpoint}.';
+  }
+}
+
+@mixin media-screen-breakpoint-between($min, $max) {
+  @if map-has-key($breakpoints, $min) and map-has-key($breakpoints, $max) {
+    $min-breakpoint: map-get($breakpoints, $min);
+    $max-breakpoint: map-get($breakpoints, $max);
+    @media (min-width: $min-breakpoint) and (max-width: ($max-breakpoint)) {
+      @content;
+    }
+  } @else {
+    @if (map-has-key($breakpoints, $min) == false) {
+      @warn 'Your min breakpoint was invalid: #{$min}.';
+    }
+    @if (map-has-key($breakpoints, $max) == false) {
+      @warn 'Your max breakpoint was invalid: #{$max}.';
+    }
+  }
+}

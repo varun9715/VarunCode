@@ -1,0 +1,298 @@
+@import "globalvariables";
+.content_wrapper {
+  padding: 60px 0;
+  @include media-screen-breakpoint-down(md) {
+    padding-bottom: 90px;
+  }
+  img {
+    vertical-align: middle;
+    width: 100%;
+  }
+  .content_heading {
+    margin-bottom: 30px;
+    .content_subtext {
+      font-size: 18px;
+      line-height: 1.5;
+      text-transform: uppercase;
+      font-family: $medium_font;
+      margin: 0 0 8px 0;
+      @include media-screen-breakpoint-down(lg) {
+        font-size: 16px;
+      }
+      @include media-screen-breakpoint-down(md) {
+        font-size: 18px;
+      }
+      @include media-screen-breakpoint-down(xs) {
+        font-size: 16px;
+      }
+    }
+    .content_title {
+      font-size: 32px;
+      line-height: 1.4;
+      color: $brand_color;
+      margin: 0;
+      font-family: $bold_font;
+      @include media-screen-breakpoint-between(lg, xl) {
+        font-size: 28px;
+      }
+      @include media-screen-breakpoint-down(lg) {
+        font-size: 24px;
+      }
+      @include media-screen-breakpoint-down(md) {
+        font-size: 32px;
+      }
+      @include media-screen-breakpoint-down(xs) {
+        font-size: 24px;
+      }
+    }
+  }
+  .cardslider {
+    margin: 0 -10px;
+    .card_slide {
+      padding: 0 10px;
+      .custom_card {
+        .card_img {
+          margin-bottom: 24px;
+        }
+        .card_body {
+          padding: 0;
+          .card_type {
+            font-size: 18px;
+            line-height: 1.6;
+            margin: 0 0 10px 0;
+            font-family: $medium_font;
+            @include media-screen-breakpoint-between(lg, xl) {
+              font-size: 15px;
+            }
+            @include media-screen-breakpoint-down(lg) {
+              font-size: 14px;
+            }
+            @include media-screen-breakpoint-down(md) {
+              font-size: 18px;
+            }
+            @include media-screen-breakpoint-down(xs) {
+              font-size: 14px;
+            }
+          }
+          .card_title, .card_title a {
+            font-size: 28px;
+            line-height: 1.4;
+            margin: 0 0 20px 0;
+            font-family: $bold_font;
+            color: $primary_color;
+            @include media-screen-breakpoint-between(lg, xl) {
+              font-size: 22px !important;
+            }
+            @include media-screen-breakpoint-down(lg) {
+              font-size: 20px !important;
+            }
+            @include media-screen-breakpoint-down(md) {
+              font-size: 28px !important;
+            }
+            @include media-screen-breakpoint-down(xs) {
+              font-size: 22px !important;
+              line-height: 1.2;
+            }
+            a {
+              text-decoration: none;
+              -webkit-transition: all 0.3s linear;
+              -moz-transition: all 0.3s linear;
+              -o-transition: all 0.3s linear;
+              transition: all 0.3s linear;
+              &:hover,
+              &:focus {
+                text-decoration: underline;
+              }
+              @include media-screen-breakpoint-between(lg, xl) {
+                font-size: 28px;
+              }
+              @include media-screen-breakpoint-down(lg) {
+                font-size: 20px;
+              }
+              @include media-screen-breakpoint-down(md) {
+                font-size: 28px;
+              }
+              @include media-screen-breakpoint-down(xs) {
+                font-size: 22px;
+                line-height: 1.2;
+              }
+            }
+          }
+          .card_text {
+            font-size: 14px;
+            line-height: 1.7;
+            padding: 0;
+            margin: 0;
+            font-family: $normal_font;
+            @include media-screen-breakpoint-between(lg, xl) {
+              font-size: 13px;
+            }
+            @include media-screen-breakpoint-down(lg) {
+              font-size: 13px;
+            }
+            @include media-screen-breakpoint-down(md) {
+              font-size: 14px;
+            }
+            @include media-screen-breakpoint-down(xs) {
+              font-size: 13px;
+            }
+            span {
+              position: relative;
+              margin: 0 10px;
+              &:before {
+                content: "";
+                position: absolute;
+                height: 2px;
+                width: 2px;
+                border-radius: 50px;
+                top: 9px;
+                background: $primary_color;
+              }
+            }
+          }
+        }
+        .card_btn {
+          margin-top: 20px;
+          display: inline-block;
+          .stats_link {
+            @include media-screen-breakpoint-between(lg, xl) {
+              font-size: 15px;
+            }
+            @include media-screen-breakpoint-down(lg) {
+              font-size: 14px;
+            }
+            @include media-screen-breakpoint-down(md) {
+              font-size: 16px;
+            }
+            @include media-screen-breakpoint-down(xs) {
+              font-size: 14px;
+            }
+          }
+        }
+      }
+    }
+  }
+  .content_explore_news {
+    display: none;
+    .content_explore_btn {
+      padding: 13px 30px;
+      background: $brand_color;
+      border: 1px solid $brand_color;
+      border-radius: 50px;
+      color: $white_color;
+      font-size: 16px;
+      line-height: 1.6;
+      font-family: $semibold_font;
+      text-decoration: none;
+      display: inline-block;
+      min-width: 270px;
+      width: auto;
+      -webkit-transition: all 0.3s linear;
+      -moz-transition: all 0.3s linear;
+      -o-transition: all 0.3s linear;
+      transition: all 0.3s linear;
+      &:hover {
+        border: 1px solid $brand_color;
+        text-decoration: none;
+        background: $white_color;
+        color: $brand_color;
+      }
+    }
+    @include media-screen-breakpoint-down(md) {
+      display: block;
+      text-align: center;
+      padding-top: 33px;
+    }
+  }
+  .content_cards_wrapper {
+    .card_slider_navigation {
+      position: relative;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding-top: 50px;
+      .slick-dots {
+        position: relative;
+        bottom: 1px;
+        display: block;
+        width: auto;
+        padding: 0;
+        margin: 0 2px;
+        list-style: none;
+        text-align: center;
+        li {
+          position: relative;
+          display: inline-block;
+          width: 16px;
+          height: 16px;
+          margin: 0 8px;
+          padding: 0;
+          cursor: pointer;
+          button {
+            display: block;
+            width: 16px;
+            height: 16px;
+            padding: 0;
+            cursor: pointer;
+            color: transparent;
+            border: 0;
+            outline: none;
+            background-color: $darkestGrey_color;
+            border: 0;
+            border-radius: 50px;
+            -webkit-transition: all 0.3s linear;
+            -moz-transition: all 0.3s linear;
+            -o-transition: all 0.3s linear;
+            transition: all 0.3s linear;
+            text-indent: -100px;
+            overflow: hidden;
+            &:focus {
+              transform: scale(1.3);
+              -webkit-transform: scale(1.3);
+              -moz-transform: scale(1.3);
+              -ms-transform: scale(1.3);
+            }
+          }
+          &.slick-active {
+            button {
+              background-color: $red_color;
+            }
+          }
+        }
+      }
+    }
+  }
+  .card_slider_navigation {
+    .card_arrow_next {
+      transform: rotate(135deg) !important;
+    }
+    .slick-arrow {
+      font-size: 0;
+      border-left: 2px solid $primary_color;
+      border-right: 0;
+      border-bottom: 0;
+      border-top: 2px solid $primary_color;
+      background-color: transparent;
+      line-height: 0;
+      width: 12px;
+      height: 12px;
+      position: relative;
+      padding: 0;
+      transform: rotate(-45deg);
+      bottom: 0;
+      top: auto;
+      cursor: pointer;
+      -webkit-transition: all 0.3s linear;
+      -moz-transition: all 0.3s linear;
+      -o-transition: all 0.3s linear;
+      transition: all 0.3s linear;
+      &.slick-disabled {
+        display: none !important;
+        pointer-events: none;
+      }
+      &:focus {
+        border-color: $red_color !important;
+      }
+    }
+  }
+}

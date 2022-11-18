@@ -1,0 +1,691 @@
+@import 'globalvariables';
+
+.blockquote_wrapper {
+    .blockquote_user_img {
+        display: none;
+        img {
+            height: 100%;
+            width: 100%;
+            -o-object-fit: cover;
+            object-fit: cover;
+            display: block;
+        }
+    }
+    .blockquote_section {
+        text-align: center;
+        padding-top: 100px;
+        padding-bottom: 100px;
+        @include media-screen-breakpoint-between(lg, xl) {
+            padding-top: 70px;
+            padding-bottom: 70px;
+        }
+        @include media-screen-breakpoint-between(md, lg) {
+            padding-top: 50px;
+            padding-bottom: 50px;
+        }
+        @include media-screen-breakpoint-down(md) {
+            padding-top: 60px;
+            padding-bottom: 60px;
+        }
+        @include media-screen-breakpoint-down(sm) {
+            padding-top: 50px;
+            padding-bottom: 50px;
+        }
+        @include media-screen-breakpoint-down(xxs) {
+            padding-top: 40px;
+            padding-bottom: 40px;
+        }
+    }
+    .blockquote_heading {
+        padding-bottom: 60px;
+        @include media-screen-breakpoint-between(lg, xl) {
+            padding-bottom: 40px;
+        }
+        @include media-screen-breakpoint-between(md, lg) {
+            padding-bottom: 30px;
+        }
+        @include media-screen-breakpoint-down(md) {
+            padding-bottom: 40px;
+        }
+        @include media-screen-breakpoint-down(sm) {
+            padding-bottom: 30px;
+        }
+        h3 {
+            font-size: 32px;
+            line-height: 1.3;
+            @include media-screen-breakpoint-between(lg, xl) {
+                font-size: 28px;
+            }
+            @include media-screen-breakpoint-between(md, lg) {
+                font-size: 24px;
+            }
+            @include media-screen-breakpoint-down(sm) {
+                font-size: 25px;
+            }
+            @include media-screen-breakpoint-down(xxs) {
+                font-size: 22px;
+            }
+        }
+    }
+    .blockquote_description {
+        padding-bottom: 30px;
+        @include media-screen-breakpoint-between(lg, xl) {
+            padding-bottom: 25px;
+        }
+        @include media-screen-breakpoint-between(md, lg) {
+            padding-bottom: 20px;
+        }
+        @include media-screen-breakpoint-down(md) {
+            padding-bottom: 30px;
+        }
+        p {
+            font-size: 30px;
+            line-height: 1.3;
+            letter-spacing: -0.07px;
+            position: relative;
+            display: inline;
+            @include media-screen-breakpoint-between(lg, xl) {
+                font-size: 22px;
+            }
+            @include media-screen-breakpoint-between(md, lg) {
+                font-size: 19px;
+            }
+            @include media-screen-breakpoint-down(sm) {
+                font-size: 20px;
+            }
+            @include media-screen-breakpoint-down(xxs) {
+                font-size: 18px;
+            }
+            &:first-child {
+                &::before {
+                    content: '';
+                    position: absolute;
+                    left: -30px;
+                    top: -10px;
+                    background-image: url('../images/start-quote.svg');
+                    background-size: contain;
+                    background-repeat: no-repeat;
+                    height: 24px;
+                    width: 24px;
+                    @include media-screen-breakpoint-between(md, lg) {
+                        left: -25px;
+                        height: 20px;
+                        width: 20px;
+                    }
+                    @include media-screen-breakpoint-down(sm) {
+                        left: -25px;
+                        height: 20px;
+                        width: 20px;
+                    }
+                }
+            }
+            &:last-child {
+                &::after {
+                    content: '';
+                    position: absolute;
+                    right: -35px;
+                    bottom: -10px;
+                    background-image: url('../images/end-quote.svg');
+                    background-size: contain;
+                    background-repeat: no-repeat;
+                    height: 24px;
+                    width: 24px;
+                    @include media-screen-breakpoint-between(md, lg) {
+                        height: 20px;
+                        width: 20px;
+                        right: -30px;
+                    }
+                    @include media-screen-breakpoint-down(sm) {
+                        height: 20px;
+                        width: 20px;
+                        right: -30px;
+                    }
+                }
+            }
+        }
+    }
+    .blockquote_line {
+        width: 161px;
+        height: 2px;
+        margin: 0 auto;
+    }
+    .blockquote_user_name {
+        font-size: 16px;
+        font-family: $bold_font;
+        line-height: 1.5;
+        @include media-screen-breakpoint-between(md, lg) {
+            font-size: 15px;
+        }
+        @include media-screen-breakpoint-down(md) {
+            font-size: 14px;
+        }
+    }
+    .blockquote_user_designation {
+        font-size: 16px;
+        font-family: $bold_font;
+        line-height: 1.5;
+        @include media-screen-breakpoint-between(md, lg) {
+            font-size: 15px;
+        }
+        @include media-screen-breakpoint-down(md) {
+            font-size: 14px;
+        }
+    }
+    .blockquote_text {
+        max-width: 890px;
+        margin: 0 auto;
+        padding: 0 40px;
+        @include media-screen-breakpoint-down(md) {
+            padding: 0 15px;
+        }
+    }
+    &.blockquote_v1_a {
+        background-color: $white_color;
+        .blockquote_heading {
+            @include media-screen-breakpoint-between(md, lg) {
+                padding-bottom: 40px;
+            }
+            @include media-screen-breakpoint-down(md) {
+                padding-bottom: 48px;
+            }
+            @include media-screen-breakpoint-down(sm) {
+                padding-bottom: 38px;
+            }
+        }
+        .blockquote_content {
+            .blockquote_card {
+                .blockquote_text {
+                    @include media-screen-breakpoint-down(md) {
+                        padding: 0;
+                    }
+                    .blockquote_description {
+                        padding-top: 20px;
+                        padding-bottom: 48px;
+                        @include media-screen-breakpoint-between(lg, xl) {
+                            padding-bottom: 30px;
+                        }
+                        @include media-screen-breakpoint-between(md, lg) {
+                            padding-bottom: 25px;
+                        }
+                        @include media-screen-breakpoint-down(md) {
+                            padding-bottom: 40px;
+                        }
+                        p {
+                            &::before {
+                                display: none;
+                            }
+                            &::after {
+                                display: none;
+                            }
+                        }
+                    }
+                    .blockquote_user_name {
+                        font-size: 18px;
+                        @include media-screen-breakpoint-between(lg, xl) {
+                            font-size: 17px;
+                        }
+                        @include media-screen-breakpoint-between(md, lg) {
+                            font-size: 16px;
+                        }
+                        @include media-screen-breakpoint-down(md) {
+                            font-size: 18px;
+                        }
+                        @include media-screen-breakpoint-down(sm) {
+                            font-size: 15px;
+                        }
+                    }
+                    .blockquote_user_designation {
+                        font-family: $medium_font;
+                        font-size: 18px;
+                        @include media-screen-breakpoint-between(lg, xl) {
+                            font-size: 17px;
+                        }
+                        @include media-screen-breakpoint-between(md, lg) {
+                            font-size: 16px;
+                        }
+                        @include media-screen-breakpoint-down(md) {
+                            font-size: 18px;
+                        }
+                        @include media-screen-breakpoint-down(sm) {
+                            font-size: 15px;
+                        }
+                    }
+                    .blockquote_user {
+                        padding-bottom: 20px;
+                    }
+                    .blockquote_line {
+                        background-color: $brand_color;
+                    }
+                }
+            }
+        }
+    }
+    &.blockquote_v1_b {
+        background-color: $lightblue_color;
+        .blockquote_heading {
+            @include media-screen-breakpoint-between(md, lg) {
+                padding-bottom: 40px;
+            }
+            @include media-screen-breakpoint-down(md) {
+                padding-bottom: 48px;
+            }
+            @include media-screen-breakpoint-down(sm) {
+                padding-bottom: 38px;
+            }
+        }
+        .blockquote_section {
+            .blockquote_content {
+                .blockquote_card {
+                    .blockquote_text {
+                        @include media-screen-breakpoint-down(md) {
+                            padding: 0;
+                        }
+                        .blockquote_description {
+                            padding-top: 20px;
+                            padding-bottom: 48px;
+                            @include media-screen-breakpoint-between(lg, xl) {
+                                padding-bottom: 30px;
+                            }
+                            @include media-screen-breakpoint-between(md, lg) {
+                                padding-bottom: 25px;
+                            }
+                            @include media-screen-breakpoint-down(md) {
+                                padding-bottom: 40px;
+                            }
+                            p {
+                                &::before {
+                                    display: none;
+                                }
+                                &::after {
+                                    display: none;
+                                }
+                            }
+                        }
+                        .blockquote_user_name {
+                            font-size: 18px;
+                            @include media-screen-breakpoint-between(lg, xl) {
+                                font-size: 17px;
+                            }
+                            @include media-screen-breakpoint-between(md, lg) {
+                                font-size: 16px;
+                            }
+                            @include media-screen-breakpoint-down(md) {
+                                font-size: 18px;
+                            }
+                            @include media-screen-breakpoint-down(sm) {
+                                font-size: 15px;
+                            }
+                        }
+                        .blockquote_user_designation {
+                            font-family: $medium_font;
+                            font-size: 18px;
+                            @include media-screen-breakpoint-between(lg, xl) {
+                                font-size: 17px;
+                            }
+                            @include media-screen-breakpoint-between(md, lg) {
+                                font-size: 16px;
+                            }
+                            @include media-screen-breakpoint-down(md) {
+                                font-size: 18px;
+                            }
+                            @include media-screen-breakpoint-down(sm) {
+                                font-size: 15px;
+                            }
+                        }
+                        .blockquote_user {
+                            padding-bottom: 20px;
+                        }
+                        .blockquote_line {
+                            background-color: $primary_color;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    &.blockquote_v1_c {
+        .blockquote_section {
+            @include media-screen-breakpoint-down(md) {
+                padding-top: 30px;
+                padding-bottom: 30px;
+            }
+            .blockquote_heading {
+                padding-top: 60px;
+                padding-bottom: 60px;
+                background-color: $lightblue_color;
+                padding-left: 45px;
+                padding-right: 45px;
+                @include media-screen-breakpoint-between(md, lg) {
+                    padding-bottom: 40px;
+                }
+                @include media-screen-breakpoint-down(md) {
+                    padding-left: 25px;
+                    padding-right: 25px;
+                }
+                @include media-screen-breakpoint-down(md) {
+                    padding-bottom: 48px;
+                }
+                @include media-screen-breakpoint-down(sm) {
+                    padding-top: 50px;
+                    padding-left: 20px;
+                    padding-right: 20px;
+                    padding-bottom: 38px;
+                }
+            }
+            .blockquote_content {
+                .blockquote_card {
+                    padding-bottom: 60px;
+                    background-color: $lightblue_color;
+                    padding-left: 45px;
+                    padding-right: 45px;
+                    @include media-screen-breakpoint-between(md, lg) {
+                        padding-left: 25px;
+                        padding-right: 25px;
+                    }
+                    @include media-screen-breakpoint-down(md) {
+                        padding-left: 25px;
+                        padding-right: 25px;
+                    }
+                    @include media-screen-breakpoint-down(sm) {
+                        padding-bottom: 50px;
+                    }
+                    .blockquote_text {
+                        @include media-screen-breakpoint-down(md) {
+                            padding: 0;
+                        }
+                        .blockquote_description {
+                            padding-top: 20px;
+                            padding-bottom: 48px;
+                            @include media-screen-breakpoint-between(lg, xl) {
+                                padding-bottom: 30px;
+                            }
+                            @include media-screen-breakpoint-between(md, lg) {
+                                padding-bottom: 25px;
+                            }
+                            @include media-screen-breakpoint-down(md) {
+                                padding-bottom: 40px;
+                            }
+                            p {
+                                &::before {
+                                    display: none;
+                                }
+                                &::after {
+                                    display: none;
+                                }
+                            }
+                        }
+                        .blockquote_user_name {
+                            font-size: 18px;
+                            @include media-screen-breakpoint-between(lg, xl) {
+                                font-size: 17px;
+                            }
+                            @include media-screen-breakpoint-between(md, lg) {
+                                font-size: 16px;
+                            }
+                            @include media-screen-breakpoint-down(md) {
+                                font-size: 18px;
+                            }
+                            @include media-screen-breakpoint-down(sm) {
+                                font-size: 15px;
+                            }
+                        }
+                        .blockquote_user_designation {
+                            font-family: $medium_font;
+                            font-size: 18px;
+                            @include media-screen-breakpoint-between(lg, xl) {
+                                font-size: 17px;
+                            }
+                            @include media-screen-breakpoint-between(md, lg) {
+                                font-size: 16px;
+                            }
+                            @include media-screen-breakpoint-down(md) {
+                                font-size: 18px;
+                            }
+                            @include media-screen-breakpoint-down(sm) {
+                                font-size: 15px;
+                            }
+                        }
+                        .blockquote_user {
+                            padding-bottom: 20px;
+                        }
+                        .blockquote_line {
+                            background-color: $primary_color;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    &.blockquote_v2_a {
+        .blockquote_content {
+            background-color: $brand_color;
+            .sm_container {
+                max-width: 1920px;
+                padding: 0;
+                margin: 0 auto;
+            }
+            .blockquote_card {
+                display: -ms-flexbox;
+                display: -webkit-box;
+                display: flex;
+                -ms-flex-align: center;
+                -webkit-box-align: center;
+                align-items: center;
+                padding: 0;
+                @include media-screen-breakpoint-down(md) {
+                    -ms-flex-wrap: wrap;
+                    flex-wrap: wrap;
+                }
+                .blockquote_text {
+                    text-align: left;
+                    padding: 50px 80px;
+                    @include media-screen-breakpoint-between(lg, xl) {
+                        padding: 30px 50px;
+                    }
+                    @include media-screen-breakpoint-between(md, lg) {
+                        padding: 20px 45px;
+                    }
+                    @include media-screen-breakpoint-down(md) {
+                        padding: 60px 50px 50px;
+                    }
+                    @include media-screen-breakpoint-down(sm) {
+                        padding: 50px 40px 40px;
+                    }
+                    .blockquote_description {
+                        p {
+                            font-style: italic;
+                            color: $white_color;
+                        }
+                    }
+                }
+                .blockquote_user_img {
+                    display: block;
+                    @include media-screen-breakpoint-down(md) {
+                        -ms-flex: 0 0 100%;
+                        -webkit-box-flex: 0;
+                        flex: 0 0 100%;
+                        width: 100%;
+                    }
+                }
+                .blockquote_user {
+                    color: $white_color;
+                }
+            }
+        }
+    }
+    &.blockquote_v2_b {
+        .blockquote_section {
+            .blockquote_content {
+                background-color: $lightblue_color;
+                .sm_container {
+                    max-width: 1920px;
+                    padding: 0;
+                    margin: 0 auto;
+                }
+                .blockquote_card {
+                    display: -ms-flexbox;
+                    display: -webkit-box;
+                    display: flex;
+                    -ms-flex-align: center;
+                    -webkit-box-align: center;
+                    align-items: center;
+                    padding: 0;
+                    -moz-flex-direction: row-reverse;
+                    -ms-flex-direction: row-reverse;
+                    -o-flex-direction: row-reverse;
+                    -webkit-box-orient: horizontal;
+                    -webkit-box-direction: reverse;
+                    flex-direction: row-reverse;
+                    @include media-screen-breakpoint-down(md) {
+                        -ms-flex-wrap: wrap;
+                        flex-wrap: wrap;
+                        -moz-flex-direction: column-reverse;
+                        -ms-flex-direction: column-reverse;
+                        -o-flex-direction: column-reverse;
+                        -webkit-box-orient: vertical;
+                        -webkit-box-direction: reverse;
+                        flex-direction: column-reverse;
+                    }
+                    .blockquote_text {
+                        text-align: left;
+                        padding: 50px 80px;
+                        @include media-screen-breakpoint-between(lg, xl) {
+                            padding: 30px 50px;
+                        }
+                        @include media-screen-breakpoint-between(md, lg) {
+                            padding: 20px 45px;
+                        }
+                        @include media-screen-breakpoint-down(md) {
+                            padding: 60px 50px 50px;
+                        }
+                        @include media-screen-breakpoint-down(sm) {
+                            padding: 50px 40px 40px;
+                        }
+                        .blockquote_description {
+                            p {
+                                font-style: italic;
+                                &:first-child {
+                                    &::before {
+                                        background-image: url('../images/start-black-quote.svg');
+                                    }
+                                }
+                                &:last-child {
+                                    &::after {
+                                        background-image: url('../images/end-black-quote.svg');
+                                    }
+                                }
+                            }
+                        }
+                    }
+                    .blockquote_user_img {
+                        display: block;
+                        @include media-screen-breakpoint-down(md) {
+                            -ms-flex: 0 0 100%;
+                            -webkit-box-flex: 0;
+                            flex: 0 0 100%;
+                            width: 100%;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    &.blockquote_v3_a {
+        .blockquote_section {
+            .blockquote_content {
+                background-color: $brand_color;
+                color: $white_color;
+                .blockquote_card {
+                    padding: 60px 10px;
+                    text-align: left;
+                    @include media-screen-breakpoint-between(md, lg) {
+                        padding: 50px 10px;
+                    }
+                    @include media-screen-breakpoint-down(sm) {
+                        padding: 50px 10px 40px;
+                    }
+                    .blockquote_text {
+                        .blockquote_description {
+                            padding-bottom: 30px;
+                            p {
+                                font-style: italic;
+                                color: $white_color;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+    &.blockquote_v3_b {
+        .blockquote_section {
+            padding-bottom: 66px;
+            @include media-screen-breakpoint-between(lg, xl) {
+                padding-bottom: 56px;
+            }
+            .blockquote_content {
+                background-color: $primary_color;
+                color: $white_color;
+                .blockquote_card {
+                    padding: 60px 10px;
+                    text-align: left;
+                    @include media-screen-breakpoint-between(md, lg) {
+                        padding: 50px 10px;
+                    }
+                    .blockquote_text {
+                        .blockquote_description {
+                            padding-bottom: 30px;
+                            p {
+                                font-style: italic;
+                                color: $white_color;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+    &.blockquote_v3_c {
+        background-color: $lightgray_color;
+        @include media-screen-breakpoint-down(md) {
+            background-color: $white_color;
+        }
+        .blockquote_section {
+            .blockquote_content {
+                background-color: $white_color;
+                padding: 60px 0;
+                @include media-screen-breakpoint-between(lg, xl) {
+                    padding: 50px 0;
+                }
+                @include media-screen-breakpoint-between(md, lg) {
+                    padding: 40px 0;
+                }
+                @include media-screen-breakpoint-down(md) {
+                    padding: 0;
+                }
+                .blockquote_card {
+                    padding: 60px 10px;
+                    text-align: left;
+                    background-color: $primary_color;
+                    color: $white_color;
+                    @include media-screen-breakpoint-between(md, lg) {
+                        padding: 50px 10px;
+                    }
+                    @include media-screen-breakpoint-down(md) {
+                        padding-left: 30px;
+                        padding-right: 30px;
+                    }
+                    .blockquote_text {
+                        .blockquote_description {
+                            padding-bottom: 30px;
+                            p {
+                                font-style: italic;
+                                color: $white_color;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
