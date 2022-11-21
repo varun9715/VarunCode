@@ -161,6 +161,9 @@
                         @include media-screen-breakpoint-down(xs) {
                             margin-bottom: 20px;
                         }
+                        .stats_icon_v1{
+                            width: 49px;
+                        }
                     }
                     .stats_date {
                         display: none;
@@ -306,6 +309,9 @@
                         position: absolute;
                         top: 30px;
                         right: -10px;
+                    .stats_icon_v3{
+                        width: 65px;
+                    }
                     }
                 }
             }
@@ -388,6 +394,11 @@
                     }
                     .stats_block_lower {
                         display: none;
+                    }
+                    .stats_icon_main {
+                    .stats_icon_v4{
+                        width: 32px;
+                    }
                     }
                 }
             }

@@ -1,0 +1,380 @@
+@import "globalvariables";
+.wrapper.parallaxImageSection {
+  margin-top: 60px;
+  h2 {
+    font-size: 50px;
+    line-height: 1.2;
+    text-align: left;
+    color: $primary_color;
+    margin-bottom: 80px;
+    @include media-screen-breakpoint-up(lgmd) {
+      margin-bottom: 50px;
+    }
+    @include media-screen-breakpoint-between(md, lg) {
+      font-size: 32px;
+    }
+    @include media-screen-breakpoint-down(xs) {
+      font-size: 32px;
+    }
+  }
+  p {
+    font-family: $medium_font;
+    font-size: 18px;
+    line-height: 1.6;
+    color: $primary_color;
+    @include media-screen-breakpoint-between(md, lg) {
+      font-size: 16px;
+    }
+    @include media-screen-breakpoint-down(xs) {
+      font-size: 16px;
+    }
+  }
+  .descriptionPanel {
+    margin-bottom: 60px;
+    @include media-screen-breakpoint-between(md, lg) {
+      margin-top: 0;
+    }
+    h3 {
+      color: $primary_color;
+      margin-bottom: 24px;
+      @include media-screen-breakpoint-between(lg, xl) {
+        font-size: 28px;
+      }
+      @include media-screen-breakpoint-between(md, lg) {
+        font-size: 24px;
+      }
+      @include media-screen-breakpoint-down(xs) {
+        font-size: 24px;
+      }
+    }
+    p {
+      margin-bottom: 24px;
+    }
+  }
+  .mainInfoPanel {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: reverse;
+    -ms-flex-flow: row-reverse;
+    flex-flow: row-reverse;
+    @include media-screen-breakpoint-down(md) {
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: reverse;
+      -ms-flex-flow: column-reverse;
+      flex-flow: column-reverse;
+      max-width: 100%;
+    }
+    .infoPanel {
+      background: $lightblue_color;
+      padding: 80px 67px 80px 67px;
+      max-width: 580px;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-pack: center;
+      -ms-flex-pack: center;
+      justify-content: center;
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+      -ms-flex-flow: column;
+      flex-flow: column;
+      margin-left: -67px;
+      z-index: 99;
+      @include media-screen-breakpoint-between(md, xl) {
+        padding: 60px;
+      }
+      @include media-screen-breakpoint-between(md, lg) {
+        padding: 40px 30px;
+        max-width: 460px;
+      }
+      @include media-screen-breakpoint-down(md) {
+        margin: 0;
+        padding: 30px;
+        max-width: 100%;
+      }
+      h2 {
+        margin-bottom: 20px;
+        margin-top: 0;
+        color: $darkgrey_color;
+        @include media-screen-breakpoint-between(md, xl) {
+          font-size: 36px;
+        }
+        @include media-screen-breakpoint-down(lg) {
+          font-size: 28px;
+        }
+        @include media-screen-breakpoint-down(xs) {
+          font-size: 24px;
+        }
+        br {
+          @include media-screen-breakpoint-down(md) {
+            display: none;
+          }
+        }
+      }
+      p {
+        color: $darkestGrey_color;
+        @include media-screen-breakpoint-between(md, lg) {
+          font-size: 16px;
+        }
+        &:last-child {
+          margin-bottom: 0;
+        }
+      }
+    }
+    .parallaxImagePanel {
+      position: relative;
+      @include media-screen-breakpoint-between(md, xl) {
+        margin-left: 0;
+        width: 57%;
+        height: auto;
+        -webkit-box-flex: 0;
+        -ms-flex: 0 0 57%;
+        flex: 0 0 57%;
+      }
+      @include media-screen-breakpoint-down(md) {
+        position: relative;
+        margin-bottom: -7px;
+        width: 100%;
+      }
+      img {
+        @include media-screen-breakpoint-down(md) {
+          width: 100%;
+        }
+      }
+    }
+  }
+  .visibleMob {
+    display: none;
+    @include media-screen-breakpoint-down(md) {
+      display: block;
+    }
+  }
+  strong {
+    font-family: $bold_font;
+  }
+  &.parallaxVTwo {
+    .mainInfoPanel {
+      @include media-screen-breakpoint-up(md) {
+        -webkit-box-orient: horizontal;
+        -webkit-box-direction: normal;
+        -ms-flex-flow: row;
+        flex-flow: row;
+      }
+      .infoPanel {
+        margin-right: -67px;
+        margin-left: 0;
+        @include media-screen-breakpoint-down(md) {
+          margin-right: 0;
+        }
+      }
+    }
+  }
+  &.parallaxVThree,
+  &.parallaxVFour,
+  &.parallaxVFive,
+  &.parallaxVSix {
+    .mainInfoPanel {
+      background-attachment: fixed;
+      background-size: 100% 100%;
+      padding: 55px;
+      background-repeat: no-repeat;
+      @include media-screen-breakpoint-down(lgmd) {
+        padding: 35px;
+      }
+      @include media-screen-breakpoint-down(md) {
+        background-image: none !important;
+        padding: 0;
+      }
+    }
+  }
+  &.parallaxVThree {
+    .mainInfoPanel {
+      @include media-screen-breakpoint-up(md) {
+        -webkit-box-orient: horizontal;
+        -webkit-box-direction: normal;
+        -ms-flex-flow: row;flex-flow: row;
+      }
+      @include media-screen-breakpoint-down(md) {
+        padding-left: 0;
+        padding-right: 0;
+      }
+      .infoPanel {
+        margin-right: 0;
+        margin-left: 0;
+        background: $white_color;
+        @include media-screen-breakpoint-down(md) {
+          padding-left: 0;
+          padding-right: 0;
+          padding-bottom: 0 !important;
+        }
+      }
+    }
+  }
+  &.parallaxVFour {
+    .mainInfoPanel {
+      -webkit-box-pack: start;
+      -ms-flex-pack: start;
+      justify-content: flex-start;
+      .infoPanel {
+        margin-right: 0;
+        margin-left: 0;
+        background: $white_color;
+        @include media-screen-breakpoint-down(md) {
+          padding-left: 0;
+          padding-right: 0;
+          padding-bottom: 0;
+        }
+      }
+    }
+  }
+  &.parallaxVFive {
+    margin-bottom: 160px;
+    .mainInfoPanel {
+      padding-bottom: 0;
+      display: block;
+      @include media-screen-breakpoint-between(md, lg) {
+        padding: 40px 35px;
+      }
+      .infoPanel {
+        background: $brand_color;
+        margin-top: 58px;
+        padding: 80px 67px;
+        margin-bottom: -90px;
+        margin-left: 0;
+        @include media-screen-breakpoint-between(md, xl) {
+          padding: 60px !important;
+        }
+        @include media-screen-breakpoint-between(md, lg) {
+          margin-bottom: -70px;
+        }
+        @include media-screen-breakpoint-down(md) {
+          margin-top: 0;
+          padding: 30px;
+          margin-left: 25px;
+          margin-right: 25px;
+          margin-top: -50px;
+        }
+        @include media-screen-breakpoint-down(xs) {
+          margin-left: 15px;
+          margin-right: 15px;
+        }
+        p,
+        h2 {
+          color: $white_color;
+        }
+      }
+      > .sm_container {
+        @include media-screen-breakpoint-down(lgmd) {
+          padding: 0;
+        }
+      }
+    }
+    .sm_container {
+      width: 100%;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-pack: end;
+      -ms-flex-pack: end;
+      justify-content: flex-end;
+      @include media-screen-breakpoint-down(lg) {
+        padding: 0px 20px;
+      }
+      @include media-screen-breakpoint-down(md) {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: reverse;
+        -ms-flex-flow: column-reverse;
+        flex-flow: column-reverse;
+      }
+    }
+    @include media-screen-breakpoint-between(md, lg) {
+      margin-bottom: 100px;
+    }
+  }
+  &.parallaxVSix {
+    margin-bottom: 100px;
+    @include media-screen-breakpoint-down(md) {
+      margin-bottom: 160px;
+    }
+    .mainInfoPanel {
+      padding-bottom: 0;      
+      @include media-screen-breakpoint-between(md, lg) {
+        padding: 40px 35px 40px 20px;
+      }
+      @include media-screen-breakpoint-down(md) {
+        padding-bottom: 0;
+        padding: 0;
+        margin: 0;
+        background-image: none !important;
+      }
+      .infoPanel {
+        background: $brand_color;
+        margin-top: 58px;
+        padding: 80px 67px;
+        margin-bottom: -90px;
+        margin-left: 0;
+        @include media-screen-breakpoint-between(md, xl) {
+          padding: 60px !important;
+        }
+        @include media-screen-breakpoint-between(md, lg) {
+          margin-bottom: -70px;
+        }
+        @include media-screen-breakpoint-down(md) {
+          margin-top: 0;
+          padding: 30px;
+          margin-left: 25px;
+          margin-right: 25px;
+          margin-top: -50px;
+        }
+        @include media-screen-breakpoint-down(xs) {
+          margin-left: 15px;
+          margin-right: 15px;
+        }
+        p,
+        h2 {
+          color: $white_color;
+        }
+      }
+      .sm_container {
+        @include media-screen-breakpoint-down(lgmd) {
+          padding: 0;
+        }
+      }
+    }
+    .sm_container {
+      width: 100%;
+    
+      @include media-screen-breakpoint-down(lg) {
+        padding: 0px 20px;
+      }
+      @include media-screen-breakpoint-down(md) {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: reverse;
+        -ms-flex-flow: column-reverse;
+        flex-flow: column-reverse;
+      }
+    }
+  }
+  @include media-screen-breakpoint-down(xxl) {
+    margin-top: 60px !important;
+  }
+  @include media-screen-breakpoint-between(md, lg) {
+    margin: 0;
+    padding-top: 0;
+  }
+  @include media-screen-breakpoint-down(md) {
+    margin: 0;
+    padding-top: 0;
+  }
+}
