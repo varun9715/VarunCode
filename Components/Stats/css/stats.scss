@@ -3,7 +3,10 @@
 .stats_wrapper {
     padding: 60px 0 40px;
     .stats_header {
-        margin-bottom: 60px;
+        margin-bottom: 55px;
+        @include media-screen-breakpoint-between(md, lg) {
+            margin-bottom: 45px;
+        }
         @include media-screen-breakpoint-down(xs) {
             margin-bottom: 40px;
         }
