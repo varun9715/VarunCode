@@ -1,4 +1,4 @@
-@import "globalvariables";
+@import '../../Assets/scss/globalvariables';
 .content_wrapper {
   padding: 60px 0;
   @include media-screen-breakpoint-down(md) {

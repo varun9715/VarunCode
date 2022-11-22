@@ -10,9 +10,13 @@ $lightblue_color:#DDF1F2;
 $teal_color:#00AAAD;
 $darkgrey_color: #28111A;
 $red_color:#f00037;
-$darkestGrey_color :#240B15;
-$gray_color : #dddddd;
+$darkestGrey_color:#240B15;
+$gray_color: #dddddd;
 $lightgray_color:#F7F7F7;
+$lightborder_color: #D5D1D2;
+$blue_color: #004B98;
+$red_color2: #EE1B3A;
+$darkblue_color:#212529;
 /** Font Family **/
 
 $light_font: 'Montserrat-Light';
@@ -29,7 +33,7 @@ $breakpoints: map-merge(
   $breakpoints,  (
     xxs: 374.98px,
     xs: 413.98px,
-    sm: 479.98px,
+    sm: 479.98px, 
     md: 767.98px,
     lg: 991.98px,
     xl: 1199.98px,
