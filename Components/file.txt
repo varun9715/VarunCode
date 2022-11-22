@@ -1,0 +1,9 @@
+dev url
+https://mbrdev.otpp.com/en-ca/about-us/news-and-insights/2022/test/
+
+dev author url
+https://author-p33718-e121022.adobeaemcloud.com/ui#/aem/editor.html/content/otpp/en_CA/test-page-tru.html
+
+author url
+https://experience.adobe.com/#/@otpp/home
+
