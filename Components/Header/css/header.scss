@@ -134,7 +134,10 @@
                 width: 100%;
                 background-image: none !important;
             }
-            img {
+            .header_desk_img{
+                display: none;
+            }
+            .header_mob_img {
                 width: 100%;
                 display: none;
                 @include media-screen-breakpoint-down(md) {
