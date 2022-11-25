@@ -1,0 +1,33 @@
+<html >
+
+<head>
+  <title>World map</title>
+  <link rel="stylesheet" href="../Assets/scss/common-style.css">
+  <link rel="stylesheet" href="css/WorldMap.css" type="text/css">
+</head>
+
+<body>
+  <div class="wrapper worldmap_wrapper">
+    <div class="mapTopDescriptionPanel">
+      <div class="sm_container">
+        <h3>Map V2</h3>
+        <p>As a global investor, we believe performance and purpose go hand in hand. We want to make sure the
+          investments we make create a better world, not just for our members and our partners, but for everyone. </p>
+        <p><a href="#" aria-label="Learn more" class="customLink">Learn more about our impact<span
+              class="arrow_right"><img src="images/Arrow-Right.svg" alt="Arrow Right"></span></a></p>
+      </div>
+    </div>
+    <div id="map" class="worldmap_main" >
+
+    </div>
+  </div>
+
+  <br/><br/><br/><br/><br/>
+
+  
+  <script src="js/worldmap.js"></script>
+  <script defer
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBaiaxvEN5N8JucAuwtkoFBef-nvoZkJq4&v=3.31&language=en&libraries=places,geometry&callback=createMap"></script>
+</body>
+
+</html>

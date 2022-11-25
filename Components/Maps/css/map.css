@@ -1,134 +1,185 @@
-body {
-    margin:0;
+@font-face {
+  font-family: "Montserrat-Medium";
+  src: url("../fonts/Montserrat-Medium.eot");
+  src: url("../fonts/Montserrat-Medium.eot?#iefix") format("embedded-opentype"), url("../fonts/Montserrat-Medium.woff2") format("woff2"), url("../fonts/Montserrat-Medium.woff") format("woff"), url("../fonts/Montserrat-Medium.ttf") format("truetype"), url("../fonts/Montserrat-Medium.svg#Montserrat-Medium") format("svg");
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
 }
+@font-face {
+  font-family: "Montserrat-Light";
+  src: url("../fonts/Montserrat-Light.eot");
+  src: url("../fonts/Montserrat-Light.eot?#iefix") format("embedded-opentype"), url("../fonts/Montserrat-Light.woff2") format("woff2"), url("../fonts/Montserrat-Light.woff") format("woff"), url("../fonts/Montserrat-Light.ttf") format("truetype"), url("../fonts/Montserrat-Light.svg#Montserrat-Light") format("svg");
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Montserrat-Bold";
+  src: url("../fonts/Montserrat-Bold.eot");
+  src: url("../fonts/Montserrat-Bold.eot?#iefix") format("embedded-opentype"), url("../fonts/Montserrat-Bold.woff2") format("woff2"), url("../fonts/Montserrat-Bold.woff") format("woff"), url("../fonts/Montserrat-Bold.ttf") format("truetype"), url("../fonts/Montserrat-Bold.svg#Montserrat-Bold") format("svg");
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Montserrat-SemiBold";
+  src: url("../fonts/Montserrat-SemiBold.eot");
+  src: url("../fonts/Montserrat-SemiBold.eot?#iefix") format("embedded-opentype"), url("../fonts/Montserrat-SemiBold.woff2") format("woff2"), url("../fonts/Montserrat-SemiBold.woff") format("woff"), url("../fonts/Montserrat-SemiBold.ttf") format("truetype"), url("../fonts/Montserrat-SemiBold.svg#Montserrat-SemiBold") format("svg");
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Montserrat-Regular";
+  src: url("../fonts/Montserrat-Regular.eot");
+  src: url("../fonts/Montserrat-Regular.eot?#iefix") format("embedded-opentype"), url("../fonts/Montserrat-Regular.woff2") format("woff2"), url("../fonts/Montserrat-Regular.woff") format("woff"), url("../fonts/Montserrat-Regular.ttf") format("truetype"), url("../fonts/Montserrat-Regular.svg#Montserrat-Regular") format("svg");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+/** Colors **/
+/** Font Family **/
+/** Media Queries **/
 .mapSectionMain {
-    padding: 100px 0;
+  padding: 100px 0;
+}
+@media screen and (max-width: 1199.98px) {
+  .mapSectionMain {
+    padding: 60px 0;
+  }
+}
+@media (min-width: 991.98px) and (max-width: 1299.98px) {
+  .mapSectionMain h3 {
+    font-size: 28px;
+  }
+}
+@media (min-width: 767.98px) and (max-width: 991.98px) {
+  .mapSectionMain h3 {
+    font-size: 24px;
+  }
+}
+@media screen and (max-width: 413.98px) {
+  .mapSectionMain h3 {
+    font-size: 24px;
+  }
 }
 .mapSectionMain p {
-    font-family: 'Montserrat-Medium';
-    font-size: 18px;
-    line-height: 1.6;
-    color: #240B14;
-    margin-top: 24px;
-    margin-bottom: 15px;
+  font-family: "Montserrat-Medium";
+  font-size: 18px;
+  line-height: 1.6;
+  color: #240B14;
+  margin-top: 24px;
+  margin-bottom: 15px;
 }
-.mapSectionMain p a{
-    text-decoration: none;
+@media (min-width: 767.98px) and (max-width: 991.98px) {
+  .mapSectionMain p {
+    font-size: 16px;
+  }
 }
-.mapSectionMain .mapTopDescriptionPanel a {
-    margin-top: 0;
+@media screen and (max-width: 413.98px) {
+  .mapSectionMain p {
+    font-size: 16px;
+  }
 }
 .mapSectionMain .lactionPanel {
-    margin-top: 60px;
+  margin-top: 60px;
 }
-.mapSectionMain .mapDescriptionPanel {
-    background: #fff;
-    max-width: 1024px;
-    margin: 0 auto;
-    top: -340px;
-    position: relative;
-    z-index: 999;
-    box-shadow: 0px 3px 6px rgb(0 0 0 / 45%);
+@media (min-width: 1299.98px) and (max-width: 1850.98px) {
+  .mapSectionMain .lactionPanel .mapFrame iframe {
+    height: 600px !important;
+  }
+}
+@media screen and (max-width: 1199.98px) {
+  .mapSectionMain .lactionPanel .mapFrame iframe {
+    height: 580px !important;
+  }
+}
+@media screen and (max-width: 767.98px) {
+  .mapSectionMain .lactionPanel {
+    margin-top: 40px;
+  }
+}
+.mapSectionMain .lactionPanel .mapDescriptionPanel {
+  background: #FFFFFF;
+  max-width: 1024px;
+  margin: 0 auto;
+  margin-top: -340px;
+  position: relative;
+  z-index: 999;
+  box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.45);
+  display: flex;
+  flex-direction: row;
+  align-items: stretch;
+}
+@media screen and (max-width: 1199.98px) {
+  .mapSectionMain .lactionPanel .mapDescriptionPanel {
+    margin-top: -280px;
+  }
+}
+@media screen and (max-width: 767.98px) {
+  .mapSectionMain .lactionPanel .mapDescriptionPanel {
+    margin-top: -100px;
     display: flex;
-    flex-direction: row;
-    align-items: stretch;
+    flex-flow: column-reverse;
+    box-shadow: none;
+    filter: drop-shadow(0px 4px 15px rgba(0, 0, 0, 0.1));
+  }
 }
-.mapSectionMain .mapDescriptionPanel .leftPanel .topDesc p {
-    margin-top: 14px;
-    margin-bottom: 5px;
+.mapSectionMain .lactionPanel .mapDescriptionPanel .leftPanel {
+  padding: 36px;
+  max-width: 50%;
 }
-.mapSectionMain .mapDescriptionPanel .leftPanel {
-    padding: 36px;
+@media screen and (max-width: 767.98px) {
+  .mapSectionMain .lactionPanel .mapDescriptionPanel .leftPanel {
+    max-width: 100%;
+    padding: 30px;
+  }
 }
-.mapSectionMain .mapDescriptionPanel .leftPanel {
-    max-width: 50%;
+.mapSectionMain .lactionPanel .mapDescriptionPanel .leftPanel .topDesc p {
+  margin-top: 14px;
+  margin-bottom: 5px;
 }
-.mapSectionMain .mapDescriptionPanel .middlePanel {
-    margin: 30px 0;
+@media screen and (max-width: 767.98px) {
+  .mapSectionMain .lactionPanel .mapDescriptionPanel .leftPanel .topDesc p {
+    margin-top: 0;
+  }
 }
-.mapSectionMain .mapDescriptionPanel .bottomPanel {
-    margin-bottom: 50px;
+.mapSectionMain .lactionPanel .mapDescriptionPanel .leftPanel .middlePanel {
+  margin: 30px 0;
 }
-.mapSectionMain .mapDescriptionPanel .bottomPanel p {
-    margin: 0 0 5px 0;
-    font-weight: 400;
-    font-size: 14px;
-    line-height: 1.5;
+@media screen and (max-width: 767.98px) {
+  .mapSectionMain .lactionPanel .mapDescriptionPanel .leftPanel .middlePanel {
+    margin: 20px 0;
+  }
 }
-.mapSectionMain .mapDescriptionPanel .bottomPanel p span {
-    margin-right: 22px;
+@media screen and (max-width: 767.98px) {
+  .mapSectionMain .lactionPanel .mapDescriptionPanel .leftPanel .middlePanel p {
+    margin-top: 20px;
+    margin-bottom: 0;
+  }
 }
-.mapSectionMain .mapDescriptionPanel .rightPanel img{
-    height:100%;
+.mapSectionMain .lactionPanel .mapDescriptionPanel .leftPanel .bottomPanel {
+  margin-bottom: 50px;
 }
-@media screen and (max-width:1800.98px) and (min-width:1299.98px) {
-    .lactionPanel .mapFrame iframe {
-        height: 600px !important;
-    }
+.mapSectionMain .lactionPanel .mapDescriptionPanel .leftPanel .bottomPanel p {
+  margin: 0 0 5px 0;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.5;
 }
-@media screen and (max-width:1299.98px) and (min-width:991.98px) {
-    .mapSectionMain h3 {
-        font-size: 28px;
-    }   
+.mapSectionMain .lactionPanel .mapDescriptionPanel .leftPanel .bottomPanel p span {
+  margin-right: 22px;
 }
-@media screen and (max-width:1199.98px) {
-    .lactionPanel .mapFrame iframe {
-        height: 580px !important;
-    }
-    .mapSectionMain .mapDescriptionPanel {
-        top: -280px;
-    }
-    .mapSectionMain {
-        padding: 60px 0;
-    }
+.mapSectionMain .lactionPanel .mapDescriptionPanel .rightPanel img {
+  height: 100%;
 }
-@media screen and (max-width:991.98px) and (min-width:767.98px) {
-    .mapSectionMain p {
-        font-size: 16px;
-    }
-    .mapSectionMain h3 {
-        font-size: 24px;
-    }
+@media screen and (max-width: 767.98px) {
+  .mapSectionMain .lactionPanel .mapDescriptionPanel .rightPanel img {
+    width: 100%;
+  }
 }
-@media screen and (max-width:767.98px) {
-    .mapSectionMain .mapDescriptionPanel {
-        top: -60px;
-    }
-    .mapSectionMain .mapDescriptionPanel {
-        top: -100px;
-        display: flex;
-        flex-flow: column-reverse;
-        box-shadow: none;
-        filter: drop-shadow(0px 4px 15px rgba(0, 0, 0, 0.1));
-    }
-    .mapSectionMain .mapDescriptionPanel .leftPanel {
-        max-width: 100%;
-    }
-    .mapSectionMain .mapDescriptionPanel .leftPanel {
-        padding: 30px;
-    }
-    .mapSectionMain .mapDescriptionPanel .leftPanel .topDesc p {
-        margin-top: 0;
-    }
-    .mapSectionMain .mapDescriptionPanel .middlePanel {
-        margin: 20px 0;
-    }
-    .mapSectionMain .mapDescriptionPanel .middlePanel p {
-        margin-top: 20px;
-        margin-bottom: 0;
-    }
-    .mapSectionMain .lactionPanel {
-        margin-top: 40px;
-    }
-    .mapSectionMain .mapDescriptionPanel .rightPanel img{
-        width:100%;
-    }
-}
-@media screen and (max-width:413.98px) {
-    .mapSectionMain p {
-        font-size: 16px;
-    }
-    .mapSectionMain h3 {
-        font-size: 24px;
-    }
-}
+.mapSectionMain .mapFrame {
+  height: 100%;
+  max-height: 890px;
+}/*# sourceMappingURL=map.css.map */

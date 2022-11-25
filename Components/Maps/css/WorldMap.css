@@ -1,0 +1,401 @@
+@font-face {
+  font-family: "Montserrat-Medium";
+  src: url("../fonts/Montserrat-Medium.eot");
+  src: url("../fonts/Montserrat-Medium.eot?#iefix") format("embedded-opentype"), url("../fonts/Montserrat-Medium.woff2") format("woff2"), url("../fonts/Montserrat-Medium.woff") format("woff"), url("../fonts/Montserrat-Medium.ttf") format("truetype"), url("../fonts/Montserrat-Medium.svg#Montserrat-Medium") format("svg");
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Montserrat-Light";
+  src: url("../fonts/Montserrat-Light.eot");
+  src: url("../fonts/Montserrat-Light.eot?#iefix") format("embedded-opentype"), url("../fonts/Montserrat-Light.woff2") format("woff2"), url("../fonts/Montserrat-Light.woff") format("woff"), url("../fonts/Montserrat-Light.ttf") format("truetype"), url("../fonts/Montserrat-Light.svg#Montserrat-Light") format("svg");
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Montserrat-Bold";
+  src: url("../fonts/Montserrat-Bold.eot");
+  src: url("../fonts/Montserrat-Bold.eot?#iefix") format("embedded-opentype"), url("../fonts/Montserrat-Bold.woff2") format("woff2"), url("../fonts/Montserrat-Bold.woff") format("woff"), url("../fonts/Montserrat-Bold.ttf") format("truetype"), url("../fonts/Montserrat-Bold.svg#Montserrat-Bold") format("svg");
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Montserrat-SemiBold";
+  src: url("../fonts/Montserrat-SemiBold.eot");
+  src: url("../fonts/Montserrat-SemiBold.eot?#iefix") format("embedded-opentype"), url("../fonts/Montserrat-SemiBold.woff2") format("woff2"), url("../fonts/Montserrat-SemiBold.woff") format("woff"), url("../fonts/Montserrat-SemiBold.ttf") format("truetype"), url("../fonts/Montserrat-SemiBold.svg#Montserrat-SemiBold") format("svg");
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Montserrat-Regular";
+  src: url("../fonts/Montserrat-Regular.eot");
+  src: url("../fonts/Montserrat-Regular.eot?#iefix") format("embedded-opentype"), url("../fonts/Montserrat-Regular.woff2") format("woff2"), url("../fonts/Montserrat-Regular.woff") format("woff"), url("../fonts/Montserrat-Regular.ttf") format("truetype"), url("../fonts/Montserrat-Regular.svg#Montserrat-Regular") format("svg");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+/** Colors **/
+/** Font Family **/
+/** Media Queries **/
+.worldmap_wrapper .worldmap_main {
+  height: 100%;
+  max-height: 750px;
+}
+.worldmap_wrapper .mapTopDescriptionPanel {
+  padding: 60px 0;
+}
+@media (min-width: 991.98px) and (max-width: 1299.98px) {
+  .worldmap_wrapper .mapTopDescriptionPanel h3 {
+    font-size: 28px;
+  }
+}
+@media (min-width: 767.98px) and (max-width: 991.98px) {
+  .worldmap_wrapper .mapTopDescriptionPanel h3 {
+    font-size: 24px;
+  }
+}
+@media screen and (max-width: 413.98px) {
+  .worldmap_wrapper .mapTopDescriptionPanel h3 {
+    font-size: 24px;
+  }
+}
+.worldmap_wrapper .mapTopDescriptionPanel p {
+  font-family: "Montserrat-Medium";
+  font-size: 18px;
+  line-height: 1.6;
+  color: #240B14;
+  margin-top: 24px;
+  margin-bottom: 15px;
+}
+@media (min-width: 767.98px) and (max-width: 991.98px) {
+  .worldmap_wrapper .mapTopDescriptionPanel p {
+    font-size: 16px;
+  }
+}
+@media screen and (max-width: 413.98px) {
+  .worldmap_wrapper .mapTopDescriptionPanel p {
+    font-size: 16px;
+  }
+}
+.worldmap_wrapper .labels {
+  margin-top: 60px;
+  font-size: 16px !important;
+  font-weight: 400;
+}
+.worldmap_wrapper .marginSm {
+  margin-top: 50px;
+  font-size: 16px;
+  font-weight: 400;
+}
+.worldmap_wrapper .si-float-wrapper {
+  position: absolute;
+  width: 100%;
+  box-sizing: border-box;
+}
+.worldmap_wrapper .si-float-wrapper * {
+  box-sizing: border-box;
+}
+.worldmap_wrapper [class*=si-wrapper] {
+  display: flex;
+  position: absolute;
+  align-items: center;
+  font-size: 14px;
+  cursor: default;
+}
+.worldmap_wrapper .si-wrapper-top {
+  flex-direction: column;
+  margin-top: -40px;
+  margin-left: 0;
+  transform: translate(-50%, -100%);
+}
+.worldmap_wrapper .si-wrapper-bottom {
+  flex-direction: column-reverse;
+  margin-top: 0;
+  margin-left: 0;
+  transform: translate(-50%, 0);
+}
+.worldmap_wrapper .si-wrapper-left {
+  margin-top: -20px;
+  margin-left: -11px;
+  transform: translate(-100%, -50%);
+}
+.worldmap_wrapper .si-wrapper-right {
+  flex-direction: row-reverse;
+  margin-top: -20px;
+  margin-left: 11px;
+  transform: translate(0, -50%);
+}
+.worldmap_wrapper [class*=si-shadow-wrapper] {
+  display: flex;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  opacity: 0.29804;
+  z-index: 1;
+}
+.worldmap_wrapper .si-shadow-wrapper-top {
+  flex-direction: column;
+}
+.worldmap_wrapper .si-shadow-wrapper-bottom {
+  flex-direction: column;
+}
+.worldmap_wrapper .si-shadow-pointer-bottom {
+  order: -1;
+}
+.worldmap_wrapper .si-shadow-pointer-right {
+  order: -1;
+}
+.worldmap_wrapper .si-shadow-frame {
+  box-shadow: 0 1px 3px 0 #000000;
+}
+.worldmap_wrapper [class*=si-shadow-pointer] {
+  position: relative;
+  width: 15px;
+  height: 15px;
+  margin: auto;
+}
+.worldmap_wrapper [class*=si-shadow-inner-pointer] {
+  position: absolute;
+  width: 141%;
+  height: 141%;
+  box-shadow: -0.70711px 0.70711px 3px 0 #000000;
+}
+.worldmap_wrapper .si-shadow-inner-pointer-top {
+  left: 50%;
+  transform: translate(-50%, -50%) rotate(-45deg);
+}
+.worldmap_wrapper .si-shadow-inner-pointer-bottom {
+  bottom: 0;
+  left: 50%;
+  transform: translate(-50%, 50%) rotate(-45deg);
+}
+.worldmap_wrapper .si-shadow-inner-pointer-left {
+  top: 50%;
+  transform: translate(-50%, -50%) rotate(-45deg);
+}
+.worldmap_wrapper .si-shadow-inner-pointer-right {
+  top: 50%;
+  right: 0;
+  transform: translate(50%, -50%) rotate(-45deg);
+}
+.worldmap_wrapper .si-frame {
+  position: relative;
+  flex: 1 1 auto;
+  border-radius: 3px;
+  overflow: hidden;
+  z-index: 2;
+}
+.worldmap_wrapper .si-content-wrapper {
+  width: 100%;
+  max-width: 100%;
+  max-height: 100%;
+  padding: 30px;
+}
+.worldmap_wrapper .si-has-border .si-content-wrapper {
+  border: 1px solid #dddddd;
+}
+.worldmap_wrapper .si-has-border [class*=si-pointer-bg] {
+  border-width: 15px;
+}
+.worldmap_wrapper .si-has-border .si-pointer-bg-top {
+  top: -1px;
+  margin-bottom: 0;
+}
+.worldmap_wrapper .si-has-border .si-pointer-bg-bottom {
+  bottom: -1px;
+  margin-top: 0;
+}
+.worldmap_wrapper .si-has-border .si-pointer-bg-left {
+  left: -1px;
+  margin-right: 0;
+}
+.worldmap_wrapper .si-has-border .si-pointer-bg-right {
+  right: -1px;
+  margin-left: 0;
+}
+.worldmap_wrapper .si-content {
+  overflow: auto;
+}
+.worldmap_wrapper .si-content .popupContent span {
+  color: #FFFFFF;
+  font-size: 10px;
+}
+.worldmap_wrapper .si-content .popupContent h4 {
+  margin: 5px 0 0;
+  font-size: 20px;
+  font-family: "Montserrat-Medium";
+}
+.worldmap_wrapper .si-content .popupContent p {
+  max-width: 430px;
+  line-height: 20px;
+  font-size: 14px;
+  margin: 8px 0 0;
+  font-family: "Montserrat-Regular";
+}
+.worldmap_wrapper .si-close-button {
+  position: absolute;
+  top: 0;
+  right: 0;
+  border: 0;
+  outline: 0;
+  font-size: 24px;
+  cursor: pointer;
+  background-color: transparent;
+  color: #FFFFFF;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+}
+.worldmap_wrapper [class*=si-pointer-border] {
+  position: absolute;
+  border: 15px solid transparent;
+  z-index: 3;
+}
+.worldmap_wrapper [class*=si-pointer-bg] {
+  position: relative;
+  border: 15px solid transparent;
+  z-index: 4;
+}
+.worldmap_wrapper .si-pointer-border-top {
+  left: 50%;
+  transform: translate(-50%, 0);
+  bottom: 0;
+}
+.worldmap_wrapper .si-pointer-border-bottom {
+  left: 50%;
+  transform: translate(-50%, 0);
+  top: 0;
+}
+.worldmap_wrapper .si-pointer-border-left {
+  top: 50%;
+  transform: translate(0, -50%);
+  right: 0;
+}
+.worldmap_wrapper .si-pointer-border-right {
+  top: 50%;
+  transform: translate(0, -50%);
+  left: 0;
+}
+.worldmap_wrapper .si-pointer-top {
+  border-bottom: 0;
+}
+.worldmap_wrapper .si-pointer-bottom {
+  border-top: 0;
+}
+.worldmap_wrapper .pinIcon {
+  height: 100px !important;
+  margin-top: -30px;
+  position: relative;
+  width: 25px;
+  -webkit-animation: iconAnimation 0.9s;
+  animation: iconAnimation 0.9s;
+}
+.worldmap_wrapper .pinIcon:after {
+  content: "";
+  width: 4px;
+  height: 41px;
+  position: absolute;
+  background-color: #E81132;
+  top: 20px;
+  display: block;
+  right: 7.8px;
+}
+.worldmap_wrapper .gm-style .gm-style-iw-a {
+  margin-top: -32px;
+  -webkit-animation: tooltipAnimation 1s;
+  animation: tooltipAnimation 1s;
+}
+.worldmap_wrapper .gm-style .gm-style-iw-c {
+  background: #240B14;
+  padding: 20px !important;
+  border-radius: 0 !important;
+  left: 0px;
+}
+.worldmap_wrapper .gm-style .gm-ui-hover-effect {
+  opacity: 1;
+  right: 0 !important;
+  top: 0 !important;
+  display: none !important;
+}
+.worldmap_wrapper .gm-style .gm-ui-hover-effect > span {
+  background-color: #FFFFFF;
+}
+.worldmap_wrapper .gm-style .gm-style-iw-tc::after {
+  background: #240B14;
+  height: 13px;
+  width: 18px;
+  left: 4px;
+}
+.worldmap_wrapper .gm-style .gm-style-iw-d {
+  overflow: hidden !important;
+}
+.worldmap_wrapper .gm-style .gm-style-iw-d .firstHeading {
+  color: #FFFFFF;
+  margin: 0;
+  font-family: "Montserrat-SemiBold";
+  font-size: 20px;
+  line-height: 1;
+}
+.worldmap_wrapper .gm-style .gm-style-iw-d .maptooltip p {
+  color: #FFFFFF;
+  font-family: "Montserrat-Medium";
+  margin: 0;
+  font-size: 14px;
+  margin-top: 10px;
+  line-height: 1.43;
+}
+.worldmap_wrapper .gm-style .type {
+  font-size: 10px;
+  line-height: 1.2;
+  margin-bottom: 5px;
+  display: block;
+  color: #FFFFFF;
+  font-family: "Montserrat-Medium";
+}
+
+@-webkit-keyframes iconAnimation {
+  from {
+    margin-top: -50px;
+    opacity: 0.1;
+  }
+  to {
+    margin-top: -30px;
+    opacity: 1;
+  }
+}
+@keyframes iconAnimation {
+  from {
+    margin-top: -50px;
+    opacity: 0.1;
+  }
+  to {
+    margin-top: -30px;
+    opacity: 1;
+  }
+}
+@-webkit-keyframes tooltipAnimation {
+  from {
+    margin-top: -50px;
+    opacity: 0.1;
+  }
+  to {
+    margin-top: -32px;
+    opacity: 1;
+  }
+}
+@keyframes tooltipAnimation {
+  from {
+    margin-top: -50px;
+    opacity: 0.1;
+  }
+  to {
+    margin-top: -32px;
+    opacity: 1;
+  }
+}/*# sourceMappingURL=WorldMap.css.map */

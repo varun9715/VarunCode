@@ -1,0 +1,21 @@
+[
+    {
+        "name": "Newfoundland and Labrador",
+        "state": "Newfoundland and Labrador",
+        "lat": "53.000000",
+        "lon": "-60.000000"
+    },
+    {
+        "name": "Saskatchewan",
+        "state": "Saskatchewan",
+        "lat": "55.000000",
+        "lon": "-106.000000"
+    },
+    {
+        "name": "Ontario",
+        "state": "Ontario",
+        "lat": "50.000000",
+        "lon": "-85.000000"
+    }
+
+]

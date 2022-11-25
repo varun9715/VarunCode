@@ -1,0 +1,75 @@
+[
+    {
+        "name": "Singapore",
+        "location_type": "TYPE, LOCATION",
+        "short_name":"SG",
+        "content":"TORONTO, ON – Building on over a decade of climate change efforts, Ontario Teachers’ Pension Plan Board (Ontario Teachers’) today announced its commitment.",
+        "lat": "1.352083",
+        "lng": "103.91",
+        "center_lat":"1.352083","center_lng":"103.819836",
+        "zoom":11,
+        "maxZoom": 14,
+        "minZoom": 11
+    },
+    {
+        "name": "Toronto",
+        "location_type": "TYPE, LOCATION",
+        "short_name":"CA",
+        "lat": "43.780022",
+        "lng": "-79.41605",
+        "content":"TORONTO, ON – Building on over a decade of climate change efforts, Ontario Teachers’ Pension Plan Board (Ontario Teachers’) today announced its commitment.",
+        "zoom": 1,
+        "center_lat":"70.130366","center_lng":"-106.346771",
+        "maxZoom": 5,
+        "minZoom": 3
+    },
+    {
+        "name": "Hong kong",
+        "location_type": "TYPE, LOCATION",
+        "short_name": "HK",
+        "lat": "22.281676",
+        "lng": "114.158479",
+        "content":"TORONTO, ON – Building on over a decade of climate change efforts, Ontario Teachers’ Pension Plan Board (Ontario Teachers’) today announced its commitment.",
+        "center_lat":"22.389","center_lng":"114.158479",
+        "zoom":11,
+        "maxZoom": 14,
+        "minZoom": 11
+    },
+    {
+        "name": "London",
+        "location_type": "TYPE, LOCATION",
+        "short_name": "GB",
+        "lat": "51.5166790436",
+        "lng": "-0.154822689555",
+        "content":"TORONTO, ON – Building on over a decade of climate change efforts, Ontario Teachers’ Pension Plan Board (Ontario Teachers’) today announced its commitment.",
+        "center_lat":"55.378051","center_lng":"-3.435973",
+        "zoom":5.5,
+        "maxZoom": 7,
+        "minZoom": 5.5
+    },
+    {
+        "name": "New York",
+        "location_type": "TYPE, LOCATION",
+        "short_name": "US",
+        "lat": "40.45",
+        "lng": "-73.58",
+        "content":"TORONTO, ON – Building on over a decade of climate change efforts, Ontario Teachers’ Pension Plan Board (Ontario Teachers’) today announced its commitment.",
+        "center_lat":"39.500240","center_lng":"-98.350891",
+        "zoom":3,
+        "maxZoom": 5,
+        "minZoom": 3
+    },
+    {
+        "name": "Mumbai",
+        "location_type": "TYPE, LOCATION",
+        "short_name": "IN",
+        "lat": "19.0687893",
+        "lng": "72.8702647",
+        "content":"TORONTO, ON – Building on over a decade of climate change efforts, Ontario Teachers’ Pension Plan Board (Ontario Teachers’) today announced its commitment.",
+        "center_lat":"21.69","center_lng":"78.962880",
+        "zoom":5,
+        "maxZoom": 7,
+        "minZoom": 5
+    }
+    
+]

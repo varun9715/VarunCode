@@ -1,11 +1,9 @@
-<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/common.css" type="text/css">
-    <link rel="stylesheet" href="css/fonts.css" type="text/css">
+    <link rel="stylesheet" href="../Assets/scss/common-style.css" type="text/css">
     <link rel="stylesheet" href="css/map.css" type="text/css">
     <title>OTTP - FreeForm Blog Component</title>
 </head>
@@ -26,8 +24,9 @@
         <!-- Map Section Starts Here-->
         <div class="lactionPanel">
             <div class="mapFrame">
-                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2690.9781480420197!2d-52.70951534855771!3d47.58766709717637!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4b0ca3fb565a56e1%3A0xb507d43466533c86!2s10%20Elizabeth%20Ave%2C%20St.%20John&#39;s%2C%20NL%20A1A%205L4%2C%20Canada!5e0!3m2!1sen!2sin!4v1668506671162!5m2!1sen!2sin" width="100%" height="880" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                <div id="map" class="mapFrame"></div>
             </div>
+         
             <div class="sm_container">
                 <div class="mapDescriptionPanel">
                     <div class="leftPanel">
@@ -55,6 +54,12 @@
             </div>
 
         </div>
+        
     </section>
+    <script src="js/map.js"></script>
+    <script
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBaiaxvEN5N8JucAuwtkoFBef-nvoZkJq4&v=3.31&language=en&libraries=places,geometry&callback=createMaps"
+    defer
+  ></script>
 </body>
 </html>

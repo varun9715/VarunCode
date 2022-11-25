@@ -1,0 +1,128 @@
+@import '../../Assets/scss/globalvariables';
+
+.mapSectionMain {
+    padding: 100px 0;
+    @include media-screen-breakpoint-down(xl) {
+        padding: 60px 0;
+    }
+    h3 {
+        @include media-screen-breakpoint-between(lg, lgmd) {
+            font-size: 28px;
+        }
+        @include media-screen-breakpoint-between(md, lg) {
+            font-size: 24px;
+        }
+        @include media-screen-breakpoint-down(xs) {
+            font-size: 24px;
+        }
+    }
+    p {
+        font-family: $medium_font;
+        font-size: 18px;
+        line-height: 1.6;
+        color: $primary_color;
+        margin-top: 24px;
+        margin-bottom: 15px;
+        @include media-screen-breakpoint-between(md, lg) {
+            font-size: 16px;
+        }
+        @include media-screen-breakpoint-down(xs) {
+            font-size: 16px;
+        }
+    }
+    .lactionPanel {
+        margin-top: 60px;
+        .mapFrame {
+            height: 100%;
+            max-height: 890px;
+            @include media-screen-breakpoint-down(lg) {
+                max-height: 579px;
+            }
+        }
+        @include media-screen-breakpoint-down(md) {
+            margin-top: 40px;
+        }
+        .mapDescriptionPanel {
+            background: $white_color;
+            max-width: 1024px;
+            margin: 0 auto;
+            margin-top: -340px;
+            position: relative;
+            z-index: 999;
+            box-shadow: 0px 3px 6px rgb(0 0 0 / 45%);
+            display: flex;
+            flex-direction: row;
+            align-items: stretch;
+            @include media-screen-breakpoint-down(xl) {
+                margin-top: -280px;
+            }
+            
+            @include media-screen-breakpoint-down(md) {
+                margin-top: -100px;
+                display: flex;
+                flex-flow: column-reverse;
+                box-shadow: none;
+                filter: drop-shadow(0px 4px 15px rgba(0, 0, 0, 0.1));
+            }
+            .leftPanel {
+                padding: 36px;
+                max-width: 50%;
+                @include media-screen-breakpoint-between(md, lg) {
+                    padding: 20px;
+                    max-width: 50%;
+                }
+                @include media-screen-breakpoint-down(md) {
+                    max-width: 100%;
+                    padding: 30px;
+                }
+                .topDesc {
+                    p {
+                        margin-top: 14px;
+                        margin-bottom: 5px;
+                        @include media-screen-breakpoint-down(md) {
+                            margin-top: 0;
+                        }
+                    }
+                }
+                .middlePanel {
+                    margin: 30px 0;
+                    @include media-screen-breakpoint-down(md) {
+                        margin: 20px 0;
+                    }
+                    p {
+                        @include media-screen-breakpoint-down(md) {
+                            margin-top: 20px;
+                            margin-bottom: 0;
+                        }
+                    }
+                }
+                .bottomPanel {
+                    margin-bottom: 50px;
+                    p {
+                        margin: 0 0 5px 0;
+                        font-weight: 400;
+                        font-size: 14px;
+                        line-height: 1.5;
+                        span {
+                            margin-right: 22px;
+                        }
+                    }
+                }
+            }
+            .rightPanel {
+                @include media-screen-breakpoint-between(md, lg) {
+                    max-width: 50%;
+                }
+                img {
+                    height: 100%;
+                    @include media-screen-breakpoint-between(md, lg) {
+                        width: 100%;
+                    }
+                    @include media-screen-breakpoint-down(md) {
+                        width: 100%;
+                    }
+                }
+            }
+        }
+    }
+}
