@@ -1,24 +1,38 @@
 $(document).ready(function () {
     Chart.defaults.global.defaultFontSize = 16;
+
     if (jQuery('#barChart').length > 0) {
+        let xAxisLabelsVal = document.getElementById('xAxisLabel').value;
+        let xAxisLabels = xAxisLabelsVal.split(",");
+
+        let data1_label = document.getElementById('data1_label').value;
+        let dataset_data1val = document.getElementById('dataset_data1').value;
+        let dataset_data1 = dataset_data1val.split(",");
+
+        let data2_label = document.getElementById('data2_label').value;
+        let dataset_data2val = document.getElementById('dataset_data2').value;
+        let dataset_data2 = dataset_data2val.split(",");
+
+
         var BarChartWindowWidth = $(window).width() < 768;
         var BarChartWindowWidthsmall = $(window).width() < 479;
         var BarChartData = {
             type: 'bar',
             data: {
-                labels: ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec",],
+                labels: xAxisLabels,  
+                //labels: ["Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"],              
                 datasets: [
                     {
-                        label: "Data One",
+                        label: data1_label,
                         fill: true,
                         backgroundColor: "#71BF44",
-                        data: [15, 25, 20, 25, 40, 30, 50, 43, 40, 30, 50, 50],
+                        data: dataset_data1,
                     },
                     {
-                        label: "Data Two",
+                        label: data2_label,
                         fill: true,
                         backgroundColor: "#240B14",
-                        data: [15, 25, 20, 25, 40, 30, 50, 43, 40, 30, 50, 50],
+                        data: dataset_data2,
                     }
                 ]
             },
@@ -65,7 +79,7 @@ $(document).ready(function () {
                 },
                 title: {
                     display: false,
-                    text: 'Ice Cream Truck Report',
+                    text: '',
                     position: 'bottom'
                 },
                 scales: {
@@ -86,6 +100,7 @@ $(document).ready(function () {
                             tickMarkLength: BarChartWindowWidth ? 10 : 15,
                         },
                     }],
+                    
                     xAxes: [{
                         barThickness: BarChartWindowWidthsmall ? 5 : BarChartWindowWidth ? 10 : 14,
                         ticks: {
@@ -108,6 +123,7 @@ $(document).ready(function () {
                     titleFontSize: 15,
                     xPadding: 15,
                     yPadding: 7,
+                    
                     callbacks: {
                         labelPointStyle: function (context) {
                             return {
@@ -126,7 +142,9 @@ $(document).ready(function () {
                     animateRotate: true
                 },
             }
+            
         };
+
         var BarChartctxd = document.getElementById('barChart').getContext('2d');
         window.myBarChart = new Chart(BarChartctxd, BarChartData);
         $("#BarChartLegend").html(window.myBarChart.generateLegend());
@@ -153,8 +171,12 @@ $(document).ready(function () {
 
     if (jQuery('#pieChart').length > 0) {
         var PieChartCtx = document.getElementById("pieChart").getContext('2d');
-        var chartData = [120, 90, 100];
-        var chartLabels = ['CDPQ return ', 'CDPQ annualized return ', 'CDPQ annualized '];
+
+        let chartDataVal = document.getElementById("chartData").value;
+        let chartLabelsVal = document.getElementById("chartLabels").value;
+        let chartData = chartDataVal.split(",");
+        let chartLabels = chartLabelsVal.split(",");
+
         var chart = new Chart(PieChartCtx, {
             type: 'pie',
             data: {
@@ -255,6 +277,18 @@ $(document).ready(function () {
 
     if (jQuery('#lineChart').length > 0) {
         var LineChartCtx = document.getElementById('lineChart').getContext('2d');
+
+        let xAxisLabelsVal = document.getElementById('xAxisLabel').value;
+        let xAxisLabels = xAxisLabelsVal.split(",");
+
+        let data1_label = document.getElementById('data1_label').value;
+        let dataset_data1val = document.getElementById('dataset_data1').value;
+        let dataset_data1 = dataset_data1val.split(",");
+
+        let data2_label = document.getElementById('data2_label').value;
+        let dataset_data2val = document.getElementById('dataset_data2').value;
+        let dataset_data2 = dataset_data2val.split(",");
+
         var LineChartWindowWidthsmall = $(window).width() < 479;
         var LineChartWindowWidth = $(window).width() < 768;
         if (LineChartWindowWidth) {
@@ -264,19 +298,19 @@ $(document).ready(function () {
         var LineChartData = {
             type: 'line',
             data: {
-                labels: ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"],
+                labels: xAxisLabels,
                 datasets: [{
-                    label: 'Data One',
+                    label: data1_label,
                     backgroundColor: "#240B14",
                     borderColor: "#240B14",
                     fill: false,
-                    data: [3.5, 3.5, 1, 1, 2, 1.8, 2.5, 2, 3, 4, 3.5, 5],
+                    data: dataset_data1,
                 }, {
-                    label: 'Data Two',
+                    label: data2_label,
                     backgroundColor: "#00AAAD",
                     borderColor: "#00AAAD",
                     fill: false,
-                    data: [5.5, 2, 2, 1.8, 1, 3, .5, 4.5, 1.5, 2, 4.3, 5.5],
+                    data: dataset_data2,
 
                 }]
             },
