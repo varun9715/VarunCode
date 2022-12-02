@@ -295,7 +295,6 @@
 }
 .wrapper.parallaxImageSection.parallaxVFive .mainInfoPanel {
   padding-bottom: 0;
-  display: block;
 }
 @media (min-width: 767.98px) and (max-width: 991.98px) {
   .wrapper.parallaxImageSection.parallaxVFive .mainInfoPanel {

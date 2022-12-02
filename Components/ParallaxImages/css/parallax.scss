@@ -235,8 +235,7 @@
   &.parallaxVFive {
     margin-bottom: 160px;
     .mainInfoPanel {
-      padding-bottom: 0;
-      display: block;
+      padding-bottom: 0; 
       @include media-screen-breakpoint-between(md, lg) {
         padding: 40px 35px;
       }
