@@ -12,9 +12,12 @@ $(document).ready(function () {
         let data2_label = document.getElementById('dataSetLabelTwo').value;
         let dataset_data2val = document.getElementById('dataSetValuesSecondArr').value;
         let dataset_data2 = dataset_data2val.split(",");
-		let maxsize = document.getElementById('maxSize').value;
-		let stepsize = document.getElementById('stepSize').value;
 
+		let maxsizeval = document.getElementById('maxSize').value;
+        let maxsize = parseInt(maxsizeval);
+
+		let stepsizeval = document.getElementById('stepSize').value;
+        let stepsize = parseInt(stepsizeval);
 
         var BarChartWindowWidth = $(window).width() < 768;
         var BarChartWindowWidthsmall = $(window).width() < 479;
