@@ -2,16 +2,18 @@ $(document).ready(function () {
     Chart.defaults.global.defaultFontSize = 16;
 
     if (jQuery('#barChart').length > 0) {
-        let xAxisLabelsVal = document.getElementById('xAxisLabel').value;
+        let xAxisLabelsVal = document.getElementById('barChartAxis').value;
         let xAxisLabels = xAxisLabelsVal.split(",");
 
-        let data1_label = document.getElementById('data1_label').value;
-        let dataset_data1val = document.getElementById('dataset_data1').value;
+        let data1_label = document.getElementById('dataSetLabelOne').value;
+        let dataset_data1val = document.getElementById('dataSetValuesFirstArr').value;
         let dataset_data1 = dataset_data1val.split(",");
 
-        let data2_label = document.getElementById('data2_label').value;
-        let dataset_data2val = document.getElementById('dataset_data2').value;
+        let data2_label = document.getElementById('dataSetLabelTwo').value;
+        let dataset_data2val = document.getElementById('dataSetValuesSecondArr').value;
         let dataset_data2 = dataset_data2val.split(",");
+		let maxsize = document.getElementById('maxSize').value;
+		let stepsize = document.getElementById('stepSize').value;
 
 
         var BarChartWindowWidth = $(window).width() < 768;
@@ -86,8 +88,8 @@ $(document).ready(function () {
                     yAxes: [{
                         ticks: {
                             beginAtZero: true,
-                            max: 60,
-                            stepSize: 10,
+                            max: maxsize,
+                            stepSize: stepsize,
                             backdropPadding: 1,
                             padding: BarChartWindowWidth ? 5 : 15,
                             crossAlign: 'start',
@@ -172,8 +174,8 @@ $(document).ready(function () {
     if (jQuery('#pieChart').length > 0) {
         var PieChartCtx = document.getElementById("pieChart").getContext('2d');
 
-        let chartDataVal = document.getElementById("chartData").value;
-        let chartLabelsVal = document.getElementById("chartLabels").value;
+        let chartDataVal = document.getElementById("pieChartValuesFirstArr").value;
+        let chartLabelsVal = document.getElementById("pieChartValuesSecondArr").value;
         let chartData = chartDataVal.split(",");
         let chartLabels = chartLabelsVal.split(",");
 
@@ -281,13 +283,15 @@ $(document).ready(function () {
         let xAxisLabelsVal = document.getElementById('xAxisLabel').value;
         let xAxisLabels = xAxisLabelsVal.split(",");
 
-        let data1_label = document.getElementById('data1_label').value;
-        let dataset_data1val = document.getElementById('dataset_data1').value;
+        let data1_label = document.getElementById('lineChartLabelOne').value;
+        let dataset_data1val = document.getElementById('dataSetLineFirst').value;
         let dataset_data1 = dataset_data1val.split(",");
 
-        let data2_label = document.getElementById('data2_label').value;
-        let dataset_data2val = document.getElementById('dataset_data2').value;
+        let data2_label = document.getElementById('lineChartLabelTwo').value;
+        let dataset_data2val = document.getElementById('dataSetLineSecond').value;
         let dataset_data2 = dataset_data2val.split(",");
+		let maxSizeLine = document.getElementById('maxSizeLineChart').value;
+		let stepSizeLine = document.getElementById('stepSizeLineChart').value;
 
         var LineChartWindowWidthsmall = $(window).width() < 479;
         var LineChartWindowWidth = $(window).width() < 768;
