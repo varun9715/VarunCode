@@ -1,4 +1,5 @@
-var ImgUrl = "https://snazzy-maps-cdn.azureedge.net/assets/marker-87dcc371-fbb5-4cad-9a1c-d4a04b8d5057.png";
+var imgUrlVal = document.getElementById('iconImgUrl').value;
+var ImgUrl = imgUrlVal;
 
 var geocoder;
 var map;
@@ -83,11 +84,11 @@ async function Marker() {
     });
     marker.addListener('mouseover', () => {
 
-      document.querySelectorAll("img[src^='https://snazzy-maps-cdn.azureedge.net/assets/marker-87dcc371-fbb5-4cad-9a1c-d4a04b8d5057.png']")[i].parentElement.classList = 'pinIcon'
+      document.querySelectorAll("img[src^='"+ImgUrl+"']")[i].parentElement.classList = 'pinIcon'
       infoWindow.open(map, marker)
     })
     marker.addListener('mouseout', () => {
-      document.querySelectorAll("img[src^='https://snazzy-maps-cdn.azureedge.net/assets/marker-87dcc371-fbb5-4cad-9a1c-d4a04b8d5057.png']")[i].parentElement.className = "";
+      document.querySelectorAll("img[src^='"+ImgUrl+"']")[i].parentElement.className = "";
       infoWindow.close()
     })
 

@@ -1,4 +1,5 @@
-var ImgUrl = "https://snazzy-maps-cdn.azureedge.net/assets/marker-87dcc371-fbb5-4cad-9a1c-d4a04b8d5057.png";
+var imgUrlVal = document.getElementById('iconImgUrl').value;
+var ImgUrl = imgUrlVal;
 
 var markerposition = [
   {
@@ -93,30 +94,24 @@ function createMap() {
 
     });
 
-
-
     marker.addListener('mouseover', () => {
-      var markerIcon = document.querySelectorAll("img[src^='https://snazzy-maps-cdn.azureedge.net/assets/marker-87dcc371-fbb5-4cad-9a1c-d4a04b8d5057.png']")[i].parentElement.classList = 'pinIcon'
+      var markerIcon = document.querySelectorAll("img[src^='"+ImgUrl+"']")[i].parentElement.classList = 'pinIcon'
       infoWindow.open({
         anchor: marker,
         map,
       });
-      console.log(markerIcon)
     })
     marker.addListener('mouseout', () => {
-      document.querySelectorAll("img[src^='https://snazzy-maps-cdn.azureedge.net/assets/marker-87dcc371-fbb5-4cad-9a1c-d4a04b8d5057.png']")[i].parentElement.className = "";
+      document.querySelectorAll("img[src^='"+ImgUrl+"']")[i].parentElement.className = "";
       infoWindow.close()
-
-
     })
 
   }
 
   var marker = new google.maps.Marker();
 
-
-
-
-
 }
 
+window.addEventListener('DOMContentLoaded', (event) => {
+  createMap();
+});

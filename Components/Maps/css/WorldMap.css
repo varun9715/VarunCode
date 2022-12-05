@@ -44,6 +44,12 @@
 .worldmap_wrapper .worldmap_main {
   height: 100%;
   max-height: 750px;
+  margin-bottom: 60px;
+}
+@media screen and (max-width: 991.98px) {
+  .worldmap_wrapper .worldmap_main {
+    max-height: 500px;
+  }
 }
 .worldmap_wrapper .mapTopDescriptionPanel {
   padding: 60px 0;
@@ -330,7 +336,6 @@
   background: #240B14;
   height: 13px;
   width: 18px;
-  left: 4px;
 }
 .worldmap_wrapper .gm-style .gm-style-iw-d {
   overflow: hidden !important;
