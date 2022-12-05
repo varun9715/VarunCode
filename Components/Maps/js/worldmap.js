@@ -7,7 +7,7 @@ var maxZoom = parseInt(document.getElementById('maxZoom').value);
 var minZoom = parseInt(document.getElementById('minZoom').value);
 var defaultZoom = parseInt(document.getElementById('defaultZoom').value);
 
-console.log('centerLang ',centerLang + ' centerLat',centerLat + ' maxZoom',maxZoom + ' minZoom',minZoom + ' defaultZoom',defaultZoom);
+var markerJson = document.getElementById('markerJson').value;
 
 var markerposition = [
   {
