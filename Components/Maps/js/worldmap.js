@@ -1,5 +1,13 @@
-var imgUrlVal = document.getElementById('iconImgUrl').value;
+var imgUrlVal = document.getElementById('mapimage').value;
 var ImgUrl = imgUrlVal;
+
+var centerLang = parseInt(document.getElementById('centerLangitude').value);
+var centerLat = parseInt(document.getElementById('centerLatitude').value);
+var maxZoom = parseInt(document.getElementById('maxZoom').value);
+var minZoom = parseInt(document.getElementById('minZoom').value);
+var defaultZoom = parseInt(document.getElementById('defaultZoom').value);
+
+console.log('centerLang ',centerLang + ' centerLat',centerLat + ' maxZoom',maxZoom + ' minZoom',minZoom + ' defaultZoom',defaultZoom);
 
 var markerposition = [
   {
@@ -34,17 +42,17 @@ function createMap() {
 
   var opts = {
     center: {
-      lat: 47.516156,
-      lng: -1.101597,
+      lat: centerLat,
+      lng: centerLang,
     },
-    zoom: 2.4,
+    zoom: defaultZoom,
     styles: [{ "featureType": "all", "elementType": "labels", "stylers": [{ "visibility": "off" }] }, { "featureType": "administrative", "elementType": "labels.text.fill", "stylers": [{ "color": "#444444" }] }, { "featureType": "administrative.country", "elementType": "geometry", "stylers": [{ "visibility": "off" }] }, { "featureType": "landscape", "elementType": "all", "stylers": [{ "color": "#f2f2f2" }] }, { "featureType": "landscape", "elementType": "geometry", "stylers": [{ "visibility": "off" }] }, { "featureType": "landscape", "elementType": "geometry.fill", "stylers": [{ "visibility": "on" }, { "color": "#ffffff" }] }, { "featureType": "landscape", "elementType": "geometry.stroke", "stylers": [{ "visibility": "off" }] }, { "featureType": "landscape", "elementType": "labels", "stylers": [{ "visibility": "off" }] }, { "featureType": "landscape", "elementType": "labels.text", "stylers": [{ "visibility": "off" }] }, { "featureType": "landscape", "elementType": "labels.text.fill", "stylers": [{ "visibility": "off" }] }, { "featureType": "landscape", "elementType": "labels.text.stroke", "stylers": [{ "visibility": "off" }] }, { "featureType": "landscape", "elementType": "labels.icon", "stylers": [{ "visibility": "off" }] }, { "featureType": "landscape.natural.terrain", "elementType": "geometry.fill", "stylers": [{ "saturation": "18" }] }, { "featureType": "poi", "elementType": "all", "stylers": [{ "visibility": "off" }] }, { "featureType": "road", "elementType": "all", "stylers": [{ "saturation": -100 }, { "lightness": 45 }] }, { "featureType": "road.highway", "elementType": "all", "stylers": [{ "visibility": "simplified" }] }, { "featureType": "road.arterial", "elementType": "labels.icon", "stylers": [{ "visibility": "off" }] }, { "featureType": "transit", "elementType": "all", "stylers": [{ "visibility": "off" }] }, { "featureType": "water", "elementType": "all", "stylers": [{ "color": "#d8d6cc" }, { "visibility": "on" }] }, { "featureType": "water", "elementType": "geometry.fill", "stylers": [{ "color": "#DDF1F2" }] }, { "featureType": "water", "elementType": "labels.text", "stylers": [{ "visibility": "off" }] }, {
       "featureType": "administrative.province",
       "elementType": "geometry.stroke",
       "stylers": [{ "visibility": "off" }]
     }],
-    maxZoom: 20,
-    minZoom: 0,
+    maxZoom: maxZoom,
+    minZoom: minZoom,
     clickableIcons: true,
     clickableIcons: true,
     disableDoubleClickZoom: true,
@@ -57,12 +65,7 @@ function createMap() {
 
   };
 
-
-
   var map = new google.maps.Map(document.getElementById('map'), opts);
-
-
-
 
   for (let i = 0; i < markerposition.length; i++) {
 
