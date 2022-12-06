@@ -13,27 +13,28 @@ var markerposition = markerJson;
 
 // var markerposition = [
 //   {
-//     position: { lat: 56.130366, lng: -106.346771 },
+//     lat: 56.130366,
+//     lng: -106.346771,
 //     type: "info",
 //     label: 'Canada',
 //     content: 'TORONTO, ON – Building on over a decade of climate change efforts, Ontario Teachers’ Pension Plan Board (Ontario Teachers’) today announced its commitment.'
 
 //   },
 //   {
-//     position: { lat: -4.442038, lng: -61.326854 },
+//     lat: -4.442038, lng: -61.326854,
 //     type: "info",
 //     label: 'Latin',
 //     content: 'TORONTO, ON – Building on over a decade of climate change efforts, Ontario Teachers’ Pension Plan Board (Ontario Teachers’) today announced its commitment.'
 //   },
 //   {
-//     position: { lat: 54.525961, lng: 15.255119 },
+//     lat: 54.525961, lng: 15.255119,
 //     type: "info",
 //     label: 'Europe',
 //     content: 'TORONTO, ON – Building on over a decade of climate change efforts, Ontario Teachers’ Pension Plan Board (Ontario Teachers’) today announced its commitment.'
 
 //   },
 //   {
-//     position: { lat: 34.047863, lng: 100.619655 },
+//     lat: 34.047863, lng: 100.619655,
 //     type: "info",
 //     label: 'Asia',
 //     content: 'TORONTO, ON – Building on over a decade of climate change efforts, Ontario Teachers’ Pension Plan Board (Ontario Teachers’) today announced its commitment.'
@@ -86,7 +87,7 @@ function createMap() {
 
     const marker = new google.maps.Marker({
 
-      position: new google.maps.LatLng(markerposition[i].position.lat, markerposition[i].position.lng),
+      position: new google.maps.LatLng(markerposition[i].lat, markerposition[i].lng),
       icon: ImgUrl,
       optimized: true,
       map: map,
