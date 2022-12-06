@@ -12,3 +12,10 @@ https://experience.adobe.com/#/@otpp/home
 
 varun git token
 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
+
+
+
+======================
+
+Marker Json
+<input type="hidden" id="markerJson" name="markerJson" value="[{" lng":"56.130366","lat":"-106.346771","label":"canada","content":"toronto,="" on="" –="" building="" over="" a="" decade="" of="" climate="" change="" efforts,="" ontario="" teachers’="" pension="" plan="" board="" (ontario="" teachers’)"},{"lng":"-4.442038,","lat":"61.326854","label":"latin","content":"toronto,="" efforts"}]"="">
