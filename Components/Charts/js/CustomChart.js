@@ -19,6 +19,9 @@ $(document).ready(function () {
 		let stepsizeval = document.getElementById('stepSize').value;
         let stepsize = parseInt(stepsizeval);
 
+        let barChartXLabel = document.getElementById('barChartXLabel').value;
+        let barChartYLabel = document.getElementById('barChartXLabel').value;
+
         var BarChartWindowWidth = $(window).width() < 768;
         var BarChartWindowWidthsmall = $(window).width() < 479;
         var BarChartData = {
@@ -49,9 +52,9 @@ $(document).ready(function () {
                         ctx.fillStyle = "#240B14";
                     var y = 15;
                     ctx.textAlign = 'start';
-                    ctx.fillText('Users', BarChartWindowWidth ? "0" : "30", y);
+                    ctx.fillText(barChartYLabel, BarChartWindowWidth ? "0" : "30", y);
                     ctx.textAlign = 'end';
-                    ctx.fillText('Month', chart.chart.width - 10, chart.chart.height - 35);
+                    ctx.fillText(barChartXLabel, chart.chart.width - 10, chart.chart.height - 35);
                     ctx.restore();
                 },
             }],
@@ -293,8 +296,12 @@ $(document).ready(function () {
         let data2_label = document.getElementById('lineChartLabelTwo').value;
         let dataset_data2val = document.getElementById('dataSetLineSecond').value;
         let dataset_data2 = dataset_data2val.split(",");
+        
 		let maxSizeLine = document.getElementById('maxSizeLineChart').value;
 		let stepSizeLine = document.getElementById('stepSizeLineChart').value;
+
+        let lineChartXLabel = document.getElementById('lineChartXLabel').value;
+        let lineChartYLabel = document.getElementById('lineChartYLabel').value;
 
         var LineChartWindowWidthsmall = $(window).width() < 479;
         var LineChartWindowWidth = $(window).width() < 768;
@@ -329,9 +336,9 @@ $(document).ready(function () {
                         ctx.fillStyle = "#240B14";
                     var y = 15;
                     ctx.textAlign = 'start';
-                    ctx.fillText('Users', "0", y);
+                    ctx.fillText(lineChartYLabel, "0", y);
                     ctx.textAlign = 'end';
-                    ctx.fillText('Month', chart.chart.width - 10, chart.chart.height - 35);
+                    ctx.fillText(lineChartXLabel, chart.chart.width - 10, chart.chart.height - 35);
                     ctx.restore();
                 },
             }],
