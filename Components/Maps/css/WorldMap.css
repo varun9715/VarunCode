@@ -49,10 +49,11 @@
 @media screen and (max-width: 991.98px) {
   .worldmap_wrapper .worldmap_main {
     max-height: 500px;
+    min-height: 350px;
   }
 }
 .worldmap_wrapper .mapTopDescriptionPanel {
-  padding: 60px 0;
+  padding: 0 0 60px 0;
 }
 @media (min-width: 991.98px) and (max-width: 1299.98px) {
   .worldmap_wrapper .mapTopDescriptionPanel h3 {

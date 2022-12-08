@@ -1,10 +1,6 @@
 @import '../../Assets/scss/globalvariables';
 
 .fragment_wrapper{
-    padding: 60px 0;
-    @include media-screen-breakpoint-down(xs) {
-        padding: 40px 0;
-    }
     .fragment_block{
         h3{
             font-family: $bold_font;
@@ -93,9 +89,11 @@
         .fragment_img{
             .fragment_img_desk{
                 display: block;
+                min-height: 320px;
                 @include media-screen-breakpoint-down(md) {
                     display: none;
                 }
+              
             }
             .fragment_img_mob {
                 display: none;

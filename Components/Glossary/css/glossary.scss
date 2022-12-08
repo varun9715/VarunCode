@@ -1,7 +1,6 @@
 @import '../../Assets/scss/globalvariables';
 
 .glossaryIntroSection {
-  padding: 60px 0;
   background: $white_color;
   p {
     font-family: $medium_font;
@@ -268,10 +267,6 @@
 }
 /* End tooltip */
 .glossaryAccordianPanel {
-  padding: 60px 0;
-  @include media-screen-breakpoint-down(md) {
-    padding: 0px 0 60px 0;
-  }
   ul {
     &.accordion-list {
       position: relative;

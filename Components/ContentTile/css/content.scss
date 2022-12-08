@@ -1,9 +1,5 @@
 @import '../../Assets/scss/globalvariables';
 .content_wrapper {
-  padding: 60px 0;
-  @include media-screen-breakpoint-down(md) {
-    padding-bottom: 90px;
-  }
   img {
     vertical-align: middle;
     width: 100%;
@@ -29,7 +25,7 @@
     .content_title {
       font-size: 32px;
       line-height: 1.4;
-      color: $brand_color;
+      color: $red_color2;
       margin: 0;
       font-family: $bold_font;
       @include media-screen-breakpoint-between(lg, xl) {

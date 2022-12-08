@@ -3,10 +3,6 @@
 .table_wrapper {
     max-width: 1920px;
     margin: 0 auto;
-    padding: 60px 0;
-    @include media-screen-breakpoint-down(xs) {
-        padding: 40px 0;
-    }
     .table_header {
         margin-bottom: 60px;
         @include media-screen-breakpoint-down(xs) {
@@ -185,7 +181,7 @@
                             font-size: 13px;
                         }
                     }
-                    &:nth-of-type(even) {
+                    &:nth-of-type(odd) {
                         @include media-screen-breakpoint-down(md) {
                             background-color: $lightgray_color;
                         }

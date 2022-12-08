@@ -1,10 +1,6 @@
 @import '../../Assets/scss/globalvariables';
 
 .mapSectionMain {
-    padding: 100px 0;
-    @include media-screen-breakpoint-down(xl) {
-        padding: 60px 0;
-    }
     h3 {
         @include media-screen-breakpoint-between(lg, lgmd) {
             font-size: 28px;

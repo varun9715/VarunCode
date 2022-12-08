@@ -1,10 +1,6 @@
 @import '../../Assets/scss/globalvariables';
 
 .chartMainSection {
-    padding: 60px 0px;
-    @include media-screen-breakpoint-down(xs) {
-        padding: 30px 0px;
-    }
     canvas{
         &#barChart{
             max-height: 400px;

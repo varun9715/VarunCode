@@ -41,14 +41,6 @@
 /** Colors **/
 /** Font Family **/
 /** Media Queries **/
-.chartMainSection {
-  padding: 60px 0px;
-}
-@media screen and (max-width: 413.98px) {
-  .chartMainSection {
-    padding: 30px 0px;
-  }
-}
 .chartMainSection canvas#barChart {
   max-height: 400px;
 }

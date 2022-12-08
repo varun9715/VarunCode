@@ -1,15 +1,8 @@
 @import '../../Assets/scss/globalvariables';
 
 .stats_wrapper {
-    padding: 60px 0 40px;
     .stats_header {
-        margin-bottom: 55px;
-        @include media-screen-breakpoint-between(md, lg) {
-            margin-bottom: 45px;
-        }
-        @include media-screen-breakpoint-down(xs) {
-            margin-bottom: 40px;
-        }
+        margin-bottom: 60px;
         p {
             font-family: $medium_font;
             font-size: 18px;
@@ -47,7 +40,7 @@
             margin-left: -10px;
         }
         .stats_block_inner {
-            @include media-screen-breakpoint-down(xs) {
+            @include media-screen-breakpoint-down(lg) {
                 padding: 20px;
             }
             .stats_block_upper {
@@ -95,11 +88,6 @@
         }
     }
     &.stats-V1 {
-        padding: 60px 0 0px;
-
-        @include media-screen-breakpoint-down(md) {
-            padding: 60px 0 20px;
-        }
         .stats {
             .column {
                 padding-right: 10px;
@@ -136,7 +124,7 @@
                     padding: 0 0 30px;
                     border-bottom: 2px solid $brand_color;
                     height: 100%;
-                    @include media-screen-breakpoint-down(xs) {
+                    @include media-screen-breakpoint-down(lg) {
                         padding-bottom: 20px;
                     }
                     .stats_block_upper {
@@ -162,7 +150,7 @@
                             margin-bottom: 20px;
                         }
                         .stats_icon_v1{
-                            width: 49px;
+                            width: 48px;
                         }
                     }
                     .stats_date {
@@ -210,10 +198,7 @@
                     -webkit-transition: 0.3s;
                     -o-transition: 0.3s;
                     transition: 0.3s;
-                    @include media-screen-breakpoint-down(md) {
-                        padding: 20px 15px;
-                    }
-                    @include media-screen-breakpoint-down(xs) {
+                    @include media-screen-breakpoint-down(lg) {
                         padding: 20px;
                     }
                     &:hover,

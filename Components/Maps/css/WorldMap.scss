@@ -7,10 +7,11 @@
 		margin-bottom: 60px;
 		@include media-screen-breakpoint-down(lg) {
 			max-height: 500px;
+			min-height: 350px;
 		}
 	}
 	.mapTopDescriptionPanel{
-		padding: 60px 0;
+		padding: 0 0 60px 0;
 		h3 {
 			@include media-screen-breakpoint-between(lg, lgmd) {
 				font-size: 28px;

@@ -1,7 +1,6 @@
 @import '../../Assets/scss/globalvariables';
 
 .bullet_wrapper {
-    padding: 60px 0 30px;
     .bullet_header {
         margin-bottom: 30px;
         .bullet_header_heading {
@@ -44,8 +43,9 @@
                         font-family: $bold_font;
                         margin-bottom: 20px;
                         line-height: 1.5;
+                        margin-top: 8px;
                         @include media-screen-breakpoint-between(lg, xl) {
-                            font-size: 28px;
+                            font-size: 22px;
                         }
                         @include media-screen-breakpoint-between(md, lg) {
                             font-size: 18px;
@@ -97,7 +97,7 @@
                 li {
                     position: relative;
                     .bullet-list-img {
-                        width: 78px;
+                        width: 70px;
                         @include media-screen-breakpoint-down(xs) {
                             width: 60px;
                         }

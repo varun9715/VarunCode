@@ -41,9 +41,6 @@
 /** Colors **/
 /** Font Family **/
 /** Media Queries **/
-.wrapper.parallaxImageSection {
-  margin-top: 60px;
-}
 .wrapper.parallaxImageSection h2 {
   font-size: 50px;
   line-height: 1.2;

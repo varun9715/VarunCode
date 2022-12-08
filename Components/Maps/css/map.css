@@ -41,14 +41,6 @@
 /** Colors **/
 /** Font Family **/
 /** Media Queries **/
-.mapSectionMain {
-  padding: 100px 0;
-}
-@media screen and (max-width: 1199.98px) {
-  .mapSectionMain {
-    padding: 60px 0;
-  }
-}
 @media (min-width: 991.98px) and (max-width: 1299.98px) {
   .mapSectionMain h3 {
     font-size: 28px;
@@ -88,6 +80,7 @@
 .mapSectionMain .lactionPanel .mapFrame {
   height: 100%;
   max-height: 890px;
+  min-height: 500px;
 }
 @media screen and (max-width: 991.98px) {
   .mapSectionMain .lactionPanel .mapFrame {
