@@ -41,6 +41,9 @@
 /** Colors **/
 /** Font Family **/
 /** Media Queries **/
+.wrapper.parallaxImageSection {
+  margin-top: 60px;
+}
 .wrapper.parallaxImageSection h2 {
   font-size: 50px;
   line-height: 1.2;
@@ -184,6 +187,10 @@
 .wrapper.parallaxImageSection .mainInfoPanel .infoPanel p:last-child {
   margin-bottom: 0;
 }
+.wrapper.parallaxImageSection .mainInfoPanel .infoPanel.infoPanelactive {
+  transform: translateY(0) !important;
+  opacity: 1 !important;
+}
 .wrapper.parallaxImageSection .mainInfoPanel .parallaxImagePanel {
   position: relative;
 }
@@ -232,73 +239,82 @@
     margin-right: 0;
   }
 }
-.wrapper.parallaxImageSection.parallaxVThree .mainInfoPanel, .wrapper.parallaxImageSection.parallaxVFour .mainInfoPanel, .wrapper.parallaxImageSection.parallaxVFive .mainInfoPanel, .wrapper.parallaxImageSection.parallaxVSix .mainInfoPanel {
+.wrapper.parallaxImageSection .parallaxVThree .mainInfoPanel,
+.wrapper.parallaxImageSection .parallaxVFour .mainInfoPanel,
+.wrapper.parallaxImageSection .parallaxVFive .mainInfoPanel,
+.wrapper.parallaxImageSection .parallaxVSix .mainInfoPanel {
   background-attachment: fixed;
   background-size: 100% 100%;
   padding: 55px;
   background-repeat: no-repeat;
 }
 @media screen and (max-width: 1299.98px) {
-  .wrapper.parallaxImageSection.parallaxVThree .mainInfoPanel, .wrapper.parallaxImageSection.parallaxVFour .mainInfoPanel, .wrapper.parallaxImageSection.parallaxVFive .mainInfoPanel, .wrapper.parallaxImageSection.parallaxVSix .mainInfoPanel {
+  .wrapper.parallaxImageSection .parallaxVThree .mainInfoPanel,
+.wrapper.parallaxImageSection .parallaxVFour .mainInfoPanel,
+.wrapper.parallaxImageSection .parallaxVFive .mainInfoPanel,
+.wrapper.parallaxImageSection .parallaxVSix .mainInfoPanel {
     padding: 35px;
   }
 }
 @media screen and (max-width: 767.98px) {
-  .wrapper.parallaxImageSection.parallaxVThree .mainInfoPanel, .wrapper.parallaxImageSection.parallaxVFour .mainInfoPanel, .wrapper.parallaxImageSection.parallaxVFive .mainInfoPanel, .wrapper.parallaxImageSection.parallaxVSix .mainInfoPanel {
+  .wrapper.parallaxImageSection .parallaxVThree .mainInfoPanel,
+.wrapper.parallaxImageSection .parallaxVFour .mainInfoPanel,
+.wrapper.parallaxImageSection .parallaxVFive .mainInfoPanel,
+.wrapper.parallaxImageSection .parallaxVSix .mainInfoPanel {
     background-image: none !important;
     padding: 0;
   }
 }
 @media screen and (min-width: 767.98px) {
-  .wrapper.parallaxImageSection.parallaxVThree .mainInfoPanel {
+  .wrapper.parallaxImageSection .parallaxVThree .mainInfoPanel {
     flex-flow: row;
   }
 }
 @media screen and (max-width: 767.98px) {
-  .wrapper.parallaxImageSection.parallaxVThree .mainInfoPanel {
+  .wrapper.parallaxImageSection .parallaxVThree .mainInfoPanel {
     padding-left: 0;
     padding-right: 0;
   }
 }
-.wrapper.parallaxImageSection.parallaxVThree .mainInfoPanel .infoPanel {
+.wrapper.parallaxImageSection .parallaxVThree .mainInfoPanel .infoPanel {
   margin-right: 0;
   margin-left: 0;
   background: #FFFFFF;
 }
 @media screen and (max-width: 767.98px) {
-  .wrapper.parallaxImageSection.parallaxVThree .mainInfoPanel .infoPanel {
+  .wrapper.parallaxImageSection .parallaxVThree .mainInfoPanel .infoPanel {
     padding-left: 0;
     padding-right: 0;
     padding-bottom: 0 !important;
   }
 }
-.wrapper.parallaxImageSection.parallaxVFour .mainInfoPanel {
+.wrapper.parallaxImageSection .parallaxVFour .mainInfoPanel {
   justify-content: flex-start;
 }
-.wrapper.parallaxImageSection.parallaxVFour .mainInfoPanel .infoPanel {
+.wrapper.parallaxImageSection .parallaxVFour .mainInfoPanel .infoPanel {
   margin-right: 0;
   margin-left: 0;
   background: #FFFFFF;
 }
 @media screen and (max-width: 767.98px) {
-  .wrapper.parallaxImageSection.parallaxVFour .mainInfoPanel .infoPanel {
+  .wrapper.parallaxImageSection .parallaxVFour .mainInfoPanel .infoPanel {
     padding-left: 0;
     padding-right: 0;
     padding-bottom: 0;
   }
 }
-.wrapper.parallaxImageSection.parallaxVFive {
+.wrapper.parallaxImageSection .parallaxVFive {
   margin-bottom: 160px;
 }
-.wrapper.parallaxImageSection.parallaxVFive .mainInfoPanel {
+.wrapper.parallaxImageSection .parallaxVFive .mainInfoPanel {
   padding-bottom: 0;
 }
 @media (min-width: 767.98px) and (max-width: 991.98px) {
-  .wrapper.parallaxImageSection.parallaxVFive .mainInfoPanel {
+  .wrapper.parallaxImageSection .parallaxVFive .mainInfoPanel {
     padding: 40px 35px;
   }
 }
-.wrapper.parallaxImageSection.parallaxVFive .mainInfoPanel .infoPanel {
+.wrapper.parallaxImageSection .parallaxVFive .mainInfoPanel .infoPanel {
   background: #E81132;
   margin-top: 58px;
   padding: 80px 67px;
@@ -306,17 +322,17 @@
   margin-left: 0;
 }
 @media (min-width: 767.98px) and (max-width: 1199.98px) {
-  .wrapper.parallaxImageSection.parallaxVFive .mainInfoPanel .infoPanel {
+  .wrapper.parallaxImageSection .parallaxVFive .mainInfoPanel .infoPanel {
     padding: 60px !important;
   }
 }
 @media (min-width: 767.98px) and (max-width: 991.98px) {
-  .wrapper.parallaxImageSection.parallaxVFive .mainInfoPanel .infoPanel {
+  .wrapper.parallaxImageSection .parallaxVFive .mainInfoPanel .infoPanel {
     margin-bottom: -70px;
   }
 }
 @media screen and (max-width: 767.98px) {
-  .wrapper.parallaxImageSection.parallaxVFive .mainInfoPanel .infoPanel {
+  .wrapper.parallaxImageSection .parallaxVFive .mainInfoPanel .infoPanel {
     margin-top: 0;
     padding: 30px;
     margin-left: 25px;
@@ -325,66 +341,66 @@
   }
 }
 @media screen and (max-width: 413.98px) {
-  .wrapper.parallaxImageSection.parallaxVFive .mainInfoPanel .infoPanel {
+  .wrapper.parallaxImageSection .parallaxVFive .mainInfoPanel .infoPanel {
     margin-left: 15px;
     margin-right: 15px;
   }
 }
-.wrapper.parallaxImageSection.parallaxVFive .mainInfoPanel .infoPanel p,
-.wrapper.parallaxImageSection.parallaxVFive .mainInfoPanel .infoPanel h2 {
+.wrapper.parallaxImageSection .parallaxVFive .mainInfoPanel .infoPanel p,
+.wrapper.parallaxImageSection .parallaxVFive .mainInfoPanel .infoPanel h2 {
   color: #FFFFFF;
 }
 @media screen and (max-width: 1299.98px) {
-  .wrapper.parallaxImageSection.parallaxVFive .mainInfoPanel > .sm_container {
+  .wrapper.parallaxImageSection .parallaxVFive .mainInfoPanel > .sm_container {
     padding: 0;
   }
 }
-.wrapper.parallaxImageSection.parallaxVFive .sm_container {
+.wrapper.parallaxImageSection .parallaxVFive .sm_container {
   width: 100%;
   display: flex;
   justify-content: flex-end;
 }
 @media screen and (max-width: 991.98px) {
-  .wrapper.parallaxImageSection.parallaxVFive .sm_container {
+  .wrapper.parallaxImageSection .parallaxVFive .sm_container {
     padding: 0px 20px;
   }
 }
 @media screen and (max-width: 767.98px) {
-  .wrapper.parallaxImageSection.parallaxVFive .sm_container {
+  .wrapper.parallaxImageSection .parallaxVFive .sm_container {
     display: flex;
     flex-flow: column-reverse;
   }
 }
 @media (min-width: 767.98px) and (max-width: 991.98px) {
-  .wrapper.parallaxImageSection.parallaxVFive {
+  .wrapper.parallaxImageSection .parallaxVFive {
     margin-bottom: 100px;
   }
 }
-.wrapper.parallaxImageSection.parallaxVSix {
+.wrapper.parallaxImageSection .parallaxVSix {
   margin-bottom: 100px;
 }
 @media screen and (max-width: 767.98px) {
-  .wrapper.parallaxImageSection.parallaxVSix {
+  .wrapper.parallaxImageSection .parallaxVSix {
     margin-bottom: 160px;
   }
 }
-.wrapper.parallaxImageSection.parallaxVSix .mainInfoPanel {
+.wrapper.parallaxImageSection .parallaxVSix .mainInfoPanel {
   padding-bottom: 0;
 }
 @media (min-width: 767.98px) and (max-width: 991.98px) {
-  .wrapper.parallaxImageSection.parallaxVSix .mainInfoPanel {
+  .wrapper.parallaxImageSection .parallaxVSix .mainInfoPanel {
     padding: 40px 35px 40px 20px;
   }
 }
 @media screen and (max-width: 767.98px) {
-  .wrapper.parallaxImageSection.parallaxVSix .mainInfoPanel {
+  .wrapper.parallaxImageSection .parallaxVSix .mainInfoPanel {
     padding-bottom: 0;
     padding: 0;
     margin: 0;
     background-image: none !important;
   }
 }
-.wrapper.parallaxImageSection.parallaxVSix .mainInfoPanel .infoPanel {
+.wrapper.parallaxImageSection .parallaxVSix .mainInfoPanel .infoPanel {
   background: #E81132;
   margin-top: 58px;
   padding: 80px 67px;
@@ -392,17 +408,17 @@
   margin-left: 0;
 }
 @media (min-width: 767.98px) and (max-width: 1199.98px) {
-  .wrapper.parallaxImageSection.parallaxVSix .mainInfoPanel .infoPanel {
+  .wrapper.parallaxImageSection .parallaxVSix .mainInfoPanel .infoPanel {
     padding: 60px !important;
   }
 }
 @media (min-width: 767.98px) and (max-width: 991.98px) {
-  .wrapper.parallaxImageSection.parallaxVSix .mainInfoPanel .infoPanel {
+  .wrapper.parallaxImageSection .parallaxVSix .mainInfoPanel .infoPanel {
     margin-bottom: -70px;
   }
 }
 @media screen and (max-width: 767.98px) {
-  .wrapper.parallaxImageSection.parallaxVSix .mainInfoPanel .infoPanel {
+  .wrapper.parallaxImageSection .parallaxVSix .mainInfoPanel .infoPanel {
     margin-top: 0;
     padding: 30px;
     margin-left: 25px;
@@ -411,30 +427,30 @@
   }
 }
 @media screen and (max-width: 413.98px) {
-  .wrapper.parallaxImageSection.parallaxVSix .mainInfoPanel .infoPanel {
+  .wrapper.parallaxImageSection .parallaxVSix .mainInfoPanel .infoPanel {
     margin-left: 15px;
     margin-right: 15px;
   }
 }
-.wrapper.parallaxImageSection.parallaxVSix .mainInfoPanel .infoPanel p,
-.wrapper.parallaxImageSection.parallaxVSix .mainInfoPanel .infoPanel h2 {
+.wrapper.parallaxImageSection .parallaxVSix .mainInfoPanel .infoPanel p,
+.wrapper.parallaxImageSection .parallaxVSix .mainInfoPanel .infoPanel h2 {
   color: #FFFFFF;
 }
 @media screen and (max-width: 1299.98px) {
-  .wrapper.parallaxImageSection.parallaxVSix .mainInfoPanel .sm_container {
+  .wrapper.parallaxImageSection .parallaxVSix .mainInfoPanel .sm_container {
     padding: 0;
   }
 }
-.wrapper.parallaxImageSection.parallaxVSix .sm_container {
+.wrapper.parallaxImageSection .parallaxVSix .sm_container {
   width: 100%;
 }
 @media screen and (max-width: 991.98px) {
-  .wrapper.parallaxImageSection.parallaxVSix .sm_container {
+  .wrapper.parallaxImageSection .parallaxVSix .sm_container {
     padding: 0px 20px;
   }
 }
 @media screen and (max-width: 767.98px) {
-  .wrapper.parallaxImageSection.parallaxVSix .sm_container {
+  .wrapper.parallaxImageSection .parallaxVSix .sm_container {
     display: flex;
     flex-flow: column-reverse;
   }
@@ -458,4 +474,7 @@
 }
 .wrapper.parallaxImageSection .convertedImage .desktop-image {
   display: none;
+}
+.wrapper.parallaxImageSection .parallaxImageOverflow {
+  overflow: hidden;
 }/*# sourceMappingURL=parallax.css.map */

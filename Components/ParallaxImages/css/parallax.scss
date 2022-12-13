@@ -1,5 +1,6 @@
 @import '../../Assets/scss/globalvariables';
 .wrapper.parallaxImageSection {
+  margin-top: 60px;
   h2 {
     font-size: 50px;
     line-height: 1.2;
@@ -124,6 +125,10 @@
           margin-bottom: 0;
         }
       }
+      &.infoPanelactive{
+        transform: translateY(0) !important;
+        opacity: 1 !important;
+      }
     }
     .parallaxImagePanel {
       position: relative;
@@ -173,10 +178,10 @@
       }
     }
   }
-  &.parallaxVThree,
-  &.parallaxVFour,
-  &.parallaxVFive,
-  &.parallaxVSix {
+  .parallaxVThree,
+  .parallaxVFour,
+  .parallaxVFive,
+  .parallaxVSix {
     .mainInfoPanel {
       background-attachment: fixed;
       background-size: 100% 100%;
@@ -191,7 +196,7 @@
       }
     }
   }
-  &.parallaxVThree {
+  .parallaxVThree {
     .mainInfoPanel {
       @include media-screen-breakpoint-up(md) {
         -webkit-box-orient: horizontal;
@@ -214,7 +219,7 @@
       }
     }
   }
-  &.parallaxVFour {
+  .parallaxVFour {
     .mainInfoPanel {
       -webkit-box-pack: start;
       -ms-flex-pack: start;
@@ -231,7 +236,7 @@
       }
     }
   }
-  &.parallaxVFive {
+  .parallaxVFive {
     margin-bottom: 160px;
     .mainInfoPanel {
       padding-bottom: 0; 
@@ -297,7 +302,7 @@
       margin-bottom: 100px;
     }
   }
-  &.parallaxVSix {
+  .parallaxVSix {
     margin-bottom: 100px;
     @include media-screen-breakpoint-down(md) {
       margin-bottom: 160px;
@@ -379,5 +384,8 @@
     .desktop-image {
       display: none;
     }
+  }
+  .parallaxImageOverflow{
+    overflow: hidden;
   }
 }
