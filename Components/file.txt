@@ -28,3 +28,30 @@ new json markerJson
    
 Figma link
 https://www.figma.com/file/fnZAjWDBZ1HhVoLLixzsT7/OTPP-Web-Enhancements-New?node-id=417%3A635&t=EDby4cTom9rbIeVc-0
+
+
+Chart Color Options 
+
+Bar chart 
+ - SushiGreen = #71BF44
+ - CoreBlack = #240B14
+
+Line Chart
+ - Teal = #00AAAD
+ - CoreBlack = #240B14
+
+Pie Chart 
+ - Teal = #00AAAD
+ - Grey = #F7F7F7
+ - CoreBlack = #240B14
+
+Primary Color
+ - CoreRed = #FA0037
+ - AodaRed = #E81132
+ - CoreBlack = #240B14
+
+Secondary Color
+ - SushiGreen = #71BF44
+ - Teal = #00AAAD
+ - Yellow = #F4EBFF
+ - LightBlue = #DDF1F2
