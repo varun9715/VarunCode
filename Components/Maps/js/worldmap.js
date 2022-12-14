@@ -101,17 +101,17 @@ function createMap() {
 
     });
 
-    marker.addListener('mouseover', () => {
+    marker.addListener('click', () => {
       var markerIcon = document.querySelectorAll("img[src^='"+ImgUrl+"']")[i].parentElement.classList = 'pinIcon'
       infoWindow.open({
         anchor: marker,
         map,
       });
     })
-    marker.addListener('mouseout', () => {
-      document.querySelectorAll("img[src^='"+ImgUrl+"']")[i].parentElement.className = "";
-      infoWindow.close()
-    })
+    // marker.addListener('mouseout', () => {
+    //   document.querySelectorAll("img[src^='"+ImgUrl+"']")[i].parentElement.className = "";
+    //   infoWindow.close()
+    // })
 
   }
 

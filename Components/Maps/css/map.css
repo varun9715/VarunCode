@@ -80,7 +80,6 @@
 .mapSectionMain .lactionPanel .mapFrame {
   height: 100%;
   max-height: 890px;
-  min-height: 500px;
 }
 @media screen and (max-width: 991.98px) {
   .mapSectionMain .lactionPanel .mapFrame {
