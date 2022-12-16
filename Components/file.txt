@@ -55,3 +55,8 @@ Secondary Color
  - Teal = #00AAAD
  - Yellow = #F4EBFF
  - LightBlue = #DDF1F2
+ 
+ 
+ Map Jsons
+ 
+ [{"lng":56.130366,"lat":-106.346771,"label":"Canada","content":"TORONTO, ON – Building on over a decade of climate change efforts, Ontario Teachers’ Pension Plan Board (Ontario Teachers’)","ctaLink":"#","ctaTitle":"Learn More","ariaLabel":"Canada","linkTarget":"_self"},{"lng":-4.442038,"lat":61.326854,"label":"Latin","content":"TORONTO, ON – Building on over a decade of climate change efforts","ctaLink":"#","ctaTitle":"Click Here","ariaLabel":"Latin","linkTarget":"_blank"},{"lng":72.877426,"lat":19.07609,"label":"Mumbai","content":"Mumbai, ON – Building on over a decade of climate change efforts","ctaLink":"#","ctaTitle":"Click","ariaLabel":"Mumbai","linkTarget":"_self"},{"lng":103.851959,"lat":1.29027,"label":"Singapore","content":"Singapore, ON – Building on over a decade of climate change efforts","ctaLink":"#","ctaTitle":"Learn More","ariaLabel":"Singapore","linkTarget":"_self"}]
