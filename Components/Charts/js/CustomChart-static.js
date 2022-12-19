@@ -1,11 +1,13 @@
 $(document).ready(function () {
   Chart.defaults.global.defaultFontSize = 16;
-  var animationEnable = false
+
   var count = 0
-  var count2 = 0
+  var count2=0
   var count3 = 0
+  var lastScrollTop = 0;
+
   if (jQuery("#barChart").length > 0) {
-    var lastScrollTop = 0;
+
 
     let xAxisLabelsVal = document.getElementById("xAxisLabel").value;
     let xAxisLabels = xAxisLabelsVal.split(",");
@@ -178,6 +180,7 @@ $(document).ready(function () {
     window.addEventListener("scroll", (event) => {
       var reveals = document.querySelector(".ChartLegend");
       var st = window.pageYOffset || document.documentElement.scrollTop;
+      
       if (st > lastScrollTop) {
         sccroll(0);
       } else {
@@ -186,25 +189,21 @@ $(document).ready(function () {
 
 
       function sccroll(step) {
-    
+
 
         var elementTop = reveals.getBoundingClientRect();
-   
-        if (!step) {
 
+        if (!step) {
+          
           if (elementTop.top > 0 &&
             elementTop.left >= 0 && count < 2 &&
             elementTop.right <= (window.innerWidth || document.documentElement.clientWidth) &&
             elementTop.bottom <= (window.innerHeight || document.documentElement.clientHeight)) {
-
+            
             count = count + 1
             var BarChartctxd = document.getElementById("barChart").getContext("2d");
 
-            // BarChartData.options.animation=  {
-            //   animateScale: true,
-            //   animateRotate: true,
-            //   duration:1500
-            // }
+
 
             window.myBarChart = new Chart(BarChartctxd, BarChartData);
             $("#BarChartLegend").html(window.myBarChart.generateLegend());
@@ -241,7 +240,7 @@ $(document).ready(function () {
       }
       //;
 
-      lastScrollTop = st <= 0 ? 0 : st
+
     }, false);
   }
   var count = 0
@@ -329,30 +328,36 @@ $(document).ready(function () {
         },
       },
     }
-    window.addEventListener("scroll", (event) => {
-      var lastScrollTop = 0;
-      var reveals = document.querySelector(".card-body");
 
+    window.addEventListener("scroll", (event) => {
+
+
+      let lastScrollTop = 0
+     
+     
       var st = window.pageYOffset || document.documentElement.scrollTop;
       if (st > lastScrollTop) {
         sccroll(0);
+        sccrolll(0);
       } else {
         sccroll(1);
       }
       var chart
-      function sccroll(step) {
-        //for (var i = 0; i < reveals.length; i++) {
-        
-        var elementTop = reveals.getBoundingClientRect();
-        
-        if (!step) {
-          if (elementTop.top > 0 &&
-            elementTop.left >= 0 && count2 < 2 &&
-            elementTop.right <= (window.innerWidth || document.documentElement.clientWidth) &&
-            elementTop.bottom <= (window.innerHeight || document.documentElement.clientHeight)) {
-            // console.log(elementTop, windowHeight,BarChartData.options.animation);
-            count2 = count2 + 1
-
+      function sccroll(step){
+        let windowHeight = jQuery(window).height();
+        let windowTopPosition = jQuery(window).scrollTop();
+        let windowBottomPosition = (windowTopPosition + windowHeight / 1.5);
+        //var reveals = document.querySelector(".card-body");
+          let element = jQuery('.data-pie-chart');
+          
+          let elementHeight = element.outerHeight();
+          let elementTopPosition = element.offset().top;
+          let elementBottomPosition = (elementTopPosition + elementHeight / 1.5);
+           console.log('count2',count2)
+          if((elementBottomPosition >= windowTopPosition) && (elementTopPosition <= windowBottomPosition)&&count2<2){
+            
+            count2=count2 +1;
+            console.log('count2',count2)
             chart = new Chart(PieChartCtx, PaiChart);
             var myLegendContainer = document.getElementById("legend");
             // generate HTML legend
@@ -392,22 +397,37 @@ $(document).ready(function () {
               }
               chart.update();
             }
-
+          } else{
+           // count2 = 0;
+            element.removeClass('in-view');
+            element.addClass('out-view')
           }
-        }
-        else {
-          count2 = 0
-        }
+        
+        }      
+      function sccrolll(step) {
+        //for (var i = 0; i < reveals.length; i++) {
+          let reveals = document.querySelector('.datya')
+        var elementTop = reveals.getBoundingClientRect();
 
+        if (!step) {
+          if (elementTop.top > 0 &&
+            elementTop.left >= 0  &&
+
+            elementTop.bottom <= (window.innerHeight || document.documentElement.clientHeight)) {
+            
+            console.log('asdasdasdasd')
+            count2 = 0;
+
+            }
       }
       lastScrollTop = st <= 0 ? 0 : st;
-
+    }
     })
   }
 
   if (jQuery("#lineChart").length > 0) {
-    
-    
+
+
     let xAxisLabelsVal = document.getElementById("xAxisLabel").value;
     let xAxisLabels = xAxisLabelsVal.split(",");
 
@@ -579,6 +599,7 @@ $(document).ready(function () {
     window.addEventListener("scroll", (event) => {
       var reveals = document.querySelector(".ChartLegend2");
       var lastScrollTop = 0;
+  
       var st = window.pageYOffset || document.documentElement.scrollTop;
       if (st > lastScrollTop) {
         sccroll(0);
@@ -588,19 +609,16 @@ $(document).ready(function () {
 
 
       function sccroll(step) {
-     
-       var elementTop = reveals.getBoundingClientRect();
-        
+
+        var elementTop = reveals.getBoundingClientRect();
+
         if (!step) {
-         console.log(elementTop.top > 0 ,
-          elementTop.left >= 0 , count3 < 2 ,
-          elementTop.right < (window.innerWidth || document.documentElement.clientWidth) ,
-          elementTop.bottom < (window.innerHeight || document.documentElement.clientHeight))
+
           if (elementTop.top > 0 &&
             elementTop.left >= 0 && count3 < 2 &&
             elementTop.right < (window.innerWidth || document.documentElement.clientWidth)
-            ) {
-              console.log("jhhjhjhj")
+          ) {
+            console.log("jhhjhjhj")
             count3 = count3 + 1
             var LineChartctxd = document.getElementById("lineChart").getContext("2d");
             window.myLineChart = new Chart(LineChartctxd, LineChartData);
@@ -632,8 +650,8 @@ $(document).ready(function () {
             }
           }
         }
-        else{
-          count3=0
+        else {
+          count3 = 0
         }
       }
     })

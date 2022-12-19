@@ -1,13 +1,17 @@
 @import '../../Assets/scss/globalvariables';
 .wrapper.parallaxImageSection {
   margin-top: 60px;
+  @include media-screen-breakpoint-up(xl) {
+    background-color: red;
+  }
   h2 {
     font-size: 50px;
     line-height: 1.2;
     text-align: left;
     color: $primary_color;
     margin-bottom: 80px;
-    @include media-screen-breakpoint-up(lgmd) {
+    @include media-screen-breakpoint-up(xl) {
+      background-color: red;
       margin-bottom: 50px;
     }
     @include media-screen-breakpoint-between(md, lg) {

@@ -1,0 +1,47 @@
+  
+      function sccroll(step) {
+
+        let windowHeight = jQuery(window).height();
+        let windowTopPosition = jQuery(window).scrollTop();
+        let windowBottomPosition = (windowTopPosition + windowHeight / 1.5);
+        //var reveals = document.querySelector(".card-body");
+        let element = jQuery('.ChartLegend2');
+  
+        let elementHeight = element.outerHeight();
+        let elementTopPosition = element.offset().top;
+        let elementBottomPosition = (elementTopPosition + elementHeight / 1.5);
+        if ((elementBottomPosition >= windowTopPosition) && (elementTopPosition <= windowBottomPosition)==false) {
+       
+          count3= 0
+        }
+        
+        if ((elementBottomPosition >= windowTopPosition) && (elementTopPosition <= windowBottomPosition) && count3== 0) {
+          count3 = count3 + 1
+          var LineChartctxd = document.getElementById("lineChart").getContext("2d");
+          window.myLineChart = new Chart(LineChartctxd, LineChartData);
+          $("#LineChartLegend").html(window.myLineChart.generateLegend());
+          // Show/hide chart by click legend
+          updateLineChart = function (e, datasetIndex, li) {
+            var index = datasetIndex;
+            var LineChartci = e.view.myLineChart;
+            var LineChartMeta = LineChartci.getDatasetMeta(datasetIndex);
+            LineChartMeta.hidden == true
+              ? (LineChartMeta.hidden = false)
+              : (LineChartMeta.hidden = true);
+            if (LineChartMeta.hidden) {
+              li.querySelectorAll("span")[1].style.textDecoration = "line-through";
+            } else {
+              li.querySelectorAll("span")[1].style.textDecoration = "none";
+            }
+            LineChartci.update();
+          };
+          var LineChartLegendItems = document.getElementsByTagName("li");
+          for (let i = 0; i < LineChartLegendItems.length; i += 1) {
+            LineChartLegendItems[i].addEventListener(
+              "click",
+              (event) => updateLineChart(event, i, LineChartLegendItems[i]),
+              true
+            );
+          }
+        }
+      }
