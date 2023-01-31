@@ -1,131 +1,147 @@
 World Map :
 
 <script type="text/javascript">
-var imgUrlVal = window.location.origin + document.getElementById('mapimage').value;
-var ImgUrl = imgUrlVal;
-console.log(ImgUrl);
-var centerLang = parseInt(document.getElementById('centerLangitude').value);
-var centerLat = parseInt(document.getElementById('centerLatitude').value);
-var maxZoom = parseInt(document.getElementById('maxZoom').value);
-var minZoom = parseInt(document.getElementById('minZoom').value);
-var defaultZoom = parseInt(document.getElementById('defaultZoom').value);
+    var imgUrlVal = window.location.origin + document.getElementById('mapimage').value;
+    var ImgUrl = imgUrlVal;
+    var centerLang = parseInt(document.getElementById('centerLangitude').value);
+    var centerLat = parseInt(document.getElementById('centerLatitude').value);
+    var maxZoom = parseInt(document.getElementById('maxZoom').value);
+    var minZoom = parseInt(document.getElementById('minZoom').value);
+    var defaultZoom = parseInt(document.getElementById('defaultZoom').value);
+    
+    var markerJson = JSON.parse(document.getElementById('markerJson').value);
+    
+    var markerposition = markerJson;
+    
+    function createMap() {
+    
+      var opts = {
+        center: {
+          lat: centerLat,
+          lng: centerLang,
+        },
+        zoom: defaultZoom,
+        styles: [{ "featureType": "all", "elementType": "labels", "stylers": [{ "visibility": "off" }] }, { "featureType": "administrative", "elementType": "labels.text.fill", "stylers": [{ "color": "#444444" }] }, { "featureType": "administrative.country", "elementType": "geometry", "stylers": [{ "visibility": "off" }] }, { "featureType": "landscape", "elementType": "all", "stylers": [{ "color": "#f2f2f2" }] }, { "featureType": "landscape", "elementType": "geometry", "stylers": [{ "visibility": "off" }] }, { "featureType": "landscape", "elementType": "geometry.fill", "stylers": [{ "visibility": "on" }, { "color": "#ffffff" }] }, { "featureType": "landscape", "elementType": "geometry.stroke", "stylers": [{ "visibility": "off" }] }, { "featureType": "landscape", "elementType": "labels", "stylers": [{ "visibility": "off" }] }, { "featureType": "landscape", "elementType": "labels.text", "stylers": [{ "visibility": "off" }] }, { "featureType": "landscape", "elementType": "labels.text.fill", "stylers": [{ "visibility": "off" }] }, { "featureType": "landscape", "elementType": "labels.text.stroke", "stylers": [{ "visibility": "off" }] }, { "featureType": "landscape", "elementType": "labels.icon", "stylers": [{ "visibility": "off" }] }, { "featureType": "landscape.natural.terrain", "elementType": "geometry.fill", "stylers": [{ "saturation": "18" }] }, { "featureType": "poi", "elementType": "all", "stylers": [{ "visibility": "off" }] }, { "featureType": "road", "elementType": "all", "stylers": [{ "saturation": -100 }, { "lightness": 45 }] }, { "featureType": "road.highway", "elementType": "all", "stylers": [{ "visibility": "simplified" }] }, { "featureType": "road.arterial", "elementType": "labels.icon", "stylers": [{ "visibility": "off" }] }, { "featureType": "transit", "elementType": "all", "stylers": [{ "visibility": "off" }] }, { "featureType": "water", "elementType": "all", "stylers": [{ "color": "#d8d6cc" }, { "visibility": "on" }] }, { "featureType": "water", "elementType": "geometry.fill", "stylers": [{ "color": "#DDF1F2" }] }, { "featureType": "water", "elementType": "labels.text", "stylers": [{ "visibility": "off" }] }, {
+          "featureType": "administrative.province",
+          "elementType": "geometry.stroke",
+          "stylers": [{ "visibility": "off" }]
+        }],
+        maxZoom: maxZoom,
+        minZoom: minZoom,
+        clickableIcons: true,
+        clickableIcons: true,
+        disableDoubleClickZoom: true,
+        draggable: true,
+        keyboardShortcuts: true,
+        scrollwheel: true,
+        streetViewControl: false,
+        mapTypeControl: false,
+        fullscreenControl: false,
+    
+      };
+    
+      var map = new google.maps.Map(document.getElementById('map'), opts);
+      let infoWindow =null
+      for (let i = 0; i < markerposition.length; i++) {
+       
+        const contentString =
+          '<div id="content">' +
+          '<div id="siteNotice">' +
+          "</div>" +
+          '<span class="type">TYPE, LOCATION</span>' +
+          `<h2 id="firstHeading" class="firstHeading">${markerposition[i].label}</h2>` +
+          '<div id="bodyContent" class="maptooltip">' +
+          `<p>${markerposition[i].content}</p>` +
+         `<a class="learn_more" href="${markerposition[i].ctaLink}" aria-label="${markerposition[i].ariaLabel}" target="${markerposition[i].linkTarget}">${markerposition[i].ctaTitle}</a>` +
+          "</div>" +
+          "</div>";
+    
+        const marker = new google.maps.Marker({
+    
+          position: new google.maps.LatLng(markerposition[i].lat, markerposition[i].lng),
+          icon: ImgUrl,
+          optimized: true,
+          map: map,
+          label: { text: markerposition[i].label, className: "labels" },
+    
+        });
+       
+    
+        marker.addListener('click', () => {
+            let markerIcon = document.querySelectorAll("img[src^='"+ImgUrl+"']")[i];
+            if (infoWindow) {
+            infoWindow.close();
+            markerIcon.parentElement.classList.remove('pinIcon');
+          }
+          infoWindow = new google.maps.InfoWindow({
+          content: contentString,
+    
+          maxWidth: 479,
+    
+        });
+       
+         
+          infoWindow.open({
+            anchor: marker,
+            map,
+          });
+        })
 
-var markerJson = JSON.parse(document.getElementById('markerJson').value);
+        
 
-var markerposition = markerJson;
-console.log(markerposition );
+        google.maps.event.addListener(marker, 'click', function() {
+        let markerIcon = document.querySelectorAll("img[src^='"+ImgUrl+"']")[i];
 
-function createMap() {
-
-  var opts = {
-    center: {
-      lat: centerLat,
-      lng: centerLang,
-    },
-    zoom: defaultZoom,
-    styles: [{ "featureType": "all", "elementType": "labels", "stylers": [{ "visibility": "off" }] }, { "featureType": "administrative", "elementType": "labels.text.fill", "stylers": [{ "color": "#444444" }] }, { "featureType": "administrative.country", "elementType": "geometry", "stylers": [{ "visibility": "off" }] }, { "featureType": "landscape", "elementType": "all", "stylers": [{ "color": "#f2f2f2" }] }, { "featureType": "landscape", "elementType": "geometry", "stylers": [{ "visibility": "off" }] }, { "featureType": "landscape", "elementType": "geometry.fill", "stylers": [{ "visibility": "on" }, { "color": "#ffffff" }] }, { "featureType": "landscape", "elementType": "geometry.stroke", "stylers": [{ "visibility": "off" }] }, { "featureType": "landscape", "elementType": "labels", "stylers": [{ "visibility": "off" }] }, { "featureType": "landscape", "elementType": "labels.text", "stylers": [{ "visibility": "off" }] }, { "featureType": "landscape", "elementType": "labels.text.fill", "stylers": [{ "visibility": "off" }] }, { "featureType": "landscape", "elementType": "labels.text.stroke", "stylers": [{ "visibility": "off" }] }, { "featureType": "landscape", "elementType": "labels.icon", "stylers": [{ "visibility": "off" }] }, { "featureType": "landscape.natural.terrain", "elementType": "geometry.fill", "stylers": [{ "saturation": "18" }] }, { "featureType": "poi", "elementType": "all", "stylers": [{ "visibility": "off" }] }, { "featureType": "road", "elementType": "all", "stylers": [{ "saturation": -100 }, { "lightness": 45 }] }, { "featureType": "road.highway", "elementType": "all", "stylers": [{ "visibility": "simplified" }] }, { "featureType": "road.arterial", "elementType": "labels.icon", "stylers": [{ "visibility": "off" }] }, { "featureType": "transit", "elementType": "all", "stylers": [{ "visibility": "off" }] }, { "featureType": "water", "elementType": "all", "stylers": [{ "color": "#d8d6cc" }, { "visibility": "on" }] }, { "featureType": "water", "elementType": "geometry.fill", "stylers": [{ "color": "#DDF1F2" }] }, { "featureType": "water", "elementType": "labels.text", "stylers": [{ "visibility": "off" }] }, {
-      "featureType": "administrative.province",
-      "elementType": "geometry.stroke",
-      "stylers": [{ "visibility": "off" }]
-    }],
-    maxZoom: maxZoom,
-    minZoom: minZoom,
-    clickableIcons: true,
-    clickableIcons: true,
-    disableDoubleClickZoom: true,
-    draggable: true,
-    keyboardShortcuts: true,
-    scrollwheel: true,
-    streetViewControl: false,
-    mapTypeControl: false,
-    fullscreenControl: false,
-
-  };
-
-  var map = new google.maps.Map(document.getElementById('map'), opts);
-  let infoWindow =null
-  for (let i = 0; i < markerposition.length; i++) {
-   
-    const contentString =
-      '<div id="content">' +
-      '<div id="siteNotice">' +
-      "</div>" +
-      '<span class="type">TYPE, LOCATION</span>' +
-      `<h2 id="firstHeading" class="firstHeading">${markerposition[i].label}</h2>` +
-      '<div id="bodyContent" class="maptooltip">' +
-      `<p>${markerposition[i].content}</p>` +
-     `<a class="learn_more" href="${markerposition[i].ctaLink}" aria-label="${markerposition[i].ariaLabel}" target="${markerposition[i].linkTarget}">${markerposition[i].ctaTitle}</a>` +
-      "</div>" +
-      "</div>";
-
-    const marker = new google.maps.Marker({
-
-      position: new google.maps.LatLng(markerposition[i].lat, markerposition[i].lng),
-      icon: ImgUrl,
-      optimized: true,
-      map: map,
-      label: { text: markerposition[i].label, className: "labels" },
-
-    });
-   
-
-    marker.addListener('click', () => {
-        if (infoWindow) {
-        infoWindow.close();
+            if(!marker.open){
+                infoWindow.open(map,marker);
+                marker.open = true;
+                markerIcon.parentElement.classList.add('pinIcon');
+            }
+            else{
+                infoWindow.close();
+                marker.open = false;
+                markerIcon.parentElement.classList.remove('pinIcon');
+            }
+            google.maps.event.addListener(map, 'click', function() {
+                infoWindow.close();
+                marker.open = false;
+                markerIcon.parentElement.classList.remove('pinIcon');
+            });
+        });
+    
       }
-      infoWindow = new google.maps.InfoWindow({
-      content: contentString,
-
-      maxWidth: 479,
-
+    
+      var marker = new google.maps.Marker();
+    
+    }
+    
+    window.addEventListener('DOMContentLoaded', (event) => {
+      createMap();
     });
-
-     
-      var markerIcon = document.querySelectorAll("img[src^='"+ImgUrl+"']")[i].parentElement.classList = 'pinIcon'
-      infoWindow.open({
-        anchor: marker,
-        map,
-      });
-    })
-    {/* marker.addListener('mouseout', () => {
-      document.querySelectorAll("img[src^='"+ImgUrl+"']")[i].parentElement.className = "";
-      infoWindow.close()
-    }) */}
-
-  }
-
-  var marker = new google.maps.Marker();
-
-}
-
-window.addEventListener('DOMContentLoaded', (event) => {
-  createMap();
-});
-	</script>
-  <script defer
-    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBaiaxvEN5N8JucAuwtkoFBef-nvoZkJq4&v=3.31&language=en&libraries=places,geometry&callback=createMap"></script>
+        </script>
+      <script defer
+        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBaiaxvEN5N8JucAuwtkoFBef-nvoZkJq4&v=3.31&language=en&libraries=places,geometry&callback=createMap"></script>
 	
 	=========================================================================================================================================
 
 Head Quarter
-	
+
 <script type="text/javascript">
 var imgUrlVal = window.location.origin+document.getElementById('mapimage').value;
 var ImgUrl = imgUrlVal;
 var basepath = document.getElementById('countryjson').value;
+var cities = document.getElementById('cities').value;
 var geocoder;
 var map;
 
 async function initialize() {
   ///calling JSON file for data
   var ceterPoint = await JSONCall('HeadquarterCity').then((data) => data)
-
   geocoder = new google.maps.Geocoder();
-
-  var latlng = new google.maps.LatLng(ceterPoint[0].center_lat, ceterPoint[0].center_lng);
+  var latlng = new google.maps.LatLng(ceterPoint[0].centerLat, ceterPoint[0].centerLng);
   
   var mapOptions = {
-    zoom: ceterPoint[0]?.zoom?ceterPoint[0].zoom:5,
+    zoom: parseInt( ceterPoint[0]?.zoom)?parseInt(ceterPoint[0].zoom):5,
     center: latlng,
     styles: [{ "featureType": "all", "elementType": "labels", "stylers": [{ "visibility": "off" }] }, { "featureType": "administrative", "elementType": "labels.text.fill", "stylers": [{ "color": "#444444" }] }, { "featureType": "administrative.country", "elementType": "geometry", "stylers": [{ "visibility": "off" }] }, { "featureType": "landscape", "elementType": "all", "stylers": [{ "color": "#f2f2f2" }] }, { "featureType": "landscape", "elementType": "geometry", "stylers": [{ "visibility": "on" }] }, { "featureType": "landscape", "elementType": "geometry.fill", "stylers": [{ "visibility": "on" }, { "color": "#DDF1F2" }] }, {
       "featureType": "landscape",
@@ -136,7 +152,7 @@ async function initialize() {
       "elementType": "geometry.stroke",
       "stylers": [{ "visibility": "off" }]
     }, { "featureType": "landscape", "elementType": "labels", "stylers": [{ "visibility": "off" }] }, { "featureType": "landscape", "elementType": "labels.text", "stylers": [{ "visibility": "off" }] }, { "featureType": "landscape", "elementType": "labels.text.fill", "stylers": [{ "visibility": "off" }] }, { "featureType": "landscape", "elementType": "labels.text.stroke", "stylers": [{ "visibility": "off" }] }, { "featureType": "landscape", "elementType": "labels.icon", "stylers": [{ "visibility": "off" }] }, { "featureType": "landscape.natural.terrain", "elementType": "geometry.fill", "stylers": [{ "visibility": "off" }] }, { "featureType": "poi", "elementType": "all", "stylers": [{ "visibility": "off" }] }, { "featureType": "road", "elementType": "all", "stylers": [{ "visibility": "off" }] }, { "featureType": "road.highway", "elementType": "all", "stylers": [{ "visibility": "off" }] }, { "featureType": "road.arterial", "elementType": "labels.icon", "stylers": [{ "visibility": "off" }] }, { "featureType": "transit", "elementType": "all", "stylers": [{ "visibility": "off" }] }, { "featureType": "water", "elementType": "all", "stylers": [{ "color": "#d8d6cc" }, { "visibility": "off" }] }, { "featureType": "water", "elementType": "geometry.fill", "stylers": [{ "color": "#DDF1F2" }] }, { "featureType": "water", "elementType": "labels.text", "stylers": [{ "visibility": "off" }] }],
-    maxZoom: ceterPoint[0]?.maxZoom?ceterPoint[0].maxZoom:20,
+    maxZoom: parseInt( ceterPoint[0]?.maxZoom)?parseInt( ceterPoint[0].maxZoom):20,
     minZoom: ceterPoint[0]?.minZoom?ceterPoint[0].minZoom:3,
     mapTypeId: 'roadmap',
     streetViewControl: false,
@@ -146,7 +162,7 @@ async function initialize() {
   }
   map = new google.maps.Map(document.getElementById('map'), mapOptions);
 
-  map.data.loadGeoJson(basepath +'/' + ceterPoint[0].short_name + `.json`);
+  map.data.loadGeoJson(basepath +'/' + ceterPoint[0].shortName + `.json`);
   map.data.setStyle({
     fillColor: "#ffffff",
     fillOpacity: 1,
@@ -155,19 +171,18 @@ async function initialize() {
 
   Marker()
 
-
 }
 ////marker function for pointing location
 async function Marker() {
   var markerposition = await JSONCall('HeadquarterCity').then((data) => data)
-
+  let infoWindow =null
   for (let i = 0; i < markerposition.length; i++) {
 
     const contentString =
       '<div id="content">' +
       '<div id="siteNotice">' +
       "</div>" +
-      `<span class="type">${markerposition[i].location_type}</span>` + 
+      `<span class="type">${markerposition[i].locationType}</span>` + 
       `<h2 id="firstHeading" class="firstHeading">${markerposition[i].name}</h2>` +
       '<div id="bodyContent" class="maptooltip">' +
       `<p>${markerposition[i].content}</p>` +
@@ -175,94 +190,121 @@ async function Marker() {
       "</div>" +
       "</div>";
 
-    const marker = new google.maps.Marker({
-
+    const marker = new google.maps.Marker({    
       position: new google.maps.LatLng(markerposition[i].lat, markerposition[i].lng),
       icon: ImgUrl,
       optimized: true,
       map: map,
       label: { text: markerposition[i].name, className: "labels" },
-
     });
-    const infoWindow = new google.maps.InfoWindow({
-      content: contentString,
-      marker: marker,
-      maxWidth: 479,
-      border: false,
-      pointer: "10px",
-      shadow: false,
-      closeOnMapClick: true,
-      closeWhenOthersOpen: true,
-    });
-    marker.addListener('mouseover', () => {
 
-      document.querySelectorAll("img[src^='"+ImgUrl+"']")[i].parentElement.classList = 'pinIcon'
-      infoWindow.open(map, marker)
+    marker.addListener('click', () => {
+        let markerIcon = document.querySelectorAll("img[src^='"+ImgUrl+"']")[i];
+        if (infoWindow) {
+          infoWindow.close();
+          markerIcon.parentElement.classList.remove('pinIcon');
+        }
+        infoWindow = new google.maps.InfoWindow({
+        content: contentString,
+        maxWidth: 479,
+      });
+    
+      infoWindow.open({
+        anchor: marker,
+        map,
+      });
     })
-    marker.addListener('mouseout', () => {
-      document.querySelectorAll("img[src^='"+ImgUrl+"']")[i].parentElement.className = "";
-      infoWindow.close()
-    })
+
+    google.maps.event.addListener(marker, 'click', function() {
+        let markerIcon = document.querySelectorAll("img[src^='"+ImgUrl+"']")[i];
+
+            if(!marker.open){
+                infoWindow.open(map,marker);
+                marker.open = true;
+                markerIcon.parentElement.classList.add('pinIcon');
+            }
+            else{
+                infoWindow.close();
+                marker.open = false;
+                markerIcon.parentElement.classList.remove('pinIcon');
+            }
+            google.maps.event.addListener(map, 'click', function() {
+                infoWindow.close();
+                marker.open = false;
+                markerIcon.parentElement.classList.remove('pinIcon');
+            });
+        });
 
   }
 }
 ///Json call function
 async function JSONCall(file) {
   var location = document.getElementById('country').value;
-  //var location = document.querySelector('select').value;
-  return await fetch(basepath +'/'+ file + '.json').then(response => response.json())
-    .then(data => data.filter((country) => country.short_name == location));
+  const data= JSON.parse(cities);
+    return data.filter((country) => country.shortName == location)
 }
 </script>
 <script defer
     src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBaiaxvEN5N8JucAuwtkoFBef-nvoZkJq4&v=3.31&language=en&libraries=places,geometry&callback=initialize"></script>
-	
 	==================================================================================================================================
 	
 	Address Map
 	
-	<script type="text/javascript"> 
-var addressLatitude = parseInt(document.getElementById('addressLat').value);
-var addressLongitude = parseInt(document.getElementById('addressLong').value);
+	<script type="text/javascript">
+
+var addressLatitude = parseInt(document.getElementById('addressLatitude').value);
+var addressLongitude = parseInt(document.getElementById('addressLongitude').value);
 var addressZoom = parseInt(document.getElementById('addressZoom').value);
-var addressMinZoom = parseInt(document.getElementById('addressMinZoom').value); 
-var addressJson = JSON.parse(document.getElementById('addressJson').value);
+var addressMinZoom = parseInt(document.getElementById('addressMinZoom').value);
 var addressLabel = document.getElementById('addressLabel').value;
+
 function createMaps(){
-const myLoacation = { lat: addressLatitude, lng: addressLongitude };
-const dotPoints=addressJson;
+const myLoacation = { lat: 43.780022, lng: -79.40605 };
+const addressJson=[{ "addressLat":" 43.780022", "addressLat":" -79.40605 "},{ "addressLat":" 43.780022", "addressLong":" -79.11605 "},{ "addressLat":" 43.780022", "addressLong":" -79.40005" }]
+
+const newData=addressJson.map((v)=>{
+  return {lat:parseFloat(v.addressLat),lng:parseFloat(v.addressLong)}
+})
 var opts = {
-center: myLoacation,
-streetViewControl:false,
-mapTypeControl:false,
-fullscreenControl:false,
-zoom: addressZoom,
-minZoom: addressMinZoom,
-};
-var map = new google.maps.Map(document.getElementById('map'), opts); dotPoints.forEach((marker)=>{
-    new google.maps.Marker({
-      position: marker,
-      map,
-      icon: {
-        path: google.maps.SymbolPath.CIRCLE,
-        scale: 8,
-        fillColor: 'red',
-        fillOpacity: 1,
-        strokeColor: 'white',
-        strokeWeight: 2
-    },
-  });
-  })
-  const marker = new google.maps.Marker({
-      position: myLoacation,
-      map,
-      label: {
-          text: addressLabel,
-          color: "red",
-          fontSize: "15px",
-          fontWeight: "bold",       },
-      labelAnchor: new google.maps.Point(120, 100),
-      labelClass: "my-custom-class",
-  });
-}  </script><script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBaiaxvEN5N8JucAuwtkoFBef-nvoZkJq4&v=3.31&language=en&libraries=places,geometry&callback=createMaps"
-    defer></script>
+  center: myLoacation,
+  streetViewControl:false,
+  mapTypeControl:false,
+  fullscreenControl:false,
+  zoom: 7,
+  minZoom: 0,
+  };
+  if(newData.length>0){
+  var map = new google.maps.Map(document.getElementById('map'), opts);
+  newData.forEach((marker)=>{
+    new google.maps.Marker({
+      position: marker,
+      map,
+     
+      icon: {
+        path: google.maps.SymbolPath.CIRCLE,
+        scale: 8,
+        fillColor: 'red',
+        fillOpacity: 1,
+        strokeColor: 'white',
+        strokeWeight: 2
+    },
+      
+    
+  });
+  })
+  const marker = new google.maps.Marker({
+      position: myLoacation,
+      map, 
+      label: {
+          text: addressLabel,     
+          className:"my-custom-class"
+      },         
+  });
+ 
+  }
+}
+
+</script>
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBaiaxvEN5N8JucAuwtkoFBef-nvoZkJq4&v=3.31&language=en&libraries=places,geometry&callback=createMaps"
+    defer
+  ></script>
